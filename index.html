@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Portfolio</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="popup" class="popup">Cliquez sur le texte pour interagir !</div>
+    <div class="terminal">
+      <div class="header">
+        <div class="buttons">
+          <a href="#"><div class="button red"></div></a>
+          <a href="#"><div class="button yellow"></div></a>
+          <a href="#"><div class="button green"></div></a>
+        </div>
+        <div class="center-container">
+          <a href="#" class="logo">
+            <img src="img/box.png" alt="Logo">
+          </a>
+          <div id="terminal-title" class="title">Lachkar -- Loading...</div>
+        </div>
+      </div>
+      <div class="content" id="last-login">Loading...</div>
+      <div class="content1">lachkar@Host-001 ~ % ls</div>
+      <a href="#" class="content2" onclick="showContent('Terminal')">Terminal&nbsp;&nbsp;&nbsp;</a>
+      <a href="#" class="content2" onclick="showContent('Profil')">Profil&nbsp;&nbsp;&nbsp;</a>
+      <a href="#" class="content2" onclick="showContent('Competence')">Compétence&nbsp;&nbsp;&nbsp;</a><br>
+      <a href="#" class="content2" onclick="showContent('Stages')">Stages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="#" class="content2" onclick="showContent('Projets')">Projets&nbsp;&nbsp;</a>
+      <a href="#" class="content2" onclick="showContent('Veille')">Veille technologique&nbsp;&nbsp;&nbsp;</a><br>  
+      <a href="#" class="content2" onclick="showContent('Contact')">Contact</a>     
+      <div class="content2" id="terminal-output" onclick="activateInput()">
+        <div class="command-line">lachkar@Host-001 ~ %</div>
+      </div>
+    </div>
+  
+    <!-- Zone invisible de détection de souris -->
+    <div class="mouse-detection-area"></div>
+  
+    <!-- Barre d'applications EN DEHORS du terminal -->
+    <div id="bottom-bar" class="bottom-bar">
+      <div class="app1"></div>
+      <div class="app2"></div>
+      <div class="app3"></div>
+      <div class="app4"></div>
+      <div class="app5"></div>
+    </div>
+  </body>
+</html>
