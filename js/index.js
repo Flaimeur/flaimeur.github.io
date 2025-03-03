@@ -126,3 +126,34 @@ document.addEventListener("mousemove", function(event) {
   }
 });
 
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+});
+document.addEventListener("keydown", function(event) {
+    if (
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && event.key === "I") ||
+        (event.ctrlKey && event.shiftKey && event.key === "J") ||
+        (event.ctrlKey && event.key === "U")
+    ) {
+        event.preventDefault();
+    }
+});
+setInterval(function() {
+    if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+        document.body.innerHTML = "Inspection bloquée !";
+    }
+}, 1000);
+(function() {
+    function detectDevTools() {
+        console.log("%c ", "font-size: 1px;");
+        console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
+
+        setInterval(() => {
+            (function() {
+                debugger;
+            })();
+        }, 100);
+    }
+    detectDevTools();
+})();
