@@ -26,6 +26,7 @@ a {
   backdrop-filter: blur(20%);
 }
 
+/* header */
 .header {
   background: #333;
   height: 30px;
@@ -47,11 +48,6 @@ a {
   gap: 10px;
 }
 
-.buttons {
-  display: flex;
-  gap: 8px;
-}
-
 .logo {
   pointer-events: none;
 }
@@ -64,10 +60,16 @@ a {
   width: auto;
 }
 
+/* Button */
 .button {
   width: 12px;
   height: 12px;
   border-radius: 60%;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
 }
 
 .red {
@@ -80,6 +82,7 @@ a {
   background: #28c940;
 }
 
+/* content */
 .content {
   padding-top: 2rem;
   padding-left: 1rem;
@@ -104,10 +107,11 @@ a {
   padding-left: 1rem;
   color: #ffff;
   font-size: 14px;
-  white-space: pre-line;
-  line-height: 1.6;
+  pointer-events: all;
+  transition: color 0.3s ease-in-out;
 }
 
+/*fulscreen mod*/
 .fullscreen {
   width: 100% !important;
   height: 100% !important;
@@ -120,6 +124,7 @@ a {
   backdrop-filter: none;
 }
 
+/*popup*/
 .popup {
   position: fixed;
   top: 20px;
@@ -133,7 +138,6 @@ a {
   z-index: 1000;
 }
 
-/* Barre d'application en bas */
 /* Zone invisible pour détecter la souris */
 .mouse-detection-area {
   position: fixed;
@@ -144,10 +148,10 @@ a {
   z-index: 999;
 }
 
-/* Barre d'application en bas */
+/* Barre d'application */
 .bottom-bar {
   position: fixed;
-  bottom: -70px; /* Commence cachée */
+  bottom: -70px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(30, 30, 30, 0.9);
@@ -167,6 +171,7 @@ a {
   backdrop-filter: blur(10px);
 }
 
+/*Application*/
 .app1,
 .app2,
 .app3,
