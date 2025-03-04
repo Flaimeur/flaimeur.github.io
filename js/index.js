@@ -1,5 +1,7 @@
-let isAnimating = false; // Bloque les clics pendant l'animation
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Bloque les clics pendant l'animation
+let isAnimating = false; 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //heur titre
 function updateTitleTime() {
   let now = new Date();
@@ -12,7 +14,7 @@ function updateTitleTime() {
 }
 
 document.addEventListener("DOMContentLoaded", updateTitleTime);
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Affiche l'heure de connexion (content)
 function updateLastLogin() {
   let now = new Date();
@@ -24,7 +26,6 @@ function updateLastLogin() {
 }
 
 document.addEventListener("DOMContentLoaded", updateLastLogin);
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // click
 function showContent(section) {
@@ -37,9 +38,9 @@ function showContent(section) {
   let content = {
     Terminal: " ",
     Profil: " cd Profil\nNom: Lachkar\nPrenom: Bilal\nAge: 19 ans\nDéveloppeur Web passionné !",
-    Competence: " cd Compétence\nHTML, CSS, JavaScript, Python",
-    Stages: " cd Stages\nStage 1: \nStage 2:",
-    Projets: " cd Projets\nProjet 1: Portfolio\nProjet 2:",
+    Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
+    Stages: " cd Stages\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
+    Projets: " cd Projets\nProjet 1: Chatbex\nProjet 2:",
     Veille: " cd Veille technologique\nVeille sur l'informatique quantique, Maths/Cryptographie",
     Contact: " cd Contact\nEmail: lachkar.bilal.gf@gmail.com\nGitHub: github.com/Flaimeur",
   };
@@ -72,7 +73,6 @@ function typeText(element, text, index, section, callback) {
     callback(); // Exécute la transformation des liens après l'animation
   }
 }
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //fulscreen
 document.addEventListener("DOMContentLoaded", () => {
@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Fonction pour afficher la pop-up
 function showPopup() {
@@ -111,8 +110,8 @@ function showPopup() {
 window.onload = () => {
   showPopup(); // Affiche la pop-up au chargement de la page
 };
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Detecion de la souris pour la bottom bar
 document.addEventListener("mousemove", function(event) {
   const bottomBar = document.querySelector(".bottom-bar");
 
@@ -125,35 +124,37 @@ document.addEventListener("mousemove", function(event) {
     bottomBar.style.bottom = "-70px"; // Cacher la barre
   }
 });
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Bloque clique droit / inspection
 document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
+  event.preventDefault();
 });
 document.addEventListener("keydown", function(event) {
-    if (
-        event.key === "F12" ||
-        (event.ctrlKey && event.shiftKey && event.key === "I") ||
-        (event.ctrlKey && event.shiftKey && event.key === "J") ||
-        (event.ctrlKey && event.key === "U")
-    ) {
-        event.preventDefault();
-    }
+  if (
+      event.key === "F12" ||
+      (event.ctrlKey && event.shiftKey && event.key === "I") ||
+      (event.ctrlKey && event.shiftKey && event.key === "J") ||
+      (event.ctrlKey && event.key === "U")
+  ) {
+      event.preventDefault();
+  }
 });
 setInterval(function() {
-    if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-        document.body.innerHTML = "Inspection bloquée !";
-    }
+  if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+      document.body.innerHTML = "Inspection bloquée !";
+  }
 }, 1000);
 (function() {
-    function detectDevTools() {
-        console.log("%c ", "font-size: 1px;");
-        console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
+  function detectDevTools() {
+      console.log("%c ", "font-size: 1px;");
+      console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
 
-        setInterval(() => {
-            (function() {
-                debugger;
-            })();
-        }, 100);
-    }
-    detectDevTools();
+      setInterval(() => {
+          (function() {
+              debugger;
+          })();
+      }, 100);
+  }
+  detectDevTools();
 })();
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
