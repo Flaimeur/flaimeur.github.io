@@ -55,7 +55,7 @@ function showContent(section) {
         // Remplace le texte brut par un lien cliquable après l'animation
         output.innerHTML = output.innerHTML
           .replace("Email: lachkar.bilal.gf@gmail.com",
-            "Email: <a href='mailto:lachkar.bilal.gf@gmail.com' target='_blank'>lachkar.bilal.gf@gmail.com</a>")
+            "Email: <a href='mailto:flaimeur@gmail.com' target='_blank'>flaimeur@gmail.com</a>")
           .replace("GitHub: github.com/Flaimeur",
             "GitHub: <a href='https://github.com/Flaimeur' target='_blank'>github.com/Flaimeur</a>");
       }
@@ -94,6 +94,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//reduir
+document.addEventListener("DOMContentLoaded", () => {
+  const yellowButton = document.querySelector(".button.yellow");
+  const terminal = document.querySelector(".terminal");
+
+  yellowButton.addEventListener("click", () => {
+    // Si le terminal n'est pas réduit, le réduire via une transformation
+    if (!terminal.classList.contains("minimized")) {
+      terminal.classList.add("minimized");
+      // On applique une transition pour modifier l'échelle et l'opacité pendant 0.3s
+      terminal.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out";
+      terminal.style.transform = "scale(0.7)";
+      terminal.style.opacity = "0.6";
+    } else {
+      // Sinon on restaure l'état initial
+      terminal.classList.remove("minimized");
+      terminal.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out";
+      terminal.style.transform = "scale(1)";
+      terminal.style.opacity = "1";
+    }
+  });
+});
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Fonction pour afficher la pop-up
 function showPopup() {
