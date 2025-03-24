@@ -42,7 +42,7 @@ function showContent(section) {
     Stages: " cd Stages\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
     Projets: " cd Projets\nProjet 1: Chatbex\nProjet 2:",
     Veille: " cd Veille technologique\nVeille sur l'informatique quantique, Maths/Cryptographie",
-    Contact: " cd Contact\nEmail: lachkar.bilal.gf@gmail.com\nGitHub: github.com/Flaimeur",
+    Contact: " cd Contact\nEmail: flaimeur@gmail.com\nGitHub: github.com/Flaimeur",
   };
 
   let commandLine = `lachkar@Host-001 ~ % `; // Affiche la commande
@@ -54,7 +54,7 @@ function showContent(section) {
       if (section === "Contact") {
         // Remplace le texte brut par un lien cliquable après l'animation
         output.innerHTML = output.innerHTML
-          .replace("Email: lachkar.bilal.gf@gmail.com",
+          .replace("Email: flaimeur@gmail.com",
             "Email: <a href='mailto:flaimeur@gmail.com' target='_blank'>flaimeur@gmail.com</a>")
           .replace("GitHub: github.com/Flaimeur",
             "GitHub: <a href='https://github.com/Flaimeur' target='_blank'>github.com/Flaimeur</a>");
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//reduir
+//reduct
 document.addEventListener("DOMContentLoaded", () => {
   const yellowButton = document.querySelector(".button.yellow");
   const terminal = document.querySelector(".terminal");
@@ -124,10 +124,10 @@ function showPopup() {
   const popup = document.getElementById("popup");
   popup.style.display = "block"; // Affiche la pop-up
   
-  // Masquer la pop-up après 5 secondes
+  // Masquer la pop-up après 10 secondes
   setTimeout(() => {
     popup.style.display = "none";
-  }, 5000);
+  }, 10000);
 }
 
 // Appel de la fonction une fois la page chargée
