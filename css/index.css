@@ -153,52 +153,28 @@ a {
   position: fixed;
   bottom: -70px;
   left: 50%;
-  transform: translateX(-50%);
-  background: rgba(30, 30, 30, 0.9);
   border-radius: 12px;
+  transform: translateX(-50%);
+  background: rgba(70, 68, 65, 0.9);
   padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-family: "San Francisco", sans-serif;
   transition: bottom 0.3s ease-in-out;
   z-index: 1000;
   height: 60px;
   gap: 10px;
   width: auto;
   min-width: 200px;
-  backdrop-filter: blur(10px);
 }
 
 /*Application*/
-.app1,
-.app2,
-.app3,
-.app4,
-.app5 {
-  height: 2rem;
-  width: 2rem;
-  background-color: #28c940;
+.app{
+  height: 3rem;
+  width: 3rem;
   border-radius: 10%;
   cursor: pointer;
   transition: background-color 0.3s, opacity 0.3s;
-}
-
-.app2 {
-  background-color: #ffbd2e;
-}
-
-.app3 {
-  background-color: #ff5f57;
-}
-
-.app4 {
-  background-color: #1e90ff;
-}
-
-.app5 {
-  background-color: #ff6347;
 }
 
 .app1:hover,
@@ -207,5 +183,4 @@ a {
 .app4:hover,
 .app5:hover {
   opacity: 0.7;
-  background-color: #45c27a;
 }
