@@ -340,7 +340,6 @@ document.addEventListener("keydown", function(event) {
 (function() {
   var devtools = /./;
   devtools.toString = function() {
-      alert("Ne tentez pas d'inspecter ! La page va se fermer.");
       window.close(); // Ferme la fenêtre
       document.body.innerHTML = "Inspection bloquée !";
   };
@@ -352,8 +351,19 @@ setInterval(() => {
   console.log("Inspection bloquée !");
 }, 100);
 
-setInterval(function() {
+setInterval(() => {
   (function() {
       debugger;
   })();
 }, 50);
+
+Object.defineProperty(console, '_commandLineAPI', {
+  get: function() {
+      throw new Error("Accès interdit !");
+  }
+});
+
+setInterval(() => {
+  console.clear();
+  console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
+}, 100);
