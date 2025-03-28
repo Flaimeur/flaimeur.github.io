@@ -40,8 +40,8 @@ function showContent(section) {
     Profil: " cd Profil\nNom: Lachkar\nPrenom: Bilal\nAge: 19 ans\nDéveloppeur Web passionné !",
     Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
     Stages: " cd Stages\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
-    Projets: " cd Projets\nProjet 1: Chatbex\nProjet 2:",
-    Veille: " cd Veille technologique\nVeille sur l'informatique quantique, Maths/Cryptographie",
+    Projets: " cd Projets\nProjet 1: Chatbex\nchatbex est une plateforme de communication conçue pour créer des communautés en ligne.\nElle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.\n\nProjet 2: Serveur minecraft\nJ’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.",
+    Veille: " open veille technologique", // Affiche juste la commande
     Contact: " cd Contact\nEmail: flaimeur@gmail.com\nGitHub: github.com/Flaimeur",
   };
 
@@ -51,13 +51,9 @@ function showContent(section) {
   output.innerHTML = ""; // Efface l'ancien texte
   typeText(output, text, 0, section, () => {
     setTimeout(() => {
-      if (section === "Contact") {
-        // Remplace le texte brut par un lien cliquable après l'animation
-        output.innerHTML = output.innerHTML
-          .replace("Email: flaimeur@gmail.com",
-            "Email: <a href='mailto:flaimeur@gmail.com' target='_blank'>flaimeur@gmail.com</a>")
-          .replace("GitHub: github.com/Flaimeur",
-            "GitHub: <a href='https://github.com/Flaimeur' target='_blank'>github.com/Flaimeur</a>");
+      if (section === "Veille") {
+        // Après avoir affiché "open veille technologique", affiche la fenêtre
+        openVeilleApp();
       }
       isAnimating = false; // Débloque les clics
     }, 300);
@@ -73,6 +69,34 @@ function typeText(element, text, index, section, callback) {
     callback(); // Exécute la transformation des liens après l'animation
   }
 }
+
+// Fonction pour ouvrir la fenêtre Veille Technologique
+function openVeilleApp() {
+  const veilleTechnologique = document.getElementById("veilleTechnologique");
+  veilleTechnologique.style.display = "block"; // Affiche la fenêtre
+  veilleTechnologique.style.position = "absolute";
+  veilleTechnologique.style.zIndex = "1000"; // Au-dessus du terminal
+  veilleTechnologique.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+  veilleTechnologique.style.top = Math.random() * (window.innerHeight - 450) + "px";
+}
+
+// Code pour gérer le bouton et l'affichage de l'application
+document.addEventListener("DOMContentLoaded", function () {
+  const app3 = document.querySelector(".app3"); // Bouton pour afficher Veille
+  const redButtonVeille = document.querySelector("#veilleTechnologique .button.red"); // Bouton rouge dans la fenêtre Veille
+
+  // Affiche "Veille Technologique"
+  app3.addEventListener("click", function () {
+    showContent("Veille"); // Affiche la commande 'open veille technologique' et ouvre l'app
+  });
+
+  // Ferme "Veille Technologique" lorsqu'on clique sur le bouton rouge
+  redButtonVeille.addEventListener("click", function () {
+    const veilleTechnologique = document.getElementById("veilleTechnologique");
+    veilleTechnologique.style.display = "none"; // Cache la fenêtre
+  });
+});
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //fulscreen
 document.addEventListener("DOMContentLoaded", () => {
@@ -84,16 +108,19 @@ document.addEventListener("DOMContentLoaded", () => {
       terminal.style.transform = "scale(1)"; // Préparer la réduction
       setTimeout(() => {
         terminal.classList.remove("fullscreen");
+        terminal.style.opacity = "1"; // Enlève la transparence
       }, 10); // Laisser la transition s'appliquer
     } else {
       terminal.classList.add("fullscreen");
       terminal.style.transform = "scale(1.05)"; // Petit effet d'agrandissement
+      terminal.style.opacity = "1"; // Enlève la transparence lors du passage en plein écran
       setTimeout(() => {
         terminal.style.transform = "scale(1)"; // Retour à une taille normale après agrandissement
       }, 300);
     }
   });
 });
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //reduct
 document.addEventListener("DOMContentLoaded", () => {
@@ -117,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Fonction pour afficher la pop-up
@@ -148,6 +176,23 @@ document.addEventListener("mousemove", function(event) {
     bottomBar.style.bottom = "-70px"; // Cacher la barre
   }
 });
+
+//animation
+document.addEventListener("mousemove", function(event) {
+  const bottomBar = document.querySelector(".bottom-bar");
+  let threshold = document.fullscreenElement ? 150 : 80;
+  
+  if (window.innerHeight - event.clientY < threshold) {
+    // Lorsque la souris est proche du bas, on affiche pleinement la barre
+    bottomBar.style.opacity = "1";
+    bottomBar.style.transform = "translateX(-50%) scale(1)";
+  } else {
+    // Sinon, on réduit la barre et on la rend plus transparente
+    bottomBar.style.opacity = "0.5"; // Valeur d'opacité possible, à ajuster
+    bottomBar.style.transform = "translateX(-50%) scale(0.9)"; // Réduction de la taille
+  }
+});
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Bloque clique droit / inspection
 document.addEventListener("contextmenu", function(event) {
@@ -182,3 +227,98 @@ setInterval(function() {
   detectDevTools();
 })();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//app2
+document.addEventListener("DOMContentLoaded", function () {
+  const terminal = document.querySelector(".terminal");
+  const veilleTechnologique = document.getElementById("veilleTechnologique");
+  const app3 = document.querySelector(".app3"); // Bouton pour afficher Veille
+  const redButtonVeille = veilleTechnologique.querySelector(".button.red"); // Bouton rouge dans la fenêtre Veille
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Affiche "Veille Technologique"
+  app3.addEventListener("click", function () {
+    veilleTechnologique.style.display = "block"; // Affiche la fenêtre
+    veilleTechnologique.style.position = "absolute";
+    veilleTechnologique.style.zIndex = "1000"; // Au-dessus du terminal
+    veilleTechnologique.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+    veilleTechnologique.style.top = Math.random() * (window.innerHeight - 450) + "px";
+  });
+
+  // Ferme "Veille Technologique" lorsqu'on clique sur le bouton rouge
+  redButtonVeille.addEventListener("click", function () {
+    veilleTechnologique.style.display = "none"; // Cache la fenêtre
+  });
+
+  // Déplacement de la fenêtre "Veille Technologique"
+  veilleTechnologique.querySelector(".header2").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - veilleTechnologique.getBoundingClientRect().left;
+    offsetY = e.clientY - veilleTechnologique.getBoundingClientRect().top;
+    veilleTechnologique.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      veilleTechnologique.style.left = e.clientX - offsetX + "px";
+      veilleTechnologique.style.top = e.clientY - offsetY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const veilleTechnologique = document.getElementById("veilleTechnologique");
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Détection du début du drag
+  veilleTechnologique.querySelector(".header2").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - veilleTechnologique.getBoundingClientRect().left;
+    offsetY = e.clientY - veilleTechnologique.getBoundingClientRect().top;
+    veilleTechnologique.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  // Déplacement de la fenêtre
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      let newX = e.clientX - offsetX;
+      let newY = e.clientY - offsetY;
+
+      // Obtenir les dimensions de la fenêtre du navigateur
+      const maxX = window.innerWidth - veilleTechnologique.offsetWidth;
+      const maxY = window.innerHeight - veilleTechnologique.offsetHeight;
+
+      // Bloquer la fenêtre aux bords du navigateur
+      newX = Math.max(0, Math.min(newX, maxX));
+      newY = Math.max(0, Math.min(newY, maxY));
+
+      // Appliquer la nouvelle position
+      veilleTechnologique.style.left = newX + "px";
+      veilleTechnologique.style.top = newY + "px";
+    }
+  });
+
+  // Fin du drag
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", () => {
+  const veilleTechnoDiv = document.querySelector(".terminal2");
+
+  veilleTechnoDiv.addEventListener("wheel", (event) => {
+    const scrollContent = veilleTechnoDiv.querySelector(".scroll-content");
+    
+    if (scrollContent.scrollHeight > scrollContent.clientHeight) {
+      scrollContent.scrollTop += event.deltaY;
+      event.preventDefault(); // Empêche la page entière de défiler
+    }
+  });
+});
+
