@@ -192,40 +192,6 @@ document.addEventListener("mousemove", function(event) {
     bottomBar.style.transform = "translateX(-50%) scale(0.9)"; // Réduction de la taille
   }
 });
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Bloque clique droit / inspection
-document.addEventListener("contextmenu", function(event) {
-  event.preventDefault();
-});
-document.addEventListener("keydown", function(event) {
-  if (
-      event.key === "F12" ||
-      (event.ctrlKey && event.shiftKey && event.key === "I") ||
-      (event.ctrlKey && event.shiftKey && event.key === "J") ||
-      (event.ctrlKey && event.key === "U")
-  ) {
-      event.preventDefault();
-  }
-});
-setInterval(function() {
-  if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-      document.body.innerHTML = "Inspection bloquée !";
-  }
-}, 1000);
-(function() {
-  function detectDevTools() {
-      console.log("%c ", "font-size: 1px;");
-      console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
-
-      setInterval(() => {
-          (function() {
-              debugger;
-          })();
-      }, 100);
-  }
-  detectDevTools();
-})();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //app2
 document.addEventListener("DOMContentLoaded", function () {
@@ -310,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", () => {
-  const veilleTechnoDiv = document.querySelector(".terminal2");
+  const veilleTechnoDiv = document.querySelector(".veilletechnologique");
 
   veilleTechnoDiv.addEventListener("wheel", (event) => {
     const scrollContent = veilleTechnoDiv.querySelector(".scroll-content");
@@ -321,4 +287,73 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Bloque clique droit / inspection
+document.addEventListener("contextmenu", function(event) {
+  event.preventDefault();
+});
+document.addEventListener("keydown", function(event) {
+  if (
+      event.key === "F12" ||
+      (event.ctrlKey && event.shiftKey && event.key === "I") ||
+      (event.ctrlKey && event.shiftKey && event.key === "J") ||
+      (event.ctrlKey && event.key === "U")
+  ) {
+      event.preventDefault();
+  }
+});
+setInterval(function() {
+  if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+      document.body.innerHTML = "Inspection bloquée !";
+  }
+}, 1000);
+(function() {
+  function detectDevTools() {
+      console.log("%c ", "font-size: 1px;");
+      console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
 
+      setInterval(() => {
+          (function() {
+              debugger;
+          })();
+      }, 100);
+  }
+  detectDevTools();
+})();
+
+//Bloque l'enregistrement/la copie/le collage/le couper
+document.addEventListener("keydown", function(event) {
+  if (
+      event.key === "F12" || 
+      (event.ctrlKey && event.shiftKey && event.key === "I") ||
+      (event.ctrlKey && event.shiftKey && event.key === "J") ||
+      (event.ctrlKey && event.key === "U") ||
+      (event.ctrlKey && event.key === "S") ||  // Empêche l'enregistrement
+      (event.ctrlKey && event.key === "C") ||  // Empêche la copie
+      (event.ctrlKey && event.key === "V") ||  // Empêche le collage
+      (event.ctrlKey && event.key === "X")     // Empêche le couper
+  ) {
+      event.preventDefault();
+  }
+});
+
+(function() {
+  var devtools = /./;
+  devtools.toString = function() {
+      alert("Ne tentez pas d'inspecter ! La page va se fermer.");
+      window.close(); // Ferme la fenêtre
+      document.body.innerHTML = "Inspection bloquée !";
+  };
+  console.log("%c", devtools);
+})();
+
+setInterval(() => {
+  console.clear();
+  console.log("Inspection bloquée !");
+}, 100);
+
+setInterval(function() {
+  (function() {
+      debugger;
+  })();
+}, 50);
