@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Irish+Grover&display=swap');
+
 body {
   background-image: url(/img/back.png);
   background-size: cover;
@@ -16,7 +18,7 @@ a {
 
 .terminal {
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transform 0.3s ease-in-out;
   width: 800px;
   height: 450px;
   background: rgba(30, 30, 30, 0.9);
@@ -80,6 +82,9 @@ a {
 }
 .green {
   background: #28c940;
+}
+.gray {
+  background: #505050;
 }
 
 /* content */
@@ -169,7 +174,7 @@ a {
 }
 
 /*Application*/
-.app{
+.app {
   height: 3rem;
   width: 3rem;
   border-radius: 10%;
@@ -183,4 +188,159 @@ a {
 .app4:hover,
 .app5:hover {
   opacity: 0.7;
+}
+
+/*App 2*/
+.terminal2 {
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 800px;
+  height: 600px;
+  background: rgba(239, 237, 228);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(20%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Garde le header2 en haut */
+.header2 {
+  background: #DA8265;
+  height: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  color: #ccc;
+  font-size: 14px;
+  position: relative;
+  flex-shrink: 0; 
+}
+
+/* Zone du contenu scrollable */
+.scroll-content {
+  flex-grow: 1; 
+  overflow-y: auto; 
+  padding: 1rem; 
+  scrollbar-width: thin;
+  scrollbar-color: #b07d62 #3b3b3b;
+  height: 600px;
+}
+
+.position {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+
+.vlogo {
+  position: relative; 
+  width: 100px;
+  height: auto;
+  left: -2%;
+}
+
+.vtitle {
+  font-family: "Irish Grover", system-ui;
+  font-size: 30px;
+  color: #5E5E5E;
+  position: relative;
+  left: 5%;
+}
+
+.positiontext {
+  position: relative;
+  width: 500px;
+  height: auto;
+  left: 15.3%;
+  top: -7%;
+}
+
+.positiontext2 {
+  position: relative;
+  width: 500px;
+  height: auto;
+  left: 15.3%;
+  top: -12%;
+}
+.positiontitle{
+  position: relative;
+  width: 500px;
+  height: auto;
+  left: 15.3%;
+  top: -8%;
+}
+
+.vtitle2 {
+  font-family: "Irish Grover", system-ui;
+  color: #5E5E5E;
+  position: relative;
+}
+
+.outils {
+  position: relative;
+  left: 5.5%;
+  font-size: 15px;
+}
+
+.outils2 {
+  position: relative;
+  left: 5.5%;
+  font-size: 15px;
+}
+
+.container-presentation {
+  display: flex;
+  gap: 20px; /* Espacement entre les deux éléments */
+  position: relative;
+  left: 10%;
+  top:-10%;
+}
+
+.presentation, .presentation2 {
+  width: 300px;
+  height: 710px;
+  background-color: rgba(245, 222, 179, 0.600);
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+.presentation img, .presentation2 img  {
+  width: 100%;
+  height: 25%;
+  border-radius: 20px;
+}
+
+.titre {
+  position: relative;
+  left: 2%;
+}
+
+.more {
+  position: relative;
+  left: 15%;
+  background-color: #DA8265;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  top: 4.7%;
+}
+
+.more2 {
+  position: relative;
+  left: 15%;
+  background-color: #DA8265;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  top: 0%;
+}
+
+.more:hover, .more2:hover{
+  background-color: #ff9a78;
+
 }
