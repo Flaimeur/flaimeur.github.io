@@ -37,7 +37,7 @@ function showContent(section) {
   // Textes affichés pour chaque commande
   let content = {
     Terminal: " ",
-    Profil: " cd Profil\nNom: Lachkar\nPrenom: Bilal\nAge: 19 ans\nDéveloppeur Web passionné !",
+    Profil: " cd Profil\nNom: Lachkar\nPrenom: Bilal\nAge: 19 ans\nClasse: BTS SIO option SLAM\nDéveloppeur Web passionné !",
     Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
     Stages: " cd Stages\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
     Projets: " cd Projets\nProjet 1: Chatbex\nchatbex est une plateforme de communication conçue pour créer des communautés en ligne.\nElle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.\n\nProjet 2: Serveur minecraft\nJ’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.",
