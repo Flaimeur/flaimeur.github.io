@@ -465,7 +465,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 //interaction avec le formulaire Discord
  document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("discordForm");
@@ -477,36 +476,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
 
-    // Validation simple
     if (!nom || !email || !message) {
       alert("Merci de remplir tous les champs !");
       return;
     }
 
-    const webhookURL = 'https://discord.com/api/webhooks/1376874496690225172/V89RzZa2Ag2ZurozGwLzER2W4_Hu8LUJVJB2DzWEgLiTPyJjkhKVCgphdZu0dS5aBPmS';//ULR WEBHOOK DISCORD
+    const payload = { nom, email, message };
 
-    const payload = {
-      content: `📬 **Nouveau message du portfolio**\n👤 Nom: ${nom}\n📧 Email: ${email}\n📝 Message:\n${message}`
-    };
-
-    console.log("E-mail envoyer:", payload);
-
-    fetch(webhookURL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+    fetch("https://portfolio-backend-ncfv.onrender.com/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nom, email, message })
     })
+
       .then((response) => {
-        if (!response.ok) throw new Error("Erreur réseau ou webhook invalide.");
-        alert("✅ E-mail envoyer !");
+        if (!response.ok) throw new Error("Erreur serveur.");
+        alert("✅ Message envoyé !");
         form.reset();
       })
       .catch(err => {
-        console.error("Erreur d'envoi vers Discord :", err);
+        console.error("Erreur :", err);
         alert("❌ Une erreur est survenue.");
       });
   });
 });
+
 
 
 //app4
