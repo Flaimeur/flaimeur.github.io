@@ -12,7 +12,7 @@ Salut 👋
 Tu es sur la page de présentation de **mon portfolio personnel**, conçu dans un style **terminal rétro**.
 Ce projet reflète mon univers, mon code, mon design.
 
-💡 Ce portfolio **n’est plus open source**. Il est partagé à titre de vitrine uniquement.
+💡 Ce portfolio **n’est pas open source**. Il est partagé à titre de vitrine uniquement.
 Toute reproduction ou réutilisation du code sans autorisation n’est pas autorisée.
 
 📦 **Backend déployé via [Render](https://render.com)**
@@ -26,7 +26,7 @@ Hey 👋
 This is my **personal portfolio**, designed like a **retro terminal**.
 It represents my creative and development work.
 
-💡 This project **is no longer open source**. It is shared as a showcase only.
+💡 This project **is not open source**. It is shared as a showcase only.
 Please do not reuse or reproduce any part of the code without permission.
 
 📦 **Backend deployed via [Render](https://render.com)**
