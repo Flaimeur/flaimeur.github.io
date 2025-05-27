@@ -1,7 +1,6 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Bloque les clics pendant l'animation
 let isAnimating = false; 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //heur titre
 function updateTitleTime() {
   let now = new Date();
@@ -9,12 +8,12 @@ function updateTitleTime() {
   let titleElement = document.getElementById("terminal-title");
 
   if (titleElement) {
-    titleElement.textContent = `Lachkar -- ${formattedTime}`;
+    titleElement.textContent = `Flaimeur -- ${formattedTime}`;
   }
 }
 
 document.addEventListener("DOMContentLoaded", updateTitleTime);
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Affiche l'heure de connexion (content)
 function updateLastLogin() {
   let now = new Date();
@@ -26,7 +25,7 @@ function updateLastLogin() {
 }
 
 document.addEventListener("DOMContentLoaded", updateLastLogin);
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // click
 function showContent(section) {
   if (isAnimating) return; // Empêche un clic si l'animation n'est pas finie
@@ -37,15 +36,17 @@ function showContent(section) {
   // Textes affichés pour chaque commande
   let content = {
     Terminal: " ",
-    Profil: " cd Profil\nNom: Lachkar\nPrenom: Bilal\nAge: 19 ans\nClasse: BTS SIO option SLAM\nDéveloppeur Web passionné !",
-    Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
-    Stages: " cd Stages\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
+    Profil: " cd Profil\nPseudo: Flaimeur\nAge: 19 ans\nDéveloppeur Web passionné !",
+    Tableau: " open tableau de synthèse ",
+    Stages: " cd Stages\nStage 5: Reenbow -  Stagiaire\n\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
     Projets: " cd Projets\nProjet 1: Chatbex\nchatbex est une plateforme de communication conçue pour créer des communautés en ligne.\nElle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.\n\nProjet 2: Serveur minecraft\nJ’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.",
     Veille: " open veille technologique", // Affiche juste la commande
-    Contact: " cd Contact\nEmail: flaimeur@gmail.com\nGitHub: github.com/Flaimeur",
+    Contact: " open formulaire",
+    Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
+
   };
 
-  let commandLine = `lachkar@Host-001 ~ % `; // Affiche la commande
+  let commandLine = `Flaimeur@Host-001 ~ % `; // Affiche la commande
   let text = commandLine + (content[section] || "Commande non reconnue.");
 
   output.innerHTML = ""; // Efface l'ancien texte
@@ -54,6 +55,14 @@ function showContent(section) {
       if (section === "Veille") {
         // Après avoir affiché "open veille technologique", affiche la fenêtre
         openVeilleApp();
+      }
+      if (section === "Contact") {
+        // Après avoir affiché "open veille technologique", affiche la fenêtre
+        openFormulaire();
+      }
+      if (section === "Tableau") {
+        // Ouvre le tableau de synthèse dans un nouvel onglet
+        openTableau();
       }
       isAnimating = false; // Débloque les clics
     }, 300);
@@ -64,7 +73,7 @@ function showContent(section) {
 function typeText(element, text, index, section, callback) {
   if (index < text.length) {
     element.innerHTML += text.charAt(index) === "\n" ? "<br>" : text.charAt(index);
-    setTimeout(() => typeText(element, text, index + 1, section, callback), 30);
+    setTimeout(() => typeText(element, text, index + 1, section, callback), 15); // Vitesse de frappe
   } else if (callback) {
     callback(); // Exécute la transformation des liens après l'animation
   }
@@ -73,6 +82,24 @@ function typeText(element, text, index, section, callback) {
 // Fonction pour ouvrir la fenêtre Veille Technologique
 function openVeilleApp() {
   const veilleTechnologique = document.getElementById("veilleTechnologique");
+  veilleTechnologique.style.display = "block"; // Affiche la fenêtre
+  veilleTechnologique.style.position = "absolute";
+  veilleTechnologique.style.zIndex = "1000"; // Au-dessus du terminal
+  veilleTechnologique.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+  veilleTechnologique.style.top = Math.random() * (window.innerHeight - 450) + "px";
+}
+
+function openFormulaire() {
+  const veilleTechnologique = document.getElementById("formulaire");
+  veilleTechnologique.style.display = "block"; // Affiche la fenêtre
+  veilleTechnologique.style.position = "absolute";
+  veilleTechnologique.style.zIndex = "1000"; // Au-dessus du terminal
+  veilleTechnologique.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+  veilleTechnologique.style.top = Math.random() * (window.innerHeight - 450) + "px";
+}
+
+function openTableau() {
+  const veilleTechnologique = document.getElementById("tableau");
   veilleTechnologique.style.display = "block"; // Affiche la fenêtre
   veilleTechnologique.style.position = "absolute";
   veilleTechnologique.style.zIndex = "1000"; // Au-dessus du terminal
@@ -90,14 +117,25 @@ document.addEventListener("DOMContentLoaded", function () {
     showContent("Veille"); // Affiche la commande 'open veille technologique' et ouvre l'app
   });
 
+    // Affiche "Veille Technologique"
+  app4.addEventListener("click", function () {
+    showContent("Contact"); // Affiche la commande 'open veille technologique' et ouvre l'app
+  });
+
   // Ferme "Veille Technologique" lorsqu'on clique sur le bouton rouge
   redButtonVeille.addEventListener("click", function () {
     const veilleTechnologique = document.getElementById("veilleTechnologique");
     veilleTechnologique.style.display = "none"; // Cache la fenêtre
   });
+
+  // Ferme "Veille Technologique" lorsqu'on clique sur le bouton rouge
+  redButtonVeille.addEventListener("click", function () {
+    const veilleTechnologique = document.getElementById("formulaire");
+    veilleTechnologique.style.display = "none"; // Cache la fenêtre
+  });
 });
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //fulscreen
 document.addEventListener("DOMContentLoaded", () => {
   const greenButton = document.querySelector(".button.green");
@@ -108,10 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
       terminal.style.transform = "scale(1)"; // Préparer la réduction
       setTimeout(() => {
         terminal.classList.remove("fullscreen");
+        terminal.classList.remove("large-text"); 
         terminal.style.opacity = "1"; // Enlève la transparence
       }, 10); // Laisser la transition s'appliquer
     } else {
       terminal.classList.add("fullscreen");
+      terminal.classList.add("large-text");
       terminal.style.transform = "scale(1.05)"; // Petit effet d'agrandissement
       terminal.style.opacity = "1"; // Enlève la transparence lors du passage en plein écran
       setTimeout(() => {
@@ -121,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //reduct
 document.addEventListener("DOMContentLoaded", () => {
   const yellowButton = document.querySelector(".button.yellow");
@@ -145,8 +185,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Red button
+document.addEventListener("DOMContentLoaded", () => {
+  const redButton = document.querySelector(".button.red"); // Bouton rouge
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  redButton.addEventListener("click", () => {
+    // Effacer tout le contenu du body
+    document.body.innerHTML = ""; // Vide tout le contenu du body
+
+    // Créer la div 
+    const fullscreenDiv = document.createElement("div");
+    fullscreenDiv.style.position = "fixed";
+    fullscreenDiv.style.top = "0";
+    fullscreenDiv.style.left = "0";
+    fullscreenDiv.style.width = "100%";
+    fullscreenDiv.style.height = "100%";
+    fullscreenDiv.style.backgroundColor = "black";
+    fullscreenDiv.style.zIndex = "9999";
+
+    // Ajouter les divs au body
+    document.body.appendChild(fullscreenDiv);
+
+    // Jouer un son
+    const sound = new Audio('asset/error.mp3'); // Ton fichier audio local
+    sound.play().then(() => {
+    sound.onended = () => {
+    location.reload(); // Recharge la page après la fin du son
+    };
+    }).catch(error => {
+    console.error("La lecture du son a été bloquée par le navigateur :", error);
+    });
+    // Passer en mode plein écran
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari et Brave
+      document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { // Internet Explorer
+      document.documentElement.msRequestFullscreen();
+    }
+  });
+});
+
 // Fonction pour afficher la pop-up
 function showPopup() {
   const popup = document.getElementById("popup");
@@ -162,7 +243,7 @@ function showPopup() {
 window.onload = () => {
   showPopup(); // Affiche la pop-up au chargement de la page
 };
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //Detecion de la souris pour la bottom bar
 document.addEventListener("mousemove", function(event) {
   const bottomBar = document.querySelector(".bottom-bar");
@@ -192,7 +273,7 @@ document.addEventListener("mousemove", function(event) {
     bottomBar.style.transform = "translateX(-50%) scale(0.9)"; // Réduction de la taille
   }
 });
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //app2
 document.addEventListener("DOMContentLoaded", function () {
   const terminal = document.querySelector(".terminal");
@@ -274,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
     isDragging = false;
   });
 });
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 document.addEventListener("DOMContentLoaded", () => {
   const veilleTechnoDiv = document.querySelector(".veilletechnologique");
 
@@ -287,7 +368,242 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//app3
+document.addEventListener("DOMContentLoaded", function () {
+  const terminal = document.querySelector(".terminal");
+  const formulaire = document.getElementById("formulaire");
+  const app3 = document.querySelector(".app4"); // Bouton pour afficher Veille
+  const redButtonVeille = formulaire.querySelector(".button.red"); // Bouton rouge dans la fenêtre Veille
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Affiche "Veille Technologique"
+  app3.addEventListener("click", function () {
+    formulaire.style.display = "block"; // Affiche la fenêtre
+    formulaire.style.position = "absolute";
+    formulaire.style.zIndex = "1000"; // Au-dessus du terminal
+    formulaire.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+    formulaire.style.top = Math.random() * (window.innerHeight - 450) + "px";
+  });
+
+  // Ferme "formulaire" lorsqu'on clique sur le bouton rouge
+  redButtonVeille.addEventListener("click", function () {
+    formulaire.style.display = "none"; // Cache la fenêtre
+  });
+
+  // Déplacement de la fenêtre "formulaire"
+  formulaire.querySelector(".header3").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - formulaire.getBoundingClientRect().left;
+    offsetY = e.clientY - formulaire.getBoundingClientRect().top;
+    formulaire.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      formulaire.style.left = e.clientX - offsetX + "px";
+      formulaire.style.top = e.clientY - offsetY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const formulaire = document.getElementById("formulaire");
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Détection du début du drag
+  formulaire.querySelector(".header3").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - formulaire.getBoundingClientRect().left;
+    offsetY = e.clientY - formulaire.getBoundingClientRect().top;
+    formulaire.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  // Déplacement de la fenêtre
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      let newX = e.clientX - offsetX;
+      let newY = e.clientY - offsetY;
+
+      // Obtenir les dimensions de la fenêtre du navigateur
+      const maxX = window.innerWidth - formulaire.offsetWidth;
+      const maxY = window.innerHeight - formulaire.offsetHeight;
+
+      // Bloquer la fenêtre aux bords du navigateur
+      newX = Math.max(0, Math.min(newX, maxX));
+      newY = Math.max(0, Math.min(newY, maxY));
+
+      // Appliquer la nouvelle position
+      formulaire.style.left = newX + "px";
+      formulaire.style.top = newY + "px";
+    }
+  });
+
+  // Fin du drag
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const formulaire = document.querySelector(".formulaire");
+
+  formulaire.addEventListener("wheel", (event) => {
+    const scrollContent = formulaire.querySelector(".scroll-content");
+    
+    if (scrollContent.scrollHeight > scrollContent.clientHeight) {
+      scrollContent.scrollTop += event.deltaY;
+      event.preventDefault(); // Empêche la page entière de défiler
+    }
+  });
+});
+
+
+//interaction avec le formulaire Discord
+ document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("discordForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nom = form.nom.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    // Validation simple
+    if (!nom || !email || !message) {
+      alert("Merci de remplir tous les champs !");
+      return;
+    }
+
+    const webhookURL = 'https://discord.com/api/webhooks/1376874496690225172/V89RzZa2Ag2ZurozGwLzER2W4_Hu8LUJVJB2DzWEgLiTPyJjkhKVCgphdZu0dS5aBPmS';//ULR WEBHOOK DISCORD
+
+    const payload = {
+      content: `📬 **Nouveau message du portfolio**\n👤 Nom: ${nom}\n📧 Email: ${email}\n📝 Message:\n${message}`
+    };
+
+    console.log("E-mail envoyer:", payload);
+
+    fetch(webhookURL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error("Erreur réseau ou webhook invalide.");
+        alert("✅ E-mail envoyer !");
+        form.reset();
+      })
+      .catch(err => {
+        console.error("Erreur d'envoi vers Discord :", err);
+        alert("❌ Une erreur est survenue.");
+      });
+  });
+});
+
+
+//app4
+document.addEventListener("DOMContentLoaded", function () {
+  const terminal = document.querySelector(".terminal");
+  const tableau = document.getElementById("tableau");
+  const app5 = document.querySelector(".app5"); // Bouton pour afficher Veille
+  const redButtonVeille = tableau.querySelector(".button.red"); // Bouton rouge dans la fenêtre Veille
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Affiche "Veille Technologique"
+  app5.addEventListener("click", function () {
+    tableau.style.display = "block"; // Affiche la fenêtre
+    tableau.style.position = "absolute";
+    tableau.style.zIndex = "1000"; // Au-dessus du terminal
+    tableau.style.left = Math.random() * (window.innerWidth - 800) + "px"; // Position aléatoire
+    tableau.style.top = Math.random() * (window.innerHeight - 450) + "px";
+  });
+
+  // Ferme "formulaire" lorsqu'on clique sur le bouton rouge
+  redButtonVeille.addEventListener("click", function () {
+    tableau.style.display = "none"; // Cache la fenêtre
+  });
+
+  // Déplacement de la fenêtre "formulaire"
+  tableau.querySelector(".header3").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - tableau.getBoundingClientRect().left;
+    offsetY = e.clientY - tableau.getBoundingClientRect().top;
+    tableau.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      tableau.style.left = e.clientX - offsetX + "px";
+      tableau.style.top = e.clientY - offsetY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tableau = document.getElementById("tableau");
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  // Détection du début du drag
+  tableau.querySelector(".header4").addEventListener("mousedown", function (e) {
+    isDragging = true;
+    offsetX = e.clientX - tableau.getBoundingClientRect().left;
+    offsetY = e.clientY - tableau.getBoundingClientRect().top;
+    tableau.style.zIndex = "1100"; // Toujours au-dessus lors du déplacement
+  });
+
+  // Déplacement de la fenêtre
+  document.addEventListener("mousemove", function (e) {
+    if (isDragging) {
+      let newX = e.clientX - offsetX;
+      let newY = e.clientY - offsetY;
+
+      // Obtenir les dimensions de la fenêtre du navigateur
+      const maxX = window.innerWidth - tableau.offsetWidth;
+      const maxY = window.innerHeight - tableau.offsetHeight;
+
+      // Bloquer la fenêtre aux bords du navigateur
+      newX = Math.max(0, Math.min(newX, maxX));
+      newY = Math.max(0, Math.min(newY, maxY));
+
+      // Appliquer la nouvelle position
+      tableau.style.left = newX + "px";
+      tableau.style.top = newY + "px";
+    }
+  });
+
+  // Fin du drag
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tableau = document.querySelector(".tableau");
+
+  tableau.addEventListener("wheel", (event) => {
+    const scrollContent = tableau.querySelector(".scroll-content");
+    
+    if (scrollContent.scrollHeight > scrollContent.clientHeight) {
+      scrollContent.scrollTop += event.deltaY;
+      event.preventDefault(); // Empêche la page entière de défiler
+    }
+  });
+});
+
 //Bloque clique droit / inspection
 document.addEventListener("contextmenu", function(event) {
   event.preventDefault();
@@ -337,15 +653,6 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-(function() {
-  var devtools = /./;
-  devtools.toString = function() {
-      window.close(); // Ferme la fenêtre
-      document.body.innerHTML = "Inspection bloquée !";
-  };
-  console.log("%c", devtools);
-})();
-
 setInterval(() => {
   console.clear();
   console.log("Inspection bloquée !");
@@ -367,3 +674,4 @@ setInterval(() => {
   console.clear();
   console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
 }, 100);
+

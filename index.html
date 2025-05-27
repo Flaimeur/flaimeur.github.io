@@ -25,34 +25,23 @@
           <a href="#" class="logo">
             <img src="img/box.png" alt="Logo">
           </a>
-          <div id="terminal-title" class="title">Lachkar -- Loading...</div>
+          <div id="terminal-title" class="title">Flaimeur -- Loading...</div>
         </div>
       </div>
       <!-- Contenu du terminal -->
       <div class="content" id="last-login">Loading...</div>
-      <div class="content1">lachkar@Host-001 ~ % ls</div>
+      <div class="content1">Flaimeur@Host-001 ~ % ls</div>
       <a href="#" class="content2" onclick="showContent('Terminal')">Terminal&nbsp;&nbsp;&nbsp;</a>
       <a href="#" class="content2" onclick="showContent('Profil')">Profil&nbsp;&nbsp;&nbsp;</a>
-      <a href="#" class="content2" onclick="showContent('Competence')">Compétence&nbsp;&nbsp;&nbsp;</a><br>
+      <a href="#" class="content2" onclick="showContent('Tableau')">Tableau de synthèse</a><br>  
       <a href="#" class="content2" onclick="showContent('Stages')">Stages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       <a href="#" class="content2" onclick="showContent('Projets')">Projets&nbsp;&nbsp;</a>
       <a href="#" class="content2" onclick="showContent('Veille')">Veille technologique&nbsp;&nbsp;&nbsp;</a><br>  
-      <a href="#" class="content2" onclick="showContent('Contact')">Contact</a>     
+      <a href="#" class="content2" onclick="showContent('Contact')">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+      <a href="#" class="content2" onclick="showContent('Competence')">Compétence&nbsp;&nbsp;&nbsp;</a><br><br>
       <div class="content2" id="terminal-output" onclick="activateInput()">
-        <div class="command-line">lachkar@Host-001 ~ %</div>
+        <div class="command-line">Flaimeur@Host-001 ~ %</div>
       </div>
-    </div>
-  
-    <!-- Zone invisible de détection de souris -->
-    <div class="mouse-detection-area"></div>
-  
-    <!-- Barre d'applications du terminal -->
-    <div id="bottom-bar" class="bottom-bar">
-      <a href="#" class="app1"><img src="img/TerminalIlu.png" class="app"></a>
-      <a href="http://chatbex.cloud" class="app2"><img src="img/ChatBex.png" class="app"></a>
-      <a href="#" class="app3"><img src="img/veilltech.png" class="app"></a>
-      <a href="#" class="app4"><img src="img/TerminalIlu.png" class="app"></a>
-      <a href="#" class="app5"><img src="img/TerminalIlu.png" class="app"></a>
     </div>
     
     <!-- App 2 -->
@@ -66,7 +55,7 @@
         </div>
         <div class="center-container">
           <a href="#" class="logo">
-            <img src="img/whitelogo.png" alt="Logo2">
+            <img src="img/whitelogo.png" alt="Logo2" class="logo2">
           </a>
           <div class="title">VEILLE TECHNOLOGIQUE</div>
         </div>
@@ -89,7 +78,7 @@
           <p class="outils2">L’informatique quantique est une technologie de calcul et de traitement de l’information qui repose sur les propriétés uniques des particules subatomiques, telles que la superposition et l’intrication. Contrairement aux ordinateurs classiques qui fonctionnent avec des bits (valeurs binaires 0 ou 1), les ordinateurs quantiques utilisent des qubits, capables d’exister dans plusieurs états simultanément.</p>
         </div>
         <div class="positiontitle">
-          <h1 class="vtitle">Mes articles</h1>
+          <h1 class="vatitle">Mes articles</h1>
         </div>
         <div class="container-presentation">
           <div class="presentation">
@@ -107,5 +96,77 @@
         </div>
         </div> 
       </div>
+
+      <!-- App 3 -->
+    <div class="formulaire" id="formulaire" style="display: none;">
+      <!-- Bar de la VeilleTech -->
+      <div class="header3">
+        <div class="buttons">
+          <a href="#"><div class="button red"></div></a>
+          <a href="#"><div class="button gray"></div></a>
+          <a href="#"><div class="button gray"></div></a>
+        </div>
+        <div class="center-container">
+          <div class="title">FORMULAIRE</div>
+        </div>
+      </div>
+      
+      <div class="screen-body-item">
+        <form class="discordForm" id="discordForm">
+          <div class="app-form-group">
+            <input class="app-form-control" type="text" name="nom" placeholder="NOM" maxlength="50" required>
+          </div>
+          <div class="app-form-group">
+           <input class="app-form-control" type="email" name="email" placeholder="EMAIL" maxlength="50" required>
+          </div>
+          <div class="app-form-group message">
+            <textarea class="app-form-control" name="message" placeholder="MESSAGE" maxlength="500" rows="4" required></textarea>
+          </div>
+          <div class="app-form-group buttons">
+            <button type="reset" class="app-form-button">ANNULER</button>
+            <button type="submit" class="app-form-button">ENVOYER</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+          <!-- App 4 -->
+    <div class="tableau" id="tableau" style="display: none;">
+      <!-- Bar de la VeilleTech -->
+      <div class="header4">
+        <div class="buttons">
+          <a href="#"><div class="button red"></div></a>
+          <a href="#"><div class="button gray"></div></a>
+          <a href="#"><div class="button gray"></div></a>
+        </div>
+        <div class="center-container">
+          <div class="title">Tableau de synthèse</div>
+        </div>
+      </div>
+
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS2gIotZ9LhCzPb9dZJLprhVpMhsFQHXBzixfGyA65oervTGGD1cLDH7goLicv-QW8lq_E9EEgNB_sZ/pubhtml?gid=781355869&amp;single=true&amp;widget=true&amp;headers=false" 
+          width="100%" 
+          height="1000px" 
+          frameborder="0"
+          loading="lazy"
+          style="border: 0; border-radius: 0px;">
+        </iframe>
+      </div>
+    </div>
+
+        <!-- Zone invisible de détection de souris -->
+    <div class="mouse-detection-area"></div>
+  
+    <!-- Barre d'applications du terminal -->
+    <div id="bottom-bar" class="bottom-bar">
+      <a href="#" class="app1"><img src="img/TerminalIlu.png" class="app"></a>
+      <a href="http://chatbex.cloud" class="app2"><img src="img/ChatBex.png" class="app"></a>
+      <a href="#" class="app3"><img src="img/veilltech.png" w class="app"></a>
+      <a href="#" class="app4"><img src="img/TerminalIlu.png" class="app"></a>
+      <a href="#" class="app5"><img src="img/TerminalIlu.png" class="app"></a>
+    </div>
+
   </body>
 </html>
