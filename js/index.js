@@ -679,3 +679,4 @@ setInterval(() => {
   console.clear();
   console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
 }, 100);
+

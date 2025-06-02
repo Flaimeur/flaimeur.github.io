@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Clicker 3D propre</title>
+  <link rel="stylesheet" href="css/egg.css" />
+</head>
+<body>
+  <div id="game">
+    <div id="box-area">
+      <!-- Timer au-dessus de la box (inseré par JS) -->
+      <div id="box" title="Clique pour ouvrir la boîte">
+        <div class="face front" data-text="Box"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+
+        <div id="lid"></div>
+        <div id="base"></div>
+      </div>
+      <button id="btn-buy-box">Acheter nouvelle boîte (100 points)</button>
+    </div>
+    <div id="inventory">
+      <div id="points-display">Points : 0</div>
+      <div id="auto-gain">Gain auto : 0 / sec</div>
+      <h3>Inventaire des améliorations</h3>
+      <div id="inventory-list"></div>
+      <button id="btn-reset">Réinitialiser le jeu</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

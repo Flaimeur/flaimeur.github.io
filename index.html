@@ -7,6 +7,7 @@
     <link href="css/index.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon" />
     <script src="js/intro.js" defer></script>
+    <script src="js/empty.js" defer></script>
     <script src="js/index.js" defer></script>
   </head>
 
@@ -281,7 +282,30 @@
         <a href="#" class="app5"><img src="img/excelapp.png" class="app" /></a>
       </div>
     </div>
-    <script src="js/intro.js" defer></script>
-    <script src="js/index.js" defer></script>
+    <script>
+      const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+      ];
+      let konamiIndex = 0;
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === konamiCode[konamiIndex]) {
+          konamiIndex++;
+          if (konamiIndex === konamiCode.length) {
+            konamiIndex = 0;
+            window.location.href = "egg.html"; // redirection vers la page Easter Egg
+          }
+        } else {
+          konamiIndex = 0;
+        }
+      });
+    </script>
   </body>
 </html>
