@@ -1,5 +1,5 @@
 // Bloque les clics pendant l'animation
-let isAnimating = false; 
+let isAnimating = false;
 
 //heur titre
 function updateTitleTime() {
@@ -20,8 +20,9 @@ function updateLastLogin() {
   let options = { weekday: "short", month: "short", day: "2-digit" };
   let formattedDate = now.toLocaleDateString("en-US", options);
   let formattedTime = now.toTimeString().split(" ")[0];
-  document.getElementById("last-login").textContent =
-    `Last login: ${formattedDate} ${formattedTime} on console`;
+  document.getElementById(
+    "last-login"
+  ).textContent = `Last login: ${formattedDate} ${formattedTime} on console`;
 }
 
 document.addEventListener("DOMContentLoaded", updateLastLogin);
@@ -38,12 +39,14 @@ function showContent(section) {
     Terminal: " ",
     Profil: " cd Profil\nPseudo: Flaimeur\nAge: 19 ans\nDéveloppeur Web passionné !",
     Tableau: " open tableau de synthèse ",
-    Stages: " cd Stages\nStage 5: Reenbow -  Stagiaire\n\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
-    Projets: " cd Projets\nProjet 1: Chatbex\nchatbex est une plateforme de communication conçue pour créer des communautés en ligne.\nElle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.\n\nProjet 2: Serveur minecraft\nJ’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.",
+    Stages:
+      " cd Stages\nStage 5: Reenbow -  Stagiaire\n\nStage 4: MINUTE PHONE -  Stagiaire\n\nStage 3: Boomker Concept Production - Stagiaire\n\nStage 2: Deezer - Stagiaire\n\nStage 1: Deezer - Stagiaire",
+    Projets:
+      " cd Projets\nProjet 1: Chatbex\nchatbex est une plateforme de communication conçue pour créer des communautés en ligne.\nElle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.\n\nProjet 2: Serveur minecraft\nJ’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.",
     Veille: " open veille technologique", // Affiche juste la commande
     Contact: " open formulaire",
-    Competence: " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
-
+    Competence:
+      " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
   };
 
   let commandLine = `Flaimeur@Host-001 ~ % `; // Affiche la commande
@@ -117,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showContent("Veille"); // Affiche la commande 'open veille technologique' et ouvre l'app
   });
 
-    // Affiche "Veille Technologique"
+  // Affiche "Veille Technologique"
   app4.addEventListener("click", function () {
     showContent("Contact"); // Affiche la commande 'open veille technologique' et ouvre l'app
   });
@@ -135,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 //fulscreen
 document.addEventListener("DOMContentLoaded", () => {
   const greenButton = document.querySelector(".button.green");
@@ -143,24 +145,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   greenButton.addEventListener("click", () => {
     if (terminal.classList.contains("fullscreen")) {
-      terminal.style.transform = "scale(1)"; // Préparer la réduction
+      terminal.style.transform = "scale(1)";
       setTimeout(() => {
         terminal.classList.remove("fullscreen");
-        terminal.classList.remove("large-text"); 
-        terminal.style.opacity = "1"; // Enlève la transparence
-      }, 10); // Laisser la transition s'appliquer
+        terminal.classList.remove("large-text");
+        terminal.style.opacity = "1";
+        terminal.style.width = ""; // <-- Reset largeur inline
+        terminal.style.height = ""; // <-- Reset hauteur inline
+      }, 300);
     } else {
       terminal.classList.add("fullscreen");
       terminal.classList.add("large-text");
-      terminal.style.transform = "scale(1.05)"; // Petit effet d'agrandissement
-      terminal.style.opacity = "1"; // Enlève la transparence lors du passage en plein écran
+      terminal.style.opacity = "1";
+      terminal.style.width = "100vw"; // <-- Fixe en full viewport
+      terminal.style.height = "100vh"; // <-- Fixe en full viewport
+      terminal.style.transform = "scale(1.05)";
       setTimeout(() => {
-        terminal.style.transform = "scale(1)"; // Retour à une taille normale après agrandissement
+        terminal.style.transform = "scale(1)";
       }, 300);
     }
   });
 });
-
 
 //reduct
 document.addEventListener("DOMContentLoaded", () => {
@@ -193,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Effacer tout le contenu du body
     document.body.innerHTML = ""; // Vide tout le contenu du body
 
-    // Créer la div 
+    // Créer la div
     const fullscreenDiv = document.createElement("div");
     fullscreenDiv.style.position = "fixed";
     fullscreenDiv.style.top = "0";
@@ -207,22 +212,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(fullscreenDiv);
 
     // Jouer un son
-    const sound = new Audio('asset/error.mp3'); // Ton fichier audio local
-    sound.play().then(() => {
-    sound.onended = () => {
-    location.reload(); // Recharge la page après la fin du son
-    };
-    }).catch(error => {
-    console.error("La lecture du son a été bloquée par le navigateur :", error);
-    });
+    const sound = new Audio("asset/error.mp3"); // Ton fichier audio local
+    sound
+      .play()
+      .then(() => {
+        sound.onended = () => {
+          location.reload(); // Recharge la page après la fin du son
+        };
+      })
+      .catch((error) => {
+        console.error("La lecture du son a été bloquée par le navigateur :", error);
+      });
     // Passer en mode plein écran
     if (document.documentElement.requestFullscreen) {
       document.documentElement.requestFullscreen();
-    } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+    } else if (document.documentElement.mozRequestFullScreen) {
+      // Firefox
       document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari et Brave
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      // Chrome, Safari et Brave
       document.documentElement.webkitRequestFullscreen();
-    } else if (document.documentElement.msRequestFullscreen) { // Internet Explorer
+    } else if (document.documentElement.msRequestFullscreen) {
+      // Internet Explorer
       document.documentElement.msRequestFullscreen();
     }
   });
@@ -232,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function showPopup() {
   const popup = document.getElementById("popup");
   popup.style.display = "block"; // Affiche la pop-up
-  
+
   // Masquer la pop-up après 10 secondes
   setTimeout(() => {
     popup.style.display = "none";
@@ -245,7 +256,7 @@ window.onload = () => {
 };
 
 //Detecion de la souris pour la bottom bar
-document.addEventListener("mousemove", function(event) {
+document.addEventListener("mousemove", function (event) {
   const bottomBar = document.querySelector(".bottom-bar");
 
   // Ajuste la détection selon si on est en plein écran ou non
@@ -259,10 +270,10 @@ document.addEventListener("mousemove", function(event) {
 });
 
 //animation
-document.addEventListener("mousemove", function(event) {
+document.addEventListener("mousemove", function (event) {
   const bottomBar = document.querySelector(".bottom-bar");
   let threshold = document.fullscreenElement ? 150 : 80;
-  
+
   if (window.innerHeight - event.clientY < threshold) {
     // Lorsque la souris est proche du bas, on affiche pleinement la barre
     bottomBar.style.opacity = "1";
@@ -361,14 +372,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   veilleTechnoDiv.addEventListener("wheel", (event) => {
     const scrollContent = veilleTechnoDiv.querySelector(".scroll-content");
-    
+
     if (scrollContent.scrollHeight > scrollContent.clientHeight) {
       scrollContent.scrollTop += event.deltaY;
       event.preventDefault(); // Empêche la page entière de défiler
     }
   });
 });
-
 
 //app3
 document.addEventListener("DOMContentLoaded", function () {
@@ -457,7 +467,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   formulaire.addEventListener("wheel", (event) => {
     const scrollContent = formulaire.querySelector(".scroll-content");
-    
+
     if (scrollContent.scrollHeight > scrollContent.clientHeight) {
       scrollContent.scrollTop += event.deltaY;
       event.preventDefault(); // Empêche la page entière de défiler
@@ -466,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //interaction avec le formulaire Discord
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("discordForm");
 
   form.addEventListener("submit", function (e) {
@@ -486,22 +496,19 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://portfolio-backend-ncfv.onrender.com/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nom, email, message })
+      body: JSON.stringify({ nom, email, message }),
     })
-
       .then((response) => {
         if (!response.ok) throw new Error("Erreur serveur.");
         alert("✅ Message envoyé !");
         form.reset();
       })
-      .catch(err => {
+      .catch((err) => {
         console.error("Erreur :", err);
         alert("❌ Une erreur est survenue.");
       });
   });
 });
-
-
 
 //app4
 document.addEventListener("DOMContentLoaded", function () {
@@ -590,7 +597,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tableau.addEventListener("wheel", (event) => {
     const scrollContent = tableau.querySelector(".scroll-content");
-    
+
     if (scrollContent.scrollHeight > scrollContent.clientHeight) {
       scrollContent.scrollTop += event.deltaY;
       event.preventDefault(); // Empêche la page entière de défiler
@@ -599,51 +606,54 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //Bloque clique droit / inspection
-document.addEventListener("contextmenu", function(event) {
+document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
 });
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (
-      event.key === "F12" ||
-      (event.ctrlKey && event.shiftKey && event.key === "I") ||
-      (event.ctrlKey && event.shiftKey && event.key === "J") ||
-      (event.ctrlKey && event.key === "U")
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && event.key === "I") ||
+    (event.ctrlKey && event.shiftKey && event.key === "J") ||
+    (event.ctrlKey && event.key === "U")
   ) {
-      event.preventDefault();
+    event.preventDefault();
   }
 });
-setInterval(function() {
-  if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-      document.body.innerHTML = "Inspection bloquée !";
+setInterval(function () {
+  if (
+    window.outerWidth - window.innerWidth > 200 ||
+    window.outerHeight - window.innerHeight > 200
+  ) {
+    document.body.innerHTML = "Inspection bloquée !";
   }
 }, 1000);
-(function() {
+(function () {
   function detectDevTools() {
-      console.log("%c ", "font-size: 1px;");
-      console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
+    console.log("%c ", "font-size: 1px;");
+    console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
 
-      setInterval(() => {
-          (function() {
-              debugger;
-          })();
-      }, 100);
+    setInterval(() => {
+      (function () {
+        debugger;
+      })();
+    }, 100);
   }
   detectDevTools();
 })();
 
 //Bloque l'enregistrement/la copie/le collage/le couper
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (
-      event.key === "F12" || 
-      (event.ctrlKey && event.shiftKey && event.key === "I") ||
-      (event.ctrlKey && event.shiftKey && event.key === "J") ||
-      (event.ctrlKey && event.key === "U") ||
-      (event.ctrlKey && event.key === "S") ||  // Empêche l'enregistrement
-      (event.ctrlKey && event.key === "C") ||  // Empêche la copie
-      (event.ctrlKey && event.key === "V") ||  // Empêche le collage
-      (event.ctrlKey && event.key === "X")     // Empêche le couper
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && event.key === "I") ||
+    (event.ctrlKey && event.shiftKey && event.key === "J") ||
+    (event.ctrlKey && event.key === "U") ||
+    (event.ctrlKey && event.key === "S") || // Empêche l'enregistrement
+    (event.ctrlKey && event.key === "C") || // Empêche la copie
+    (event.ctrlKey && event.key === "V") || // Empêche le collage
+    (event.ctrlKey && event.key === "X") // Empêche le couper
   ) {
-      event.preventDefault();
+    event.preventDefault();
   }
 });
 
@@ -653,19 +663,18 @@ setInterval(() => {
 }, 100);
 
 setInterval(() => {
-  (function() {
-      debugger;
+  (function () {
+    debugger;
   })();
 }, 50);
 
-Object.defineProperty(console, '_commandLineAPI', {
-  get: function() {
-      throw new Error("Accès interdit !");
-  }
+Object.defineProperty(console, "_commandLineAPI", {
+  get: function () {
+    throw new Error("Accès interdit !");
+  },
 });
 
 setInterval(() => {
   console.clear();
   console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
 }, 100);
-

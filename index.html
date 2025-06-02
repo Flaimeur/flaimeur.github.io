@@ -6,167 +6,257 @@
     <title>Terminal Portfolio</title>
     <link href="css/index.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon" />
-    <script src="js/index.js"></script>
+    <script src="js/intro.js" defer></script>
+    <script src="js/index.js" defer></script>
   </head>
 
   <body>
-  <!-- Pop-up -->
-    <div id="popup" class="popup">Cliquez sur le texte pour interagir !</div>
-    <!---->
-    <div class="terminal">
-      <div class="header">
-        <div class="buttons">
-          <a href="#"><div class="button red"></div></a>
-          <a href="#"><div class="button yellow"></div></a>
-          <a href="#"><div class="button green"></div></a>
-        </div>
-        <!-- Bar du terminal -->
-        <div class="center-container">
-          <a href="#" class="logo">
-            <img src="img/box.png" alt="Logo">
-          </a>
-          <div id="terminal-title" class="title">Flaimeur -- Loading...</div>
-        </div>
+    <!-- Intro Boot -->
+    <div id="boot-screen">
+      <div id="logo">
+        <img src="img/ton-logo.png" alt="Logo" style="width: 80px; height: 80px" />
       </div>
-      <!-- Contenu du terminal -->
-      <div class="content" id="last-login">Loading...</div>
-      <div class="content1">Flaimeur@Host-001 ~ % ls</div>
-      <a href="#" class="content2" onclick="showContent('Terminal')">Terminal&nbsp;&nbsp;&nbsp;</a>
-      <a href="#" class="content2" onclick="showContent('Profil')">Profil&nbsp;&nbsp;&nbsp;</a>
-      <a href="#" class="content2" onclick="showContent('Tableau')">Tableau de synthèse</a><br>  
-      <a href="#" class="content2" onclick="showContent('Stages')">Stages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a href="#" class="content2" onclick="showContent('Projets')">Projets&nbsp;&nbsp;</a>
-      <a href="#" class="content2" onclick="showContent('Veille')">Veille technologique&nbsp;&nbsp;&nbsp;</a><br>  
-      <a href="#" class="content2" onclick="showContent('Contact')">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a> 
-      <a href="#" class="content2" onclick="showContent('Competence')">Compétence&nbsp;&nbsp;&nbsp;</a><br><br>
-      <div class="content2" id="terminal-output" onclick="activateInput()">
-        <div class="command-line">Flaimeur@Host-001 ~ %</div>
+      <div id="progress-bar"><div></div></div>
+    </div>
+
+    <!-- Ecran connexion -->
+    <div id="login-screen" style="display: none">
+      <div id="terminal">
+        <span class="prompt">$</span>
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
       </div>
     </div>
-    
-    <!-- App 2 -->
-    <div class="veilletechnologique" id="veilleTechnologique" style="display: none;">
-      <!-- Bar de la VeilleTech -->
-      <div class="header2">
-        <div class="buttons">
-          <a href="#"><div class="button red"></div></a>
-          <a href="#"><div class="button gray"></div></a>
-          <a href="#"><div class="button gray"></div></a>
+
+    <!-- Contenu principal (ton portfolio) -->
+    <div id="main-content" style="display: none">
+      <!-- Pop-up -->
+      <div id="popup" class="popup">Cliquez sur le texte pour interagir !</div>
+      <!---->
+      <div class="terminal">
+        <div class="header">
+          <div class="buttons">
+            <a href="#"><div class="button red"></div></a>
+            <a href="#"><div class="button yellow"></div></a>
+            <a href="#"><div class="button green"></div></a>
+          </div>
+          <!-- Bar du terminal -->
+          <div class="center-container">
+            <a href="#" class="logo">
+              <img src="img/box.png" alt="Logo" />
+            </a>
+            <div id="terminal-title" class="title">Flaimeur -- Loading...</div>
+          </div>
         </div>
-        <div class="center-container">
-          <a href="#" class="logo">
-            <img src="img/whitelogo.png" alt="Logo2" class="logo2">
-          </a>
-          <div class="title">VEILLE TECHNOLOGIQUE</div>
+        <!-- Contenu du terminal -->
+        <div class="content" id="last-login">Loading...</div>
+        <div class="content1">Flaimeur@Host-001 ~ % ls</div>
+        <a href="#" class="content2" onclick="showContent('Terminal')">
+          Terminal&nbsp;&nbsp;&nbsp;
+        </a>
+        <a href="#" class="content2" onclick="showContent('Profil')">Profil&nbsp;&nbsp;&nbsp;</a>
+        <a href="#" class="content2" onclick="showContent('Tableau')">Tableau de synthèse</a>
+        <br />
+        <a href="#" class="content2" onclick="showContent('Stages')">
+          Stages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+        <a href="#" class="content2" onclick="showContent('Projets')">Projets&nbsp;&nbsp;</a>
+        <a href="#" class="content2" onclick="showContent('Veille')">
+          Veille technologique&nbsp;&nbsp;&nbsp;
+        </a>
+        <br />
+        <a href="#" class="content2" onclick="showContent('Contact')">
+          Contact&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+        <a href="#" class="content2" onclick="showContent('Competence')">
+          Compétence&nbsp;&nbsp;&nbsp;
+        </a>
+        <br />
+        <br />
+        <div class="content2" id="terminal-output" onclick="activateInput()">
+          <div class="command-line">Flaimeur@Host-001 ~ %</div>
         </div>
       </div>
-    
-      <!-- div scrollable -->
-      <div class="scroll-content">
-        <!-- Contenu de la veille -->
-        <div class="position">
-          <img class="vlogo" src="img/groslogo.png"> 
-          <h1 class="vtitle">Ma veille technologique et mes outils</h1>
-        </div>
-        <div class="positiontext">
-          <p class="outils">Pour effectuer ma veille technologique, j’utilise “Google Alertes”, qui me crée des alertes toutes les semaines. Celui-ci me permet d’être toujours au courant de toutes les actualités que je souhaite. J’ai ajouté à celui-ci, différentes sources telles que : ibm.com/quantum,etc... Le Pour ma veille technologique j'ai choisi l'informatique quantique.</p>
-        </div>
-        <div class="positiontitle">
-          <h1 class="vtitle">L'informatique quantique.</h1>
-        </div>
-        <div class="positiontext2">
-          <p class="outils2">L’informatique quantique est une technologie de calcul et de traitement de l’information qui repose sur les propriétés uniques des particules subatomiques, telles que la superposition et l’intrication. Contrairement aux ordinateurs classiques qui fonctionnent avec des bits (valeurs binaires 0 ou 1), les ordinateurs quantiques utilisent des qubits, capables d’exister dans plusieurs états simultanément.</p>
-        </div>
-        <div class="positiontitle">
-          <h1 class="vatitle">Mes articles</h1>
-        </div>
-        <div class="container-presentation">
-          <div class="presentation">
-            <img src="img/press1.png" alt="ordi">
-            <h3 class="titre">L'informatique quantique : Une révolution à venir</h3>
-            <p class="titre">IBM et l'Université de Tokyo sont des acteurs majeurs du développement de l'écosystème quantique au Japon. Depuis 2019, leur collaboration a permis l'introduction du IBM Quantum System One, et le Centre de test de matériel quantique de l'Université sert de centre d'avancement pour les technologies quantiques. Des entreprises japonaises comme TDK, ULVAC et Kyocera développent des composants clés, notamment pour les technologies cryogéniques et supraconductrices, contribuant à l'expansion de l'industrie quantique.</p>
-            <a href="https://www.ibm.com/quantum/blog/japanese-quantum-ecosystem"><button class="more">Plus d'informations</button></a>
+
+      <!-- App 2 -->
+      <div class="veilletechnologique" id="veilleTechnologique" style="display: none">
+        <!-- Bar de la VeilleTech -->
+        <div class="header2">
+          <div class="buttons">
+            <a href="#"><div class="button red"></div></a>
+            <a href="#"><div class="button gray"></div></a>
+            <a href="#"><div class="button gray"></div></a>
           </div>
-          <div class="presentation2">
-            <img src="img/press2.png" alt="ordi">
-            <h3 class="titre">Une promesse pour l'avenir</h3>
-            <p class="titre">IBM Quantum a introduit une nouvelle fonctionnalité, permettant aux utilisateurs de concevoir des circuits quantiques de manière plus flexible. Cette amélioration simplifie l'interaction avec les qubits, en permettant de spécifier des fonctions comme les portes quantiques de manière plus intuitive. L'objectif est de rendre la programmation des ordinateurs quantiques plus accessible tout en améliorant la performance des applications quantiques. Cette avancée représente un pas important vers la démocratisation de l'informatique quantique pour les chercheurs et les développeurs.</p>
-            <a href="https://www.ibm.com/quantum/blog/circuit-function-users"><button class="more2">Plus d'informations</button></a>
+          <div class="center-container">
+            <a href="#" class="logo">
+              <img src="img/whitelogo.png" alt="Logo2" class="logo2" />
+            </a>
+            <div class="title">VEILLE TECHNOLOGIQUE</div>
           </div>
         </div>
-        </div> 
+
+        <!-- div scrollable -->
+        <div class="scroll-content">
+          <!-- Contenu de la veille -->
+          <div class="position">
+            <img class="vlogo" src="img/groslogo.png" />
+            <h1 class="vtitle">Ma veille technologique et mes outils</h1>
+          </div>
+          <div class="positiontext">
+            <p class="outils">
+              Pour effectuer ma veille technologique, j’utilise “Google Alertes”, qui me crée des
+              alertes toutes les semaines. Celui-ci me permet d’être toujours au courant de toutes
+              les actualités que je souhaite. J’ai ajouté à celui-ci, différentes sources telles que
+              : ibm.com/quantum,etc... Le Pour ma veille technologique j'ai choisi l'informatique
+              quantique.
+            </p>
+          </div>
+          <div class="positiontitle">
+            <h1 class="vtitle">L'informatique quantique.</h1>
+          </div>
+          <div class="positiontext2">
+            <p class="outils2">
+              L’informatique quantique est une technologie de calcul et de traitement de
+              l’information qui repose sur les propriétés uniques des particules subatomiques,
+              telles que la superposition et l’intrication. Contrairement aux ordinateurs classiques
+              qui fonctionnent avec des bits (valeurs binaires 0 ou 1), les ordinateurs quantiques
+              utilisent des qubits, capables d’exister dans plusieurs états simultanément.
+            </p>
+          </div>
+          <div class="positiontitle">
+            <h1 class="vatitle">Mes articles</h1>
+          </div>
+          <div class="container-presentation">
+            <div class="presentation">
+              <img src="img/press1.png" alt="ordi" />
+              <h3 class="titre">L'informatique quantique : Une révolution à venir</h3>
+              <p class="titre">
+                IBM et l'Université de Tokyo sont des acteurs majeurs du développement de
+                l'écosystème quantique au Japon. Depuis 2019, leur collaboration a permis
+                l'introduction du IBM Quantum System One, et le Centre de test de matériel quantique
+                de l'Université sert de centre d'avancement pour les technologies quantiques. Des
+                entreprises japonaises comme TDK, ULVAC et Kyocera développent des composants clés,
+                notamment pour les technologies cryogéniques et supraconductrices, contribuant à
+                l'expansion de l'industrie quantique.
+              </p>
+              <a href="https://www.ibm.com/quantum/blog/japanese-quantum-ecosystem">
+                <button class="more">Plus d'informations</button>
+              </a>
+            </div>
+            <div class="presentation2">
+              <img src="img/press2.png" alt="ordi" />
+              <h3 class="titre">Une promesse pour l'avenir</h3>
+              <p class="titre">
+                IBM Quantum a introduit une nouvelle fonctionnalité, permettant aux utilisateurs de
+                concevoir des circuits quantiques de manière plus flexible. Cette amélioration
+                simplifie l'interaction avec les qubits, en permettant de spécifier des fonctions
+                comme les portes quantiques de manière plus intuitive. L'objectif est de rendre la
+                programmation des ordinateurs quantiques plus accessible tout en améliorant la
+                performance des applications quantiques. Cette avancée représente un pas important
+                vers la démocratisation de l'informatique quantique pour les chercheurs et les
+                développeurs.
+              </p>
+              <a href="https://www.ibm.com/quantum/blog/circuit-function-users">
+                <button class="more2">Plus d'informations</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- App 3 -->
-    <div class="formulaire" id="formulaire" style="display: none;">
-      <!-- Bar de la VeilleTech -->
-      <div class="header3">
-        <div class="buttons">
-          <a href="#"><div class="button red"></div></a>
-          <a href="#"><div class="button gray"></div></a>
-          <a href="#"><div class="button gray"></div></a>
+      <div class="formulaire" id="formulaire" style="display: none">
+        <!-- Bar de la VeilleTech -->
+        <div class="header3">
+          <div class="buttons">
+            <a href="#"><div class="button red"></div></a>
+            <a href="#"><div class="button gray"></div></a>
+            <a href="#"><div class="button gray"></div></a>
+          </div>
+          <div class="center-container">
+            <div class="title">FORMULAIRE</div>
+          </div>
         </div>
-        <div class="center-container">
-          <div class="title">FORMULAIRE</div>
+
+        <div class="screen-body-item">
+          <form class="discordForm" id="discordForm">
+            <div class="app-form-group">
+              <input
+                class="app-form-control"
+                type="text"
+                name="nom"
+                placeholder="NOM"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="app-form-group">
+              <input
+                class="app-form-control"
+                type="email"
+                name="email"
+                placeholder="EMAIL"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="app-form-group message">
+              <textarea
+                class="app-form-control"
+                name="message"
+                placeholder="MESSAGE"
+                maxlength="500"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="app-form-group buttons">
+              <button type="reset" class="app-form-button">ANNULER</button>
+              <button type="submit" class="app-form-button">ENVOYER</button>
+            </div>
+          </form>
         </div>
       </div>
-      
-      <div class="screen-body-item">
-        <form class="discordForm" id="discordForm">
-          <div class="app-form-group">
-            <input class="app-form-control" type="text" name="nom" placeholder="NOM" maxlength="50" required>
+
+      <!-- App 4 -->
+      <div class="tableau" id="tableau" style="display: none">
+        <!-- Bar de la VeilleTech -->
+        <div class="header4">
+          <div class="buttons">
+            <a href="#"><div class="button red"></div></a>
+            <a href="#"><div class="button gray"></div></a>
+            <a href="#"><div class="button gray"></div></a>
           </div>
-          <div class="app-form-group">
-           <input class="app-form-control" type="email" name="email" placeholder="EMAIL" maxlength="50" required>
+          <div class="center-container">
+            <div class="title">Tableau de synthèse</div>
           </div>
-          <div class="app-form-group message">
-            <textarea class="app-form-control" name="message" placeholder="MESSAGE" maxlength="500" rows="4" required></textarea>
-          </div>
-          <div class="app-form-group buttons">
-            <button type="reset" class="app-form-button">ANNULER</button>
-            <button type="submit" class="app-form-button">ENVOYER</button>
-          </div>
-        </form>
+        </div>
+
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS2gIotZ9LhCzPb9dZJLprhVpMhsFQHXBzixfGyA65oervTGGD1cLDH7goLicv-QW8lq_E9EEgNB_sZ/pubhtml?gid=781355869&amp;single=true&amp;widget=true&amp;headers=false"
+            width="100%"
+            height="1000px"
+            frameborder="0"
+            loading="lazy"
+            style="border: 0; border-radius: 0px"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Zone invisible de détection de souris -->
+      <div class="mouse-detection-area"></div>
+
+      <!-- Barre d'applications du terminal -->
+      <div id="bottom-bar" class="bottom-bar">
+        <a href="#" class="app1"><img src="img/TerminalIlu.png" class="app" /></a>
+        <a href="http://chatbex.cloud" class="app2"><img src="img/ChatBex.png" class="app" /></a>
+        <a href="#" class="app3"><img src="img/veilltech.png" w class="app" /></a>
+        <a href="#" class="app4"><img src="img/TerminalIlu.png" class="app" /></a>
+        <a href="#" class="app5"><img src="img/TerminalIlu.png" class="app" /></a>
       </div>
     </div>
-
-          <!-- App 4 -->
-    <div class="tableau" id="tableau" style="display: none;">
-      <!-- Bar de la VeilleTech -->
-      <div class="header4">
-        <div class="buttons">
-          <a href="#"><div class="button red"></div></a>
-          <a href="#"><div class="button gray"></div></a>
-          <a href="#"><div class="button gray"></div></a>
-        </div>
-        <div class="center-container">
-          <div class="title">Tableau de synthèse</div>
-        </div>
-      </div>
-
-      <div class="iframe-wrapper">
-        <iframe 
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS2gIotZ9LhCzPb9dZJLprhVpMhsFQHXBzixfGyA65oervTGGD1cLDH7goLicv-QW8lq_E9EEgNB_sZ/pubhtml?gid=781355869&amp;single=true&amp;widget=true&amp;headers=false" 
-          width="100%" 
-          height="1000px" 
-          frameborder="0"
-          loading="lazy"
-          style="border: 0; border-radius: 0px;">
-        </iframe>
-      </div>
-    </div>
-
-        <!-- Zone invisible de détection de souris -->
-    <div class="mouse-detection-area"></div>
-  
-    <!-- Barre d'applications du terminal -->
-    <div id="bottom-bar" class="bottom-bar">
-      <a href="#" class="app1"><img src="img/TerminalIlu.png" class="app"></a>
-      <a href="http://chatbex.cloud" class="app2"><img src="img/ChatBex.png" class="app"></a>
-      <a href="#" class="app3"><img src="img/veilltech.png" w class="app"></a>
-      <a href="#" class="app4"><img src="img/TerminalIlu.png" class="app"></a>
-      <a href="#" class="app5"><img src="img/TerminalIlu.png" class="app"></a>
-    </div>
-
+    <script src="js/intro.js" defer></script>
+    <script src="js/index.js" defer></script>
   </body>
 </html>
