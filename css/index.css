@@ -586,3 +586,49 @@ textarea.app-form-control {
 .terminal.large-text .command-line {
   font-size: 18px !important;
 }
+
+/* Ajout à ton CSS existant */
+
+@media (max-width: 600px) {
+  .terminal {
+    width: 100vw !important;
+    height: 60vh !important;
+    border-radius: 0 !important;
+  }
+
+  .veilletechnologique,
+  .formulaire,
+  .tableau {
+    width: 90vw !important;
+    height: 70vh !important;
+    border-radius: 10px !important;
+  }
+
+  .bottom-bar {
+    width: 90vw !important;
+    height: 50px !important;
+  }
+
+  /* Texte un peu plus petit sur mobile */
+  .terminal.large-text,
+  .terminal.large-text .content,
+  .terminal.large-text .content1,
+  .terminal.large-text .content2,
+  .terminal.large-text .command-line {
+    font-size: 14px !important;
+  }
+
+  /* Boutons plus gros pour toucher plus facilement */
+  .button {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Pop-up repositionné */
+  .popup {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80vw !important;
+    font-size: 12px !important;
+  }
+}

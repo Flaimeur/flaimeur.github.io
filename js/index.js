@@ -680,3 +680,186 @@ setInterval(() => {
   console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
 }, 100);
 
+// --- Ouverture modale avec position responsive ---
+function openWindow(elementId, defaultWidth, defaultHeight) {
+  const win = document.getElementById(elementId);
+  win.style.display = "block";
+  win.style.position = window.innerWidth <= 600 ? "fixed" : "absolute";
+  win.style.zIndex = "1000";
+  if (window.innerWidth <= 600) {
+    win.style.left = "5vw";
+    win.style.top = "10vh";
+    win.style.width = "90vw";
+    win.style.height = "70vh";
+  } else {
+    win.style.left = Math.random() * (window.innerWidth - defaultWidth) + "px";
+    win.style.top = Math.random() * (window.innerHeight - defaultHeight) + "px";
+    win.style.width = defaultWidth + "px";
+    win.style.height = defaultHeight + "px";
+  }
+}
+
+function openVeilleApp() {
+  openWindow("veilleTechnologique", 800, 600);
+}
+
+function openFormulaire() {
+  openWindow("formulaire", 800, 350);
+}
+
+function openTableau() {
+  openWindow("tableau", 1200, 700);
+}
+
+// --- Drag & drop tactile + souris pour fenêtres modales ---
+
+function makeDraggable(elementId, headerSelector) {
+  const win = document.getElementById(elementId);
+  const header = win.querySelector(headerSelector);
+
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  function onDragStart(e) {
+    isDragging = true;
+    const touch = e.touches ? e.touches[0] : e;
+    const rect = win.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
+    win.style.zIndex = "1100";
+    e.preventDefault();
+  }
+
+  function onDragMove(e) {
+    if (!isDragging) return;
+    const touch = e.touches ? e.touches[0] : e;
+    let newX = touch.clientX - offsetX;
+    let newY = touch.clientY - offsetY;
+
+    const maxX = window.innerWidth - win.offsetWidth;
+    const maxY = window.innerHeight - win.offsetHeight;
+
+    newX = Math.max(0, Math.min(newX, maxX));
+    newY = Math.max(0, Math.min(newY, maxY));
+
+    win.style.left = newX + "px";
+    win.style.top = newY + "px";
+    e.preventDefault();
+  }
+
+  function onDragEnd() {
+    isDragging = false;
+  }
+
+  header.addEventListener("mousedown", onDragStart);
+  header.addEventListener("touchstart", onDragStart, { passive: false });
+  document.addEventListener("mousemove", onDragMove);
+  document.addEventListener("touchmove", onDragMove, { passive: false });
+  document.addEventListener("mouseup", onDragEnd);
+  document.addEventListener("touchend", onDragEnd);
+}
+
+// Appelle la fonction sur chaque fenêtre modale
+document.addEventListener("DOMContentLoaded", () => {
+  makeDraggable("veilleTechnologique", ".header2");
+  makeDraggable("formulaire", ".header3");
+  makeDraggable("tableau", ".header4");
+});
+
+// --- Fermer les fenêtres avec le bouton rouge (adapté pour toutes) ---
+function setupCloseButton(elementId) {
+  const win = document.getElementById(elementId);
+  const redBtn = win.querySelector(".button.red");
+  if (redBtn) {
+    redBtn.addEventListener("click", () => {
+      win.style.display = "none";
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupCloseButton("veilleTechnologique");
+  setupCloseButton("formulaire");
+  setupCloseButton("tableau");
+});
+
+// --- Gestion des clics sur la barre d'applications ---
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".app3").addEventListener("click", () => showContent("Veille"));
+  document.querySelector(".app4").addEventListener("click", () => showContent("Contact"));
+  document.querySelector(".app5").addEventListener("click", () => showContent("Tableau"));
+});
+
+// Détecter si c’est un appareil mobile
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (!isMobileDevice()) {
+    // Code de blocage clavier uniquement sur desktop
+    document.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && event.key === "I") ||
+        (event.ctrlKey && event.shiftKey && event.key === "J") ||
+        (event.ctrlKey && event.key === "U") ||
+        (event.ctrlKey && event.key === "S") ||
+        (event.ctrlKey && event.key === "C") ||
+        (event.ctrlKey && event.key === "V") ||
+        (event.ctrlKey && event.key === "X")
+      ) {
+        event.preventDefault();
+      }
+    });
+
+    setInterval(function () {
+      if (
+        window.outerWidth - window.innerWidth > 200 ||
+        window.outerHeight - window.innerHeight > 200
+      ) {
+        document.body.innerHTML = "Inspection bloquée !";
+      }
+    }, 1000);
+
+    (function () {
+      function detectDevTools() {
+        console.log("%c ", "font-size: 1px;");
+        console.log("%c Attention : Debugging détecté !", "color: red; font-size: 20px;");
+
+        setInterval(() => {
+          (function () {
+            debugger;
+          })();
+        }, 100);
+      }
+      detectDevTools();
+    })();
+
+    setInterval(() => {
+      console.clear();
+      console.log("Inspection bloquée !");
+    }, 100);
+
+    setInterval(() => {
+      (function () {
+        debugger;
+      })();
+    }, 50);
+
+    Object.defineProperty(console, "_commandLineAPI", {
+      get: function () {
+        throw new Error("Accès interdit !");
+      },
+    });
+
+    setInterval(() => {
+      console.clear();
+      console.log("%c Salut tu fais quoi ici ?", "color: red; font-size: 50px;");
+    }, 100);
+  }
+});
