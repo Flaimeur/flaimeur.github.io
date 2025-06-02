@@ -83,7 +83,6 @@
   transform: none;
 }
 
-
 body {
   background-image: url(../img/back.png);
   background-size: cover;
@@ -447,7 +446,7 @@ a {
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out;
   width: 800px;
   height: 350px;
-  background: rgb(64, 64, 64);
+  background: #404040;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -458,7 +457,7 @@ a {
 
 /* Garde le header3 en haut */
 .header3 {
-  background: #8e4ec6;
+  background: #0c1838;
   height: 30px;
   display: flex;
   align-items: center;
@@ -502,7 +501,7 @@ a {
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #A09F9D;
   color: #ddd;
   font-size: 14px;
   text-transform: uppercase;
@@ -517,7 +516,7 @@ textarea.app-form-control {
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: #A09F9D;
 }
 
 .app-form-control:focus {
@@ -527,14 +526,14 @@ textarea.app-form-control {
 .app-form-button {
   background: none;
   border: none;
-  color: #ea1d6f;
+  color: #0c1838;
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  color: #1e3a8a;
 }
 
 /*App 4*/

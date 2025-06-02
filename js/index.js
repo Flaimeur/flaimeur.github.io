@@ -47,6 +47,7 @@ function showContent(section) {
     Contact: " open formulaire",
     Competence:
       " cd Compétence\nDESIGNE :\nFigma\n\nFRONT-END :\nHTML\nCSS\nJavaScript\n\nBACK-END :\nPHP\nPython",
+    cv: " open cv",
   };
 
   let commandLine = `Flaimeur@Host-001 ~ % `; // Affiche la commande
