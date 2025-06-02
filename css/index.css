@@ -14,6 +14,12 @@
   z-index: 1000;
 }
 
+#boot-screen.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  pointer-events: none; /* Pour éviter clics pendant fade-out */
+}
+
 #logo {
   font-size: 5rem;
   margin-bottom: 1rem;
@@ -31,7 +37,7 @@
   height: 100%;
   width: 0;
   background: white;
-  animation: load 4s linear forwards;
+  animation: load 2s linear forwards;
 }
 
 @keyframes load {
@@ -64,6 +70,19 @@
     opacity: 0;
   }
 }
+
+#main-content {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+#main-content.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
 
 body {
   background-image: url(../img/back.png);

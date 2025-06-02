@@ -1,12 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+setTimeout(() => {
   const bootScreen = document.getElementById("boot-screen");
-  const loginScreen = document.getElementById("login-screen");
   const mainContent = document.getElementById("main-content");
 
-  // Après la barre de chargement (4s), on masque boot et login, on affiche direct le contenu
+  bootScreen.classList.add("fade-out");
+
   setTimeout(() => {
     bootScreen.style.display = "none";
-    loginScreen.style.display = "none";
     mainContent.style.display = "block";
-  }, 4000);
-});
+    
+    // Animation douce d'apparition
+    void mainContent.offsetWidth; 
+    mainContent.classList.add("visible");
+  }, 800);
+}, 2000);
+
