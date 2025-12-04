@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Wii U</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="shortcut icon" href="asset/logo.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="boot-screen">
+      <div class="boot-logo">
+          <span class="wii">Flaimeur</span><span class="u">os</span>
+      </div>
+    </div>
+    <div class="wiiu-container" id="main-container">
+    <div class="wiiu-container">
+      <div class="top-bar">
+        <div class="user-badge">
+          <div class="mii-avatar">
+            <img src="https://github.com/Flaimeur.png" alt="Mii" />
+          </div>
+          <span>Flaimeur</span>
+        </div>
+        <div class="clock" id="clock">00:00</div>
+      </div>
+
+      <div class="main-stage">
+        <div class="grid-wrapper fade-in" id="menu-view">
+          <div class="app-grid" id="app-grid"></div>
+        </div>
+
+        <div class="app-window hidden" id="app-window">
+          <div class="app-header" id="app-header">
+            <button class="back-btn" id="back-btn">
+              <i data-lucide="arrow-left"></i> Back
+            </button>
+            <h1 id="app-title">Titre</h1>
+            <div style="width: 60px"></div>
+          </div>
+          <div class="app-body" id="app-body"></div>
+        </div>
+      </div>
+
+      <div class="bottom-curve" id="bottom-bar">
+        <div class="start-btn">Start</div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
