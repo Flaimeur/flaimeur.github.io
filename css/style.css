@@ -622,25 +622,6 @@ h2 {
   }
 }
 
-.news-card {
-  transition:
-    transform 0.2s,
-    background 0.2s;
-}
-.news-card:hover {
-  transform: translateX(5px);
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(255, 255, 255, 0.3) !important;
-}
-.news-card a:hover {
-  text-decoration: underline !important;
-}
-
-/* Adaptation Mode Sombre */
-body.dark-mode .news-card {
-  background: rgba(255, 255, 255, 0.08) !important;
-}
-
 /* --- CV --- */
 .cv-preview {
   width: 100%;

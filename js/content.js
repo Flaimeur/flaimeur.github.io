@@ -253,17 +253,14 @@ Elle permet aux utilisateurs de discuter en temps réel via des messages texte, 
         </div>
     `,
 
-  // --- 7. VEILLE (Version Quantique) ---
+  // --- 7. VEILLE ---
   veille: `
-        <div style="text-align:center;">
-            <h2>Veille Quantique ⚛️</h2>
-            <p class="text-secondary">Les dernières avancées sur les <b>Qubits</b>, <b>IBM Q</b> et la <b>Post-Quantum Crypto</b>.</p>
-            
-            <div id="veille-news-container" class="news-container">
-                <div class="quantum-box">
-                    <i data-lucide="atom" class="spin-slow" style="width:50px; height:50px; color:#8b5cf6;"></i>
-                    <p style="margin-top:10px;">Recherche des flux quantiques...</p>
-                </div>
+        <div class="center">
+            <h2>Veille Technologique</h2>
+            <div class="quantum-box">
+                <i data-lucide="atom" class="spin-icon" style="width:80px; height:80px;"></i>
+                <h3>L'Informatique Quantique</h3>
+                <p>En construction.</p>
             </div>
         </div>
     `,
