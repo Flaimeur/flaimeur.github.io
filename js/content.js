@@ -257,14 +257,11 @@ Elle permet aux utilisateurs de discuter en temps réel via des messages texte, 
   veille: `
         <div class="center">
             <h2>Veille Technologique</h2>
-            <p class="text-secondary" style="margin-bottom: 20px;">Flux automatique sur l'Informatique Quantique & DevOps</p>
-            <div id="veille-content" style="width: 100%; max-width: 600px; text-align: left;">
-                <div class="quantum-box">
-                    <i data-lucide="atom" class="spin-icon" style="width:80px; height:80px;"></i>
-                    <h3>Initialisation...</h3>
-                    <p>Le script récupère les dernières actualités.</p>
-                </div>
-                </div>
+            <div class="quantum-box">
+                <i data-lucide="atom" class="spin-icon" style="width:80px; height:80px;"></i>
+                <h3>L'Informatique Quantique</h3>
+                <p>En construction.</p>
+            </div>
         </div>
     `,
 
