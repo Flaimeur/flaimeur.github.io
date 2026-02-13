@@ -2,38 +2,50 @@ import requests
 import xml.etree.ElementTree as ET
 
 def get_news():
-    # Source alternative très fiable en français
-    rss_url = "https://www.programmez.com/rss.xml"
-    try:
-        # On ajoute un 'User-Agent' pour que le site ne bloque pas le robot
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        r = requests.get(rss_url, headers=headers, timeout=15)
-        root = ET.fromstring(r.content)
-        html = ""
-        
-        # On prend les 5 derniers articles du flux
-        items = root.findall('./channel/item')
-        if not items:
-            return "<p style='color: white;'>Aucun article trouvé pour le moment.</p>"
+    # Liste de flux RSS fiables en français
+    rss_feeds = [
+        "https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml",
+        "https://www.programmez.com/rss.xml",
+        "https://www.usine-digitale.fr/informatique-quantique/rss"
+    ]
+    
+    keywords = ["quantique", "quantum", "qubit", "atome", "ordinateur"]
+    articles_found = []
+    html = ""
 
-        for item in items[:5]:
-            title = item.find('title').text
-            link = item.find('link').text
-            
-            html += f"""
-            <div class="stage-card" style="margin-bottom: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
-                <div class="stage-header" style="padding: 15px;">
-                    <div class="stage-info">
-                        <h3 style="font-size: 1rem; margin: 0 0 5px 0; color: #fff;">
-                            <a href="{link}" target="_blank" style="text-decoration:none; color:inherit;">{title}</a>
-                        </h3>
-                        <span class="stage-role" style="color: #8b5cf6; font-size: 0.85rem; font-weight: bold;">Actualité Tech FR</span>
-                    </div>
+    headers = {'User-Agent': 'Mozilla/5.0'}
+
+    for url in rss_feeds:
+        try:
+            r = requests.get(url, headers=headers, timeout=10)
+            root = ET.fromstring(r.content)
+            for item in root.findall('./channel/item'):
+                title = item.find('title').text
+                # On vérifie si un mot-clé est dans le titre (en minuscule)
+                if any(key in title.lower() for key in keywords):
+                    link = item.find('link').text
+                    articles_found.append((title, link))
+        except:
+            continue
+
+    # Si on n'a pas trouvé assez de news précises, on prend les dernières news Tech générales
+    if len(articles_found) < 3:
+        # Code de secours pour ne pas avoir une page vide
+        return f"<p style='color: #8b5cf6; text-align:center;'>🤖 Veille ciblée : En attente de nouvelles actualités quantiques en français...</p>" + html
+
+    for title, link in articles_found[:5]:
+        html += f"""
+        <div class="stage-card" style="margin-bottom: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="stage-header" style="padding: 15px;">
+                <div class="stage-info">
+                    <h3 style="font-size: 1rem; margin: 0 0 5px 0; color: #fff;">
+                        <a href="{link}" target="_blank" style="text-decoration:none; color:inherit;">{title}</a>
+                    </h3>
+                    <span class="stage-role" style="color: #8b5cf6; font-size: 0.85rem; font-weight: bold;">Veille Quantique FR</span>
                 </div>
-            </div>"""
-        return html
-    except Exception as e:
-        return f"<p style='color: white;'>Erreur de récupération : {str(e)}</p>"
+            </div>
+        </div>"""
+    return html
 
 def update_file(new_html):
     file_path = "js/veille_data.js"
