@@ -27,6 +27,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add js/content.js
+          git add js/veille_data.js
           git commit -m "🤖 Auto-update: Veille technologique" || exit 0
           git push

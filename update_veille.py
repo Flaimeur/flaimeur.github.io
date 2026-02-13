@@ -20,26 +20,18 @@ def get_news():
             </div>"""
         return html
     except Exception as e:
-        return f"<p>Erreur lors de la mise à jour : {e}</p>"
+        return f"<p>Erreur : {e}</p>"
 
 def update_file(new_html):
-    # --- CORRECTION DU CHEMIN ICI ---
-    file_path = "js/content.js"
+    file_path = "js/veille_data.js"
     
-    if not os.path.exists(file_path):
-        print(f"Erreur : Le fichier {file_path} n'existe pas !")
-        exit(1)
-
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    pattern = r".*?"
-    replacement = f"{new_html}"
-    
-    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    # On écrase complètement le fichier avec la nouvelle structure propre
+    content = f"""export const veilleData = `
+{new_html}
+`;"""
 
     with open(file_path, "w", encoding="utf-8") as f:
-        f.write(new_content)
+        f.write(content)
 
 if __name__ == "__main__":
     news_html = get_news()
