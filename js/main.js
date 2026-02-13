@@ -8,14 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
   runBootSequence();
 
   initTheme();
-  // On initialise l'état visuel de la musique (OFF par défaut)
   if (localStorage.getItem("music_visual") === null) {
     localStorage.setItem("music_visual", "off");
   }
   initGrid();
   initClock();
   initGlobalListeners();
+
   if (window.lucide) window.lucide.createIcons();
+
+  // --- CORRECTIF VEILLE ---
+  document.getElementById("app-grid").addEventListener("click", () => {
+    setTimeout(() => {
+      const appTitle = document.getElementById("app-title");
+      if (appTitle && appTitle.innerText.includes("Veille")) {
+        if (window.lucide) window.lucide.createIcons();
+      }
+    }, 150);
+  });
 });
 
 function initClock() {

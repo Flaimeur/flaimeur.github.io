@@ -980,3 +980,20 @@ body.dark-mode .setting-card:hover {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+/* Force l'affichage correct des news injectées */
+#app-body .stage-card {
+  color: white !important;
+  text-align: left;
+}
+
+#app-body .stage-card h3 a {
+  color: #8b5cf6 !important; /* Couleur violette pour tes liens news */
+  text-decoration: none;
+}
+
+#app-body .stage-role {
+  display: block;
+  margin-top: 5px;
+  opacity: 0.8;
+}
