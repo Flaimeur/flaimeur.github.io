@@ -259,7 +259,7 @@ Elle permet aux utilisateurs de discuter en temps réel via des messages texte, 
             <h2>Veille Technologique</h2>
             <p class="text-secondary" style="margin-bottom: 20px;">Flux automatique (Quantum & DevOps)</p>
             <div id="veille-content" style="width: 100%; max-width: 600px; text-align: left;">
-                ${veilleData} 
+                ${window.veilleData || "<p>Chargement des news...</p>"} 
             </div>
         </div>
     `,
