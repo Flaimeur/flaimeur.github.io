@@ -1,17 +1,22 @@
 import requests
 import xml.etree.ElementTree as ET
-import os
 
 def get_news():
-    # Flux RSS en français (Thématique Cloud / DevOps)
-    rss_url = "https://www.lemondeinformatique.fr/flux-rss/thematique/le-monde-du-cloud-computing/rss.xml"
+    # Source alternative très fiable en français
+    rss_url = "https://www.programmez.com/rss.xml"
     try:
-        r = requests.get(rss_url, timeout=10)
+        # On ajoute un 'User-Agent' pour que le site ne bloque pas le robot
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        r = requests.get(rss_url, headers=headers, timeout=15)
         root = ET.fromstring(r.content)
         html = ""
         
-        # On récupère les 5 derniers articles
-        for item in root.findall('./channel/item')[:5]:
+        # On prend les 5 derniers articles du flux
+        items = root.findall('./channel/item')
+        if not items:
+            return "<p style='color: white;'>Aucun article trouvé pour le moment.</p>"
+
+        for item in items[:5]:
             title = item.find('title').text
             link = item.find('link').text
             
@@ -22,20 +27,17 @@ def get_news():
                         <h3 style="font-size: 1rem; margin: 0 0 5px 0; color: #fff;">
                             <a href="{link}" target="_blank" style="text-decoration:none; color:inherit;">{title}</a>
                         </h3>
-                        <span class="stage-role" style="color: #8b5cf6; font-size: 0.85rem; font-weight: bold;">Actualité Tech</span>
+                        <span class="stage-role" style="color: #8b5cf6; font-size: 0.85rem; font-weight: bold;">Actualité Tech FR</span>
                     </div>
                 </div>
             </div>"""
         return html
     except Exception as e:
-        return f"<p style='color: white;'>Erreur de récupération : {e}</p>"
+        return f"<p style='color: white;'>Erreur de récupération : {str(e)}</p>"
 
 def update_file(new_html):
     file_path = "js/veille_data.js"
-    # Structure pour ton fichier JS (méthode window.veilleData)
-    content = f"""window.veilleData = `
-{new_html}
-`;"""
+    content = f"window.veilleData = `{new_html}`;"
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
 
