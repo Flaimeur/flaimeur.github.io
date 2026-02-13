@@ -23,27 +23,23 @@ def get_news():
         return f"<p>Erreur lors de la mise à jour : {e}</p>"
 
 def update_file(new_html):
-    # CORRECTION : On pointe vers le dossier js/
-    file_path = "js/content.js" 
+    # --- CORRECTION DU CHEMIN ICI ---
+    file_path = "js/content.js"
     
     if not os.path.exists(file_path):
-        print(f"Erreur : Le fichier {file_path} est introuvable !")
+        print(f"Erreur : Le fichier {file_path} n'existe pas !")
         exit(1)
 
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    if "" in content:
-        pattern = r".*?"
-        replacement = f"{new_html}"
-        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-        
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write(new_content)
-        print("Mise à jour réussie !")
-    else:
-        print("Erreur : Balises introuvables dans content.js")
-        exit(1)
+    pattern = r".*?"
+    replacement = f"{new_html}"
+    
+    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
 
 if __name__ == "__main__":
     news_html = get_news()
