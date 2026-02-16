@@ -751,6 +751,9 @@ h2 {
   display: inline-block;
 }
 
+/* ========================================
+   RESPONSIVE MOBILE — Tablettes
+   ======================================== */
 @media (max-width: 800px) {
   .gh-profile-layout {
     flex-direction: column;
@@ -761,14 +764,530 @@ h2 {
     text-align: center;
     border-right: none;
     border-bottom: 1px solid #30363d;
+    padding: 15px;
   }
   .gh-avatar-large {
     width: 150px;
     height: 150px;
   }
   .app-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    padding: 15px;
+    max-width: 100%;
+  }
+  .wii-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 16px;
+  }
+  .app-body {
+    padding: 25px;
+  }
+  .settings-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .gh-pinned-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+  .sheet-frame {
+    height: 400px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE MOBILE — Smartphones
+   ======================================== */
+@media (max-width: 520px) {
+
+  /* --- BODY & CONTAINER --- */
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+    background-size: 16px 16px;
+  }
+
+  .wiiu-container {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh; /* dynamic viewport height pour mobile */
+  }
+
+  /* --- TOP BAR --- */
+  .top-bar {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .user-badge {
+    padding: 4px 12px 4px 4px;
+    font-size: 0.85rem;
+  }
+
+  .user-badge span {
+    font-size: 0.8rem;
+  }
+
+  .mii-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .clock {
+    font-size: 0.85rem;
+  }
+
+  /* --- GRILLE D'APPS --- */
+  .grid-wrapper {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .app-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px;
+    padding: 10px 15px;
+    max-width: 100%;
+    justify-items: center;
+  }
+
+  .wii-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 14px;
+    border-width: 3px;
+  }
+
+  .wii-icon:hover {
+    transform: none; /* Pas de scale au hover sur mobile */
+  }
+
+  .icon-inner svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .app-label {
+    font-size: 0.65rem;
+  }
+
+  /* --- MAIN STAGE --- */
+  .main-stage {
+    overflow: visible;
+    min-height: 0;
+  }
+
+  /* --- APP WINDOW (PLEIN ÉCRAN MOBILE) --- */
+  .app-window {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+  }
+
+  .app-header {
+    height: 55px;
+    padding: 0 12px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .app-header h1 {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    gap: 4px;
+  }
+
+  .back-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .app-body {
+    padding: 20px 15px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+  }
+
+  /* --- BOTTOM BAR --- */
+  .bottom-curve {
+    height: 55px;
+    width: 95%;
+    margin-bottom: -5px;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+  }
+
+  .start-btn,
+  .wii-menu-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* --- BOOT SCREEN --- */
+  .boot-logo {
+    font-size: 2.5rem;
+  }
+
+  /* --- CONTENU : PROFIL --- */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .bio-box {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Grille Formation / Objectifs en 1 colonne */
+  .app-body > div[style*="grid-template-columns: 1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .info-card {
+    padding: 12px;
+  }
+
+  /* --- CONTENU : GITHUB --- */
+  .gh-profile-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gh-sidebar-profile {
+    width: 100% !important;
+    padding: 15px !important;
+    align-items: center;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .gh-avatar-large {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .gh-names {
+    text-align: center !important;
+  }
+
+  .gh-names h1 {
+    font-size: 1.2rem !important;
+  }
+
+  .gh-names span {
+    font-size: 0.95rem !important;
+  }
+
+  .gh-edit-btn {
+    max-width: 200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .gh-content {
+    padding: 15px;
+  }
+
+  .gh-readme {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+
+  .gh-readme h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .gh-readme ul {
+    font-size: 0.8rem;
+    line-height: 1.6 !important;
+  }
+
+  .gh-pinned-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .gh-repo-card {
+    padding: 12px;
+  }
+
+  .gh-repo-link {
+    font-size: 0.85rem;
+  }
+
+  /* --- CONTENU : STAGES --- */
+  .stage-header {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .stage-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .stage-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .stage-role {
+    font-size: 0.8rem;
+  }
+
+  .stage-details {
+    font-size: 0.85rem;
+  }
+
+  .stage-card.open .stage-details {
+    padding: 12px;
+    max-height: 300px; /* Plus de place sur mobile car texte wrappé */
+  }
+
+  /* --- CONTENU : COMPÉTENCES --- */
+  .skill-section {
+    margin-bottom: 18px;
+  }
+
+  .skills-grid {
+    gap: 8px;
+  }
+
+  .skill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* --- CONTENU : SYNTHÈSE --- */
+  .sheet-embed-container {
+    gap: 8px;
+  }
+
+  .sheet-frame {
+    height: 300px;
+    border-radius: 6px;
+  }
+
+  .open-sheet-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    align-self: center;
+  }
+
+  /* --- CONTENU : PROJETS --- */
+  .project-list {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  /* --- CONTENU : VEILLE --- */
+  .quantum-box {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  #veille-content {
+    max-width: 100% !important;
+  }
+
+  /* --- CONTENU : CV --- */
+  .cv-preview {
+    height: 280px;
+    margin-bottom: 15px;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* --- CONTENU : CONTACT --- */
+  .social-glow-row {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .glow-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    padding: 15px;
+    gap: 12px;
+    border-radius: 12px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* --- CONTENU : PARAMÈTRES --- */
+  .settings-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .setting-card {
+    padding: 20px 12px;
+    gap: 10px;
+  }
+
+  .setting-label {
+    font-size: 0.9rem;
+  }
+
+  /* --- ANIMATIONS — plus subtiles sur mobile --- */
+  .zoom-exit {
+    animation: zoomExitMobile 0.35s forwards ease-in;
+  }
+  @keyframes zoomExitMobile {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+}
+
+/* ========================================
+   RESPONSIVE MOBILE — Très petits écrans
+   ======================================== */
+@media (max-width: 360px) {
+  .app-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+
+  .wii-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .app-label {
+    font-size: 0.6rem;
+  }
+
+  .top-bar {
+    padding: 8px 10px;
+  }
+
+  .app-body {
+    padding: 15px 12px;
+  }
+
+  .gh-avatar-large {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .boot-logo {
+    font-size: 2rem;
+  }
+}
+
+/* ========================================
+   TOUCH-FRIENDLY — Active states pour mobile
+   ======================================== */
+@media (hover: none) and (pointer: coarse) {
+  .wii-icon:active {
+    transform: scale(0.95);
+    border-color: var(--wii-blue);
+    box-shadow: 0 0 12px rgba(0, 155, 240, 0.5);
+  }
+
+  .wii-icon:hover {
+    transform: none;
+    border-color: var(--card-border);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .stage-card:hover {
+    transform: none;
+  }
+
+  .stage-card:active {
+    transform: translateX(3px);
+    border-color: #f59e0b;
+  }
+
+  .glow-btn:active {
+    transform: scale(0.92);
+  }
+
+  .setting-card:hover {
+    transform: none;
+  }
+
+  .setting-card:active {
+    transform: scale(0.97);
+  }
+
+  .back-btn:active {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .start-btn:active,
+  .wii-menu-btn:active {
+    color: var(--wii-blue);
+  }
+
+  .download-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(219, 39, 119, 0.3);
   }
 }
 
