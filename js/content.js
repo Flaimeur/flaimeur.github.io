@@ -228,10 +228,10 @@ export const appContents = {
         <h2>Tableau de Synthèse</h2>
         <p class="subtitle text-secondary">Accès au tableau Google Sheets</p>
         <div class="sheet-embed-container">
-            <a href="https://docs.google.com/spreadsheets/d/1Cq1e443zRg0Iu35bX141mebjJ1j8dp8ZV35W2S8iU_w/edit?gid=781355869#gid=781355869" target="_blank" class="open-sheet-btn">
+            <a href="https://docs.google.com/spreadsheets/d/1ekF_RTXTaiCkp1eKxJAlRVLBcIrW1WiS/edit?usp=sharing&ouid=100109285579663712649&rtpof=true&sd=true" target="_blank" class="open-sheet-btn">
                 <i data-lucide="external-link" size="16"></i> Ouvrir dans Google Sheets
             </a>
-            <iframe class="sheet-frame" src="https://docs.google.com/spreadsheets/d/1Cq1e443zRg0Iu35bX141mebjJ1j8dp8ZV35W2S8iU_w/preview?gid=781355869"></iframe>
+            <iframe class="sheet-frame" src="https://docs.google.com/spreadsheets/d/1ekF_RTXTaiCkp1eKxJAlRVLBcIrW1WiS/edit?gid=227146683#gid=227146683"></iframe>
         </div>
     `,
 
