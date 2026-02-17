@@ -2,6 +2,7 @@ import { appsConfig } from "./data.js";
 import { openApp, closeApp } from "./ui.js";
 import { updateClock } from "./utils.js";
 import { runBootSequence } from "./animation.js";
+import { soundManager } from "./sound.js";
 
 // --- INITIALISATION ---
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Unlock audio on first interaction
   document.addEventListener('click', () => {
-      import('./sound.js').then(m => m.soundManager.unlock());
+      soundManager.unlock();
   }, { once: true });
 
   if (localStorage.getItem("music_visual") === null) {
@@ -169,7 +170,6 @@ function initGrid() {
 
   // Clics Grille
   const icons = document.querySelectorAll(".wii-icon");
-  // attachSoundListeners removed (handled by global delegation)
 
   icons.forEach(icon => {
     icon.addEventListener("click", () => {
@@ -188,15 +188,25 @@ function initGrid() {
 
 // --- LISTENERS GLOBAUX ---
 function initGlobalListeners() {
+  
+  // START BUTTON (Launch Game Sequence)
+  const startBtn = document.querySelector('.start-btn');
+  if (startBtn) {
+    startBtn.addEventListener('click', () => {
+        soundManager.play('start');
+        launchGameSequence();
+    });
+  }
+
   const backBtn = document.getElementById("back-btn");
   if (backBtn) {
     backBtn.addEventListener("click", () => {
         closeApp();
-        import('./sound.js').then(m => m.soundManager.play('back'));
+        soundManager.play('back');
     });
     // Hover sound for back button
     backBtn.addEventListener("mouseenter", () => {
-        import('./sound.js').then(m => m.soundManager.play('hover'));
+        soundManager.play('hover');
     });
   }
 
@@ -207,26 +217,26 @@ function initGlobalListeners() {
       const stageCard = e.target.closest(".stage-card");
       if (stageCard) {
           stageCard.classList.toggle("open");
-          import('./sound.js').then(m => m.soundManager.play('click'));
+          soundManager.play('click');
       }
 
       // Clics Paramètres
       if (e.target.closest("#btn-toggle-theme")) {
           toggleThemeAndSave();
-          import('./sound.js').then(m => m.soundManager.play('click'));
+          soundManager.play('click');
       }
       if (e.target.closest("#btn-toggle-music")) {
           toggleMusicVisual();
-          import('./sound.js').then(m => m.soundManager.play('click'));
+          soundManager.play('click');
       }
     });
 
     // Formulaire Contact
     appBody.addEventListener("submit", async e => {
       if (e.target.id === "contact-form") {
-        import('./sound.js').then(m => m.soundManager.play('start')); // Special sound for submit
+        soundManager.play('start'); // Special sound for submit
         e.preventDefault();
-        // ... (rest of submit logic remains) ...
+        
         const btn = e.target.querySelector("button");
         const originalContent = btn.innerHTML;
 
@@ -277,49 +287,57 @@ function initGlobalListeners() {
   }
 
   // --- GLOBAL SOUND DELEGATION (Main Menu & Overlay) ---
-  document.body.addEventListener('mouseenter', (e) => {
-      // Use capture or just simple bubbling on body?
-      // mouseenter doesn't bubble. mouseover does.
-      // We need mouseover to detect hover on deep elements.
-      if (e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn')) {
-          import('./sound.js').then(m => m.soundManager.play('hover'));
-      }
-  }, true); // Use capture to ensure we get it? No, mouseenter doesn't bubble. 
-  // actually mouseover is better for delegation.
-  
   document.body.addEventListener('mouseover', (e) => {
       // Filter for interactive elements
       const target = e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn, button, a');
       // Avoid spamming if moving within the same element
       if (target && target !== window.lastHovered) {
           window.lastHovered = target;
-          import('./sound.js').then(m => m.soundManager.play('hover'));
+          soundManager.play('hover');
       } else if (!target) {
           window.lastHovered = null;
       }
   });
 
   document.body.addEventListener('click', (e) => {
-     if (e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn, button, a')) {
-         import('./sound.js').then(m => m.soundManager.play('click'));
-     }
-  }, true); // Capture click to ensure we get it even if stopPropagation is used? Maybe not, bubble is fine.
-  // Actually, I already attach specific listeners inside openApp/initGrid. 
-  // Let's rely on bubbling for simplicity but avoid double plays.
-  // If specific listener already played, maybe unnecessary.
-  // But soundManager handles rapid replays.
-  // Let's use capture: false (default bubbling).
-  // Check if target is interactive.
-  
-  document.body.addEventListener('click', (e) => {
      // Check if interactive but NOT back-btn (handled separately)
      if (e.target.closest('.start-btn, .user-badge, .wii-icon, button:not(.back-btn), a, [onclick], [data-action]')) {
          // Also ensure we don't trigger if it IS the back btn specifically
          if (!e.target.closest('.back-btn')) {
-            import('./sound.js').then(m => m.soundManager.play('click'));
+            soundManager.play('click');
          }
      }
   });
 }
 
-// Helper removed (Global delegation used instead)
+// --- FONCTION LANCEMENT JEU (Start Button) ---
+function launchGameSequence() {
+    const container = document.getElementById('main-container');
+    const bootScreen = document.getElementById('boot-screen');
+    
+    // 1. Zoom Infini + Flash
+    container.classList.add('game-launch-animation');
+
+    // 2. Après le zoom (1.2s), on affiche l'écran de boot (blanc/noir)
+    setTimeout(() => {
+        bootScreen.classList.remove('hidden');
+        
+        // Reset l'animation du conteneur en douce derrière
+        container.style.opacity = '0';
+        container.classList.remove('game-launch-animation');
+        
+        // Reset navigation (fermer les fenêtres ouvertes)
+        closeApp(); 
+    }, 1200);
+
+    // 3. Redémarrage propre (Reboot)
+    setTimeout(() => {
+        // Enlever le cache blanc pour afficher l'intro
+        // On relance la séquence de boot normale
+        location.reload(); // Le plus simple et impactant : recharger la page pour un vrai "Reboot"
+        
+        // Alternative sans reload si préféré :
+        // runBootSequence();
+        // container.style.opacity = '1';
+    }, 2500); 
+}
