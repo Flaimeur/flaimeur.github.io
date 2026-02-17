@@ -107,6 +107,21 @@ body.dark-mode {
   --grid-bg-image: radial-gradient(#334155 1px, transparent 1px);
 }
 
+body.dark-mode .bio-box,
+body.dark-mode .info-card,
+body.dark-mode .project-card,
+body.dark-mode .stage-card,
+body.dark-mode .quantum-box,
+body.dark-mode .contact-form,
+body.dark-mode .setting-card {
+  /* Plus clair et transparent pour le contraste en mode sombre */
+  background: rgba(255, 255, 255, 0.05); 
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
 body {
   margin: 0;
   background-color: var(--bg-color);
@@ -119,6 +134,40 @@ body {
   transition:
     background-color 0.3s,
     color 0.3s;
+  /* Wii Custom Cursors - Main Bleue (Défaut) */
+  cursor: url('../asset/wii-cursor.cur'), auto;
+}
+
+/* Cursor pointer pour éléments cliquables - Main Blue CCW (Select) */
+a, button, .wii-icon, .stage-card, .start-btn, .wii-menu-btn,
+.setting-card, .glow-btn, .download-btn, .submit-btn, .open-sheet-btn,
+.gh-edit-btn, .gh-repo-link, .skill,
+[onclick], [data-action] {
+  cursor: url('../asset/wii-pointer-blue-ccw.cur'), pointer;
+}
+
+/* Force specific fix for View Profile button */
+.gh-edit-btn {
+  cursor: url('../asset/wii-pointer-blue-ccw.cur'), pointer !important;
+}
+
+/* --- CLICK / ACTIVE (Main Fermée / Bouton B) --- */
+body:active, *:active {
+  cursor: url('../asset/wii-grab.cur'), grabbing !important;
+}
+
+/* Autres curseurs Wii */
+.cursor-help, [data-tooltip], [title] {
+  cursor: url('../asset/wii-help.cur'), help;
+}
+.cursor-wait, .loading, .is-loading {
+  cursor: url('../asset/wii-loading-ring.ani'), wait;
+}
+.cursor-grab {
+  cursor: url('../asset/wii-open.cur'), grab;
+}
+.cursor-grabbing, .app-window:active {
+  cursor: url('../asset/wii-grab.cur'), grabbing;
 }
 
 .wiiu-container {
@@ -200,7 +249,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
+  /* cursor pointer removed */
   transition:
     transform 0.2s,
     box-shadow 0.2s;
@@ -262,7 +311,6 @@ body {
   font-weight: bold;
   color: var(--header-text);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .wii-menu-btn:hover,
@@ -345,16 +393,27 @@ body {
   color: var(--text-color);
 }
 
+/* --- APP HEADER (Layout centré absolu pour le titre) --- */
 .app-header {
   height: 70px;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative; /* Pour le centrage absolu du h1 */
   padding: 0 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   background-color: #333;
   flex-shrink: 0;
+  cursor: url('../asset/wii-move.cur'), move;
+}
+
+.app-header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.5rem;
+  /* Pas de cursor move sur le texte si on veut pas */
 }
 
 .back-btn {
@@ -363,13 +422,15 @@ body {
   color: white;
   padding: 8px 16px;
   border-radius: 20px;
-  cursor: pointer;
+  /* Cursur "B" (Grab) pour le retour */
+  cursor: url('../asset/wii-move.cur'), pointer !important;
   display: flex;
   align-items: center;
   gap: 5px;
   font-weight: bold;
   font-size: 1rem;
   transition: background 0.2s;
+  z-index: 10; /* Au-dessus du titre centré si chevauchement */
 }
 .back-btn:hover {
   background: rgba(255, 255, 255, 0.4);
@@ -386,24 +447,92 @@ body {
   padding: 0 !important;
 }
 
-/* --- CONTENT STYLES --- */
+/* ===========================================
+   STYLE GÉNÉRAL CONTENU (Soft Glass Premium)
+   (S'applique à tout le contenu sauf GitHub spécifique)
+   =========================================== */
+
+/* Titres de section — clean avec accent line */
 h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
   color: var(--text-color);
   margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  text-align: center; /* Centrage du titre demandé */
 }
+
+h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--wii-blue);
+  border-radius: 2px;
+  margin: 8px auto 16px auto; /* Centrage explicite : top auto bottom auto */
+  transition: width 0.3s ease;
+}
+
+/* Pas de ligne bleue dans GitHub */
+.gh-profile-layout h2::after,
+.gh-readme h3::after {
+  display: none;
+}
+
 .subtitle {
   color: var(--header-text);
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.text-secondary {
+  color: var(--header-text);
+}
+
+/* Paragraphs dans le contenu */
+.app-body p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Cards / boxes — style unifié soft glass premium */
+.bio-box,
+.info-card,
+.project-card,
+.stage-card,
+.quantum-box,
+.contact-form,
+.setting-card {
+  background: rgba(255, 255, 255, 0.6); /* Plus lumineux en mode clair */
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px; /* Plus arrondi */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(12px) saturate(160%); /* Blur plus fort + saturation */
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.03),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Inner border subtile */
+}
+
+body.dark-mode .bio-box,
+body.dark-mode .info-card,
+body.dark-mode .project-card,
+body.dark-mode .stage-card,
+body.dark-mode .quantum-box,
+body.dark-mode .contact-form,
+body.dark-mode .setting-card {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .bio-box {
-  background: rgba(0, 0, 0, 0.05);
   padding: 20px;
-  border-radius: 10px;
-  border-left: 5px solid #ea580c;
+  border-left: 4px solid #ea580c;
 }
 
 /* --- STAGES (INTERACTIF) --- */
@@ -419,7 +548,7 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
-  cursor: pointer;
+/* removed cursor pointer */
 }
 
 .stage-card:hover {
@@ -535,59 +664,413 @@ h2 {
   color: var(--header-text);
 }
 
-/* --- SKILLS --- */
+/* --- SKILLS (Soft Glass Style) --- */
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
 .skill-section {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
+
 .skill-section h3 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--header-text);
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
 }
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/* --- Chaque skill = pill glass soft --- */
 .skill {
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: #333;
-  background: #eee;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--skill-color, #333);
+  background: var(--skill-bg, rgba(0, 0, 0, 0.05));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  /* Force custom Wii cursor on skills */
+  cursor: url('../asset/wii-pointer-blue-ccw.cur'), pointer;
+  border: 1px solid var(--skill-border, rgba(0, 0, 0, 0.08));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  line-height: 1;
+  overflow: hidden;
+  /* Entrance staggerée + idle breathing enchaîné */
+  animation:
+    skillFadeIn 0.4s ease-out both,
+    skillBreathe 4s ease-in-out infinite;
+  animation-delay:
+    calc(var(--i, 0) * 0.06s),
+    calc(0.5s + var(--i, 0) * 0.3s);
+  /* Micro-interaction : transition douce */
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
+
+/* Entrance animation */
+@keyframes skillFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Idle : subtile respiration décalée par skill */
+@keyframes skillBreathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+/* Shimmer effect — light sweep au hover */
+.skill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: none;
+  pointer-events: none;
+}
+
+/* Hover : lift très léger + glow subtil + shimmer sweep */
+.skill:hover {
+  /* On garde un micro-mouvement pour le feedback visuel mais pas "bouton" */
+  transform: translateY(-1px); 
+  animation-play-state: paused; /* pause le breathing pendant le hover */
+  box-shadow:
+    0 4px 12px var(--skill-glow, rgba(0, 0, 0, 0.08)),
+    0 0 0 1px var(--skill-border-hover, rgba(0, 0, 0, 0.08));
+  /* Pas de changement de fond drastique */
+  border-color: var(--skill-border-hover, var(--skill-border));
+}
+
+.skill:hover::after {
+  animation: shimmerSweep 0.8s ease-out;
+}
+
+@keyframes shimmerSweep {
+  from { left: -100%; }
+  to { left: 200%; }
+}
+
+/* Skills ne sont pas des boutons — pas de press/active */
+
+/* Hover sur les catégories — highlight toute la section */
+.skill-section:hover h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.skill-section h3 {
+  transition: opacity 0.3s ease;
+}
+
+/* --- COULEURS : chaque techno est définie par ses variables --- */
+
+/* Design */
 .skill.figma {
-  background: #fecaca;
-  color: #991b1b;
+  --skill-bg: rgba(242, 78, 30, 0.1);
+  --skill-bg-hover: rgba(242, 78, 30, 0.18);
+  --skill-color: #e04417;
+  --skill-border: rgba(242, 78, 30, 0.2);
+  --skill-border-hover: rgba(242, 78, 30, 0.4);
+  --skill-glow: rgba(242, 78, 30, 0.15);
 }
+
+/* Front-end */
 .skill.html {
-  background: #ffedd5;
-  color: #9a3412;
+  --skill-bg: rgba(227, 76, 38, 0.1);
+  --skill-bg-hover: rgba(227, 76, 38, 0.18);
+  --skill-color: #c43e1e;
+  --skill-border: rgba(227, 76, 38, 0.2);
+  --skill-border-hover: rgba(227, 76, 38, 0.4);
+  --skill-glow: rgba(227, 76, 38, 0.15);
 }
 .skill.css {
-  background: #dbeafe;
-  color: #1e40af;
+  --skill-bg: rgba(21, 101, 192, 0.1);
+  --skill-bg-hover: rgba(21, 101, 192, 0.18);
+  --skill-color: #1565c0;
+  --skill-border: rgba(21, 101, 192, 0.2);
+  --skill-border-hover: rgba(21, 101, 192, 0.4);
+  --skill-glow: rgba(21, 101, 192, 0.15);
+}
+.skill.tailwind {
+  --skill-bg: rgba(6, 182, 212, 0.1);
+  --skill-bg-hover: rgba(6, 182, 212, 0.18);
+  --skill-color: #0891b2;
+  --skill-border: rgba(6, 182, 212, 0.2);
+  --skill-border-hover: rgba(6, 182, 212, 0.4);
+  --skill-glow: rgba(6, 182, 212, 0.15);
 }
 .skill.js {
-  background: #fef08a;
-  color: #854d0e;
+  --skill-bg: rgba(247, 223, 30, 0.12);
+  --skill-bg-hover: rgba(247, 223, 30, 0.22);
+  --skill-color: #a16807;
+  --skill-border: rgba(247, 223, 30, 0.25);
+  --skill-border-hover: rgba(247, 223, 30, 0.5);
+  --skill-glow: rgba(247, 223, 30, 0.15);
 }
 .skill.react {
-  background: #ecfeff;
-  color: #155e75;
+  --skill-bg: rgba(97, 218, 251, 0.1);
+  --skill-bg-hover: rgba(97, 218, 251, 0.18);
+  --skill-color: #0e7490;
+  --skill-border: rgba(97, 218, 251, 0.25);
+  --skill-border-hover: rgba(97, 218, 251, 0.5);
+  --skill-glow: rgba(97, 218, 251, 0.15);
+}
+.skill.nextjs {
+  --skill-bg: rgba(0, 0, 0, 0.07);
+  --skill-bg-hover: rgba(0, 0, 0, 0.12);
+  --skill-color: #111;
+  --skill-border: rgba(0, 0, 0, 0.15);
+  --skill-border-hover: rgba(0, 0, 0, 0.3);
+  --skill-glow: rgba(0, 0, 0, 0.08);
+}
+
+/* Back-end */
+.skill.csharp {
+  --skill-bg: rgba(123, 31, 162, 0.1);
+  --skill-bg-hover: rgba(123, 31, 162, 0.18);
+  --skill-color: #7b1fa2;
+  --skill-border: rgba(123, 31, 162, 0.2);
+  --skill-border-hover: rgba(123, 31, 162, 0.4);
+  --skill-glow: rgba(123, 31, 162, 0.15);
+}
+.skill.dotnet {
+  --skill-bg: rgba(81, 43, 212, 0.1);
+  --skill-bg-hover: rgba(81, 43, 212, 0.18);
+  --skill-color: #512bd4;
+  --skill-border: rgba(81, 43, 212, 0.2);
+  --skill-border-hover: rgba(81, 43, 212, 0.4);
+  --skill-glow: rgba(81, 43, 212, 0.15);
+}
+.skill.winform {
+  --skill-bg: rgba(29, 78, 216, 0.1);
+  --skill-bg-hover: rgba(29, 78, 216, 0.18);
+  --skill-color: #1d4ed8;
+  --skill-border: rgba(29, 78, 216, 0.2);
+  --skill-border-hover: rgba(29, 78, 216, 0.4);
+  --skill-glow: rgba(29, 78, 216, 0.15);
 }
 .skill.php {
-  background: #e0e7ff;
-  color: #3730a3;
+  --skill-bg: rgba(119, 123, 179, 0.1);
+  --skill-bg-hover: rgba(119, 123, 179, 0.18);
+  --skill-color: #4a5899;
+  --skill-border: rgba(119, 123, 179, 0.2);
+  --skill-border-hover: rgba(119, 123, 179, 0.4);
+  --skill-glow: rgba(119, 123, 179, 0.15);
 }
 .skill.python {
-  background: #fef9c3;
-  color: #ca8a04;
+  --skill-bg: rgba(55, 118, 171, 0.1);
+  --skill-bg-hover: rgba(55, 118, 171, 0.18);
+  --skill-color: #306998;
+  --skill-border: rgba(55, 118, 171, 0.2);
+  --skill-border-hover: rgba(55, 118, 171, 0.4);
+  --skill-glow: rgba(55, 118, 171, 0.15);
+}
+.skill.java {
+  --skill-bg: rgba(176, 46, 31, 0.1);
+  --skill-bg-hover: rgba(176, 46, 31, 0.18);
+  --skill-color: #b02e1f;
+  --skill-border: rgba(176, 46, 31, 0.2);
+  --skill-border-hover: rgba(176, 46, 31, 0.4);
+  --skill-glow: rgba(176, 46, 31, 0.15);
 }
 .skill.node {
-  background: #dcfce7;
-  color: #166534;
+  --skill-bg: rgba(46, 125, 50, 0.1);
+  --skill-bg-hover: rgba(46, 125, 50, 0.18);
+  --skill-color: #2e7d32;
+  --skill-border: rgba(46, 125, 50, 0.2);
+  --skill-border-hover: rgba(46, 125, 50, 0.4);
+  --skill-glow: rgba(46, 125, 50, 0.15);
+}
+.skill.sql {
+  --skill-bg: rgba(13, 71, 161, 0.1);
+  --skill-bg-hover: rgba(13, 71, 161, 0.18);
+  --skill-color: #0d47a1;
+  --skill-border: rgba(13, 71, 161, 0.2);
+  --skill-border-hover: rgba(13, 71, 161, 0.4);
+  --skill-glow: rgba(13, 71, 161, 0.15);
+}
+.skill.mariadb {
+  --skill-bg: rgba(27, 94, 32, 0.1);
+  --skill-bg-hover: rgba(27, 94, 32, 0.18);
+  --skill-color: #1b5e20;
+  --skill-border: rgba(27, 94, 32, 0.2);
+  --skill-border-hover: rgba(27, 94, 32, 0.4);
+  --skill-glow: rgba(27, 94, 32, 0.15);
+}
+
+/* DevOps */
+.skill.docker {
+  --skill-bg: rgba(3, 105, 161, 0.1);
+  --skill-bg-hover: rgba(3, 105, 161, 0.18);
+  --skill-color: #0369a1;
+  --skill-border: rgba(3, 105, 161, 0.2);
+  --skill-border-hover: rgba(3, 105, 161, 0.4);
+  --skill-glow: rgba(3, 105, 161, 0.15);
+}
+.skill.git {
+  --skill-bg: rgba(240, 80, 51, 0.1);
+  --skill-bg-hover: rgba(240, 80, 51, 0.18);
+  --skill-color: #e04417;
+  --skill-border: rgba(240, 80, 51, 0.2);
+  --skill-border-hover: rgba(240, 80, 51, 0.4);
+  --skill-glow: rgba(240, 80, 51, 0.15);
+}
+.skill.linux {
+  --skill-bg: rgba(247, 186, 8, 0.1);
+  --skill-bg-hover: rgba(247, 186, 8, 0.18);
+  --skill-color: #a16807;
+  --skill-border: rgba(247, 186, 8, 0.2);
+  --skill-border-hover: rgba(247, 186, 8, 0.4);
+  --skill-glow: rgba(247, 186, 8, 0.15);
+}
+.skill.postman {
+  --skill-bg: rgba(255, 108, 55, 0.1);
+  --skill-bg-hover: rgba(255, 108, 55, 0.18);
+  --skill-color: #e65100;
+  --skill-border: rgba(255, 108, 55, 0.2);
+  --skill-border-hover: rgba(255, 108, 55, 0.4);
+  --skill-glow: rgba(255, 108, 55, 0.15);
+}
+
+/* Infra & Réseau */
+.skill.vmware {
+  --skill-bg: rgba(100, 116, 139, 0.1);
+  --skill-bg-hover: rgba(100, 116, 139, 0.18);
+  --skill-color: #475569;
+  --skill-border: rgba(100, 116, 139, 0.2);
+  --skill-border-hover: rgba(100, 116, 139, 0.4);
+  --skill-glow: rgba(100, 116, 139, 0.15);
+}
+.skill.selfhost {
+  --skill-bg: rgba(46, 125, 50, 0.1);
+  --skill-bg-hover: rgba(46, 125, 50, 0.18);
+  --skill-color: #2e7d32;
+  --skill-border: rgba(46, 125, 50, 0.2);
+  --skill-border-hover: rgba(46, 125, 50, 0.4);
+  --skill-glow: rgba(46, 125, 50, 0.15);
+}
+.skill.ssh {
+  --skill-bg: rgba(78, 52, 46, 0.1);
+  --skill-bg-hover: rgba(78, 52, 46, 0.18);
+  --skill-color: #4e342e;
+  --skill-border: rgba(78, 52, 46, 0.2);
+  --skill-border-hover: rgba(78, 52, 46, 0.4);
+  --skill-glow: rgba(78, 52, 46, 0.15);
+}
+.skill.sysadmin {
+  --skill-bg: rgba(55, 71, 79, 0.1);
+  --skill-bg-hover: rgba(55, 71, 79, 0.18);
+  --skill-color: #37474f;
+  --skill-border: rgba(55, 71, 79, 0.2);
+  --skill-border-hover: rgba(55, 71, 79, 0.4);
+  --skill-glow: rgba(55, 71, 79, 0.15);
+}
+.skill.network {
+  --skill-bg: rgba(0, 105, 92, 0.1);
+  --skill-bg-hover: rgba(0, 105, 92, 0.18);
+  --skill-color: #00695c;
+  --skill-border: rgba(0, 105, 92, 0.2);
+  --skill-border-hover: rgba(0, 105, 92, 0.4);
+  --skill-glow: rgba(0, 105, 92, 0.15);
+}
+
+/* Soft Skills — pills un peu plus grandes, style distinct */
+.skill.soft {
+  padding: 10px 22px;
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+  border-style: dashed;
+}
+.skill.soft.gestion {
+  --skill-bg: rgba(109, 40, 217, 0.08);
+  --skill-bg-hover: rgba(109, 40, 217, 0.15);
+  --skill-color: #6d28d9;
+  --skill-border: rgba(109, 40, 217, 0.2);
+  --skill-border-hover: rgba(109, 40, 217, 0.4);
+  --skill-glow: rgba(109, 40, 217, 0.12);
+}
+.skill.soft.veille {
+  --skill-bg: rgba(14, 116, 144, 0.08);
+  --skill-bg-hover: rgba(14, 116, 144, 0.15);
+  --skill-color: #0e7490;
+  --skill-border: rgba(14, 116, 144, 0.2);
+  --skill-border-hover: rgba(14, 116, 144, 0.4);
+  --skill-glow: rgba(14, 116, 144, 0.12);
+}
+.skill.soft.problem {
+  --skill-bg: rgba(217, 119, 6, 0.08);
+  --skill-bg-hover: rgba(217, 119, 6, 0.15);
+  --skill-color: #b45309;
+  --skill-border: rgba(217, 119, 6, 0.2);
+  --skill-border-hover: rgba(217, 119, 6, 0.4);
+  --skill-glow: rgba(217, 119, 6, 0.12);
+}
+
+/* === DARK MODE === */
+body.dark-mode .skill {
+  --skill-bg: color-mix(in srgb, var(--skill-color, #999) 12%, transparent);
+  --skill-bg-hover: color-mix(in srgb, var(--skill-color, #999) 20%, transparent);
+  color: color-mix(in srgb, var(--skill-color, #ccc) 40%, #e2e8f0);
+  border-color: color-mix(in srgb, var(--skill-color, #999) 20%, transparent);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+body.dark-mode .skill:hover {
+  box-shadow:
+    0 6px 25px color-mix(in srgb, var(--skill-color, #999) 20%, transparent);
+}
+body.dark-mode .skill.nextjs {
+  color: #e2e8f0;
+  --skill-bg: rgba(255, 255, 255, 0.08);
+  --skill-bg-hover: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+body.dark-mode .skill.js,
+body.dark-mode .skill.linux {
+  color: #fde68a;
+}
+body.dark-mode .skill::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+}
+body.dark-mode .skill.soft {
+  border-color: color-mix(in srgb, var(--skill-color, #999) 25%, transparent);
 }
 
 /* --- VEILLE --- */
@@ -749,6 +1232,78 @@ h2 {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
+}
+
+/* --- PROJETS (Premium Glass) --- */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--wii-blue);
+  box-shadow: 0 15px 30px -10px rgba(0, 155, 240, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: var(--wii-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tag {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--wii-blue);
+  color: white;
+  transform: translateY(-1px);
 }
 
 /* ========================================
@@ -1071,8 +1626,12 @@ h2 {
   }
 
   /* --- CONTENU : COMPÉTENCES --- */
+  .skill-container {
+    gap: 18px;
+  }
+
   .skill-section {
-    margin-bottom: 18px;
+    margin-bottom: 0;
   }
 
   .skills-grid {
@@ -1080,8 +1639,23 @@ h2 {
   }
 
   .skill {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+    padding: 8px 14px;
+    font-size: 0.72rem;
+  }
+
+  .skill {
+    /* Pas de breathing sur mobile pour les perfs */
+    animation: skillFadeIn 0.3s ease-out both;
+    animation-delay: calc(var(--i, 0) * 0.04s);
+  }
+
+  .skill:hover {
+    transform: none;
+  }
+
+  .skill.soft {
+    padding: 8px 14px;
+    font-size: 0.7rem;
   }
 
   /* --- CONTENU : SYNTHÈSE --- */
@@ -1324,8 +1898,7 @@ h2 {
 }
 
 body.dark-mode .info-card {
-  background: rgba(255, 255, 255, 0.1); /* Blanc transparent pour mode sombre */
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* On hérite du style glass unifié défini plus haut */
   color: #f1f5f9;
 }
 
@@ -1390,14 +1963,9 @@ body.dark-mode .info-card {
   border: 1px solid var(--header-text);
 }
 
+/* On laisse le style partagé s'appliquer pour le fond glass */
 body.dark-mode .contact-form {
-  background: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Plus sombre pour faire ressortir les inputs */
-  border-color: #334155;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-group input,
@@ -1408,14 +1976,27 @@ body.dark-mode .contact-form {
   border: 1px solid #ccc;
   background: rgba(255, 255, 255, 0.9);
   font-family: inherit;
-  box-sizing: border-box; /* Important pour pas que ça dépasse */
+  box-sizing: border-box; 
+  transition: border-color 0.3s, background 0.3s;
 }
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
-  background: #1e293b;
-  border-color: #475569;
+  /* Plus clair et transparent pour le contraste */
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
   color: white;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--wii-blue);
+  outline: none;
+}
+
+body.dark-mode ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .submit-btn {
@@ -1425,7 +2006,6 @@ body.dark-mode .form-group textarea {
   border-radius: 8px;
   color: white;
   font-weight: bold;
-  cursor: pointer;
   font-size: 1rem;
   transition: opacity 0.2s;
 }
@@ -1470,7 +2050,7 @@ body.dark-mode .form-group textarea {
   border-radius: 15px;
   padding: 30px 20px;
   text-align: center;
-  cursor: pointer;
+/* removed cursor pointer */
   transition: all 0.2s;
   display: flex;
   flex-direction: column;

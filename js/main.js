@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
   runBootSequence();
 
   initTheme();
+  
+  // Unlock audio on first interaction
+  document.addEventListener('click', () => {
+      import('./sound.js').then(m => m.soundManager.unlock());
+  }, { once: true });
+
   if (localStorage.getItem("music_visual") === null) {
     localStorage.setItem("music_visual", "off");
   }
@@ -162,7 +168,10 @@ function initGrid() {
     .join("");
 
   // Clics Grille
-  document.querySelectorAll(".wii-icon").forEach(icon => {
+  const icons = document.querySelectorAll(".wii-icon");
+  // attachSoundListeners removed (handled by global delegation)
+
+  icons.forEach(icon => {
     icon.addEventListener("click", () => {
       const id = icon.getAttribute("data-id");
       const app = appsConfig.find(a => a.id === id);
@@ -180,26 +189,44 @@ function initGrid() {
 // --- LISTENERS GLOBAUX ---
 function initGlobalListeners() {
   const backBtn = document.getElementById("back-btn");
-  if (backBtn) backBtn.addEventListener("click", closeApp);
-
-  // (Code du bouton Settings supprimé ici car le bouton n'existe plus)
+  if (backBtn) {
+    backBtn.addEventListener("click", () => {
+        closeApp();
+        import('./sound.js').then(m => m.soundManager.play('back'));
+    });
+    // Hover sound for back button
+    backBtn.addEventListener("mouseenter", () => {
+        import('./sound.js').then(m => m.soundManager.play('hover'));
+    });
+  }
 
   const appBody = document.getElementById("app-body");
   if (appBody) {
     appBody.addEventListener("click", e => {
       // Accordéon Stages
       const stageCard = e.target.closest(".stage-card");
-      if (stageCard) stageCard.classList.toggle("open");
+      if (stageCard) {
+          stageCard.classList.toggle("open");
+          import('./sound.js').then(m => m.soundManager.play('click'));
+      }
 
-      // Clics Paramètres (Si jamais on ouvre la fenêtre autrement)
-      if (e.target.closest("#btn-toggle-theme")) toggleThemeAndSave();
-      if (e.target.closest("#btn-toggle-music")) toggleMusicVisual();
+      // Clics Paramètres
+      if (e.target.closest("#btn-toggle-theme")) {
+          toggleThemeAndSave();
+          import('./sound.js').then(m => m.soundManager.play('click'));
+      }
+      if (e.target.closest("#btn-toggle-music")) {
+          toggleMusicVisual();
+          import('./sound.js').then(m => m.soundManager.play('click'));
+      }
     });
 
     // Formulaire Contact
     appBody.addEventListener("submit", async e => {
       if (e.target.id === "contact-form") {
+        import('./sound.js').then(m => m.soundManager.play('start')); // Special sound for submit
         e.preventDefault();
+        // ... (rest of submit logic remains) ...
         const btn = e.target.querySelector("button");
         const originalContent = btn.innerHTML;
 
@@ -240,5 +267,59 @@ function initGlobalListeners() {
         }, 3000);
       }
     });
+    
+    // Add generic hover sounds for app-body interactive elements
+    appBody.addEventListener('mouseover', (e) => {
+        if (e.target.closest('a, button, .stage-card, .skill, .gh-repo-card')) {
+             // Handled by specific logic or bubbling
+        }
+    });
   }
+
+  // --- GLOBAL SOUND DELEGATION (Main Menu & Overlay) ---
+  document.body.addEventListener('mouseenter', (e) => {
+      // Use capture or just simple bubbling on body?
+      // mouseenter doesn't bubble. mouseover does.
+      // We need mouseover to detect hover on deep elements.
+      if (e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn')) {
+          import('./sound.js').then(m => m.soundManager.play('hover'));
+      }
+  }, true); // Use capture to ensure we get it? No, mouseenter doesn't bubble. 
+  // actually mouseover is better for delegation.
+  
+  document.body.addEventListener('mouseover', (e) => {
+      // Filter for interactive elements
+      const target = e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn, button, a');
+      // Avoid spamming if moving within the same element
+      if (target && target !== window.lastHovered) {
+          window.lastHovered = target;
+          import('./sound.js').then(m => m.soundManager.play('hover'));
+      } else if (!target) {
+          window.lastHovered = null;
+      }
+  });
+
+  document.body.addEventListener('click', (e) => {
+     if (e.target.closest('.start-btn, .user-badge, .wii-icon, .back-btn, button, a')) {
+         import('./sound.js').then(m => m.soundManager.play('click'));
+     }
+  }, true); // Capture click to ensure we get it even if stopPropagation is used? Maybe not, bubble is fine.
+  // Actually, I already attach specific listeners inside openApp/initGrid. 
+  // Let's rely on bubbling for simplicity but avoid double plays.
+  // If specific listener already played, maybe unnecessary.
+  // But soundManager handles rapid replays.
+  // Let's use capture: false (default bubbling).
+  // Check if target is interactive.
+  
+  document.body.addEventListener('click', (e) => {
+     // Check if interactive but NOT back-btn (handled separately)
+     if (e.target.closest('.start-btn, .user-badge, .wii-icon, button:not(.back-btn), a, [onclick], [data-action]')) {
+         // Also ensure we don't trigger if it IS the back btn specifically
+         if (!e.target.closest('.back-btn')) {
+            import('./sound.js').then(m => m.soundManager.play('click'));
+         }
+     }
+  });
 }
+
+// Helper removed (Global delegation used instead)

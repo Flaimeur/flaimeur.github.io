@@ -123,10 +123,29 @@ export const appContents = {
         <div class="stage-list">
             <div class="stage-card" data-action="toggle-stage">
                 <div class="stage-header">
+                    <div class="stage-logo"><i data-lucide="feather"></i></div>
+                    <div class="stage-info"><h3>La Dictée Géante</h3><span class="stage-role">Dev Web déc. 2025 - févr. 2026</span></div>
+                </div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Conception et développement du site vitrine pour le jeu de société "La Dictée Géante" (Figma, HTML/CSS/JS).<br>
+                    - Création de la plateforme événementielle "La Dictée des Voisins" (Inscriptions, Dashboard admin).<br>
+                    <strong>Compétences :</strong> UI/UX Design, Intégration Responsive, Méthode Agile, Git.</p>
+                </div>
+            </div>
+
+            <div class="stage-card" data-action="toggle-stage">
+                <div class="stage-header">
                     <div class="stage-logo"><i data-lucide="layout-dashboard"></i></div>
                     <div class="stage-info"><h3>Reenbow</h3><span class="stage-role">Dev mai 2025 - juin 2025</span></div>
                 </div>
-                <div class="stage-details"><p>- Tests et retours UX sur l’application Universe BTP.<br>- Prospection automatisée (Make, Lemlist, Dropcontact).<br>- Mise en place d’un scoring des leads et d’un reporting automatisé.<br>- Création d’ un tableau de bord Notion pour le suivi des campagnes.</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Tests et retours UX sur l’application Universe BTP.<br>
+                    - Mise en place d’un scoring des leads et reporting automatisé (Make, Lemlist).<br>
+                    - Création d’un tableau de bord Notion pour le suivi.<br>
+                    <strong>Compétences :</strong> UX Testing, Automatisation (NoCode), CRM.</p>
+                </div>
             </div>
 
             <div class="stage-card" data-action="toggle-stage">
@@ -134,39 +153,66 @@ export const appContents = {
                     <div class="stage-logo"><i data-lucide="smartphone"></i></div>
                     <div class="stage-info"><h3>MINUTE PHONE</h3><span class="stage-role">Tech janv. 2024 - févr. 2024</span></div>
                 </div>
-                <div class="stage-details"><p>- Réparation hardware<br>- Relations clientèles<br>- Mise en rayonnage</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Diagnostic et réparation hardware de smartphones.<br>
+                    - Accueil et conseil clientèle.<br>
+                    <strong>Compétences :</strong> Hardware mobile, Relation client, Diagnostic technique.</p>
+                </div>
             </div>
 
             <div class="stage-card" data-action="toggle-stage">
                 <div class="stage-header">
                     <div class="stage-logo"><i data-lucide="camera"></i></div>
-                    <div class="stage-info"><h3>Boomker Concept</h3><span class="stage-role">Photographie commercial sept. 2023 - oct. 2023</span></div>
+                    <div class="stage-info"><h3>Boomker Concept</h3><span class="stage-role">Photographe sept. 2023 - oct. 2023</span></div>
                 </div>
-                <div class="stage-details"><p>- Photographie <br>- Prise vidéo<br>- Montage photo/vidéo sur Adobe Photoshop</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Prises de vue photo et vidéo pour des produits commerciaux.<br>
+                    - Montage et retouche sur suite Adobe.<br>
+                    <strong>Compétences :</strong> Photoshop, Premiere Pro, Cadrage/Lumière.</p>
+                </div>
             </div>
 
             <div class="stage-card" data-action="toggle-stage">
                 <div class="stage-header">
-                    <div class="stage-logo"><i data-lucide="headphones"></i></div>
-                    <div class="stage-info"><h3>Deezer</h3><span class="stage-role">Dev mars 2023 - avr. 2023</span></div>
+                    <div class="stage-logo"><i data-lucide="music"></i></div>
+                    <div class="stage-info"><h3>Deezer</h3><span class="stage-role">Stage Découverte mars 2023 - avr. 2023</span></div>
                 </div>
-                <div class="stage-details"><p>- SQL, Data analysis & Data extraction from Database<br>- Python<br>- HTML, création d'un portfolio <br>- Metadata Curation & Content Creation</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Extraction et analyse de données via SQL.<br>
+                    - Création d'un premier portfolio en HTML.<br>
+                    - Curation de métadonnées musicales.<br>
+                    <strong>Compétences :</strong> SQL, Python, HTML/CSS, Data Analysis.</p>
+                </div>
             </div>
 
             <div class="stage-card" data-action="toggle-stage">
                 <div class="stage-header">
-                    <div class="stage-logo"><i data-lucide="headphones"></i></div>
-                    <div class="stage-info"><h3>Deezer</h3><span class="stage-role">Dev nov. 2022 - déc. 2022</span></div>
+                    <div class="stage-logo"><i data-lucide="music"></i></div>
+                    <div class="stage-info"><h3>Deezer</h3><span class="stage-role">Stage Découverte nov. 2022 - déc. 2022</span></div>
                 </div>
-                <div class="stage-details"><p>- SQL Initiation, Data analysis<br>- Python initiation, création de Blind Test<br>- Utilisation d’API Deezer</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Initiation aux requêtes SQL et analyse de données.<br>
+                    - Développement d'un mini blind-test en Python.<br>
+                    - Découverte de l'API Deezer.<br>
+                    <strong>Compétences :</strong> Algorithmique, SQL, API REST.</p>
+                </div>
             </div>
 
             <div class="stage-card" data-action="toggle-stage">
                 <div class="stage-header">
                     <div class="stage-logo"><i data-lucide="gamepad-2"></i></div>
-                    <div class="stage-info"><h3>Micromania</h3><span class="stage-role">Assistant commercial mai 2022 - juin 2022</span></div>
+                    <div class="stage-info"><h3>Micromania</h3><span class="stage-role">Vente mai 2022 - juin 2022</span></div>
                 </div>
-                <div class="stage-details"><p>- Relations clientèles<br>- Test de console<br>- Mise en rayonnage</p></div>
+                <div class="stage-details">
+                    <p><strong>Missions :</strong><br>
+                    - Conseil et vente de jeux vidéo et consoles.<br>
+                    - Gestion du rayonnage et merchandising.<br>
+                    <strong>Compétences :</strong> Techniques de vente, Gestion de stock, Relation client.</p>
+                </div>
             </div>
 
         </div>
@@ -176,14 +222,14 @@ export const appContents = {
   competences: `
         <h2>Mes Compétences</h2>
         <p class="text-secondary" style="margin-bottom: 25px;">Technologies et outils que j'utilise au quotidien.</p>
-        
+
         <div class="skill-container">
             <div class="skill-section">
                 <h3 class="text-secondary" style="display:flex; align-items:center; gap:8px;">
                     <i data-lucide="palette" width="18"></i> DESIGN
                 </h3>
                 <div class="skills-grid">
-                    <span class="skill figma">Figma</span>
+                    <span class="skill figma" style="--i:0">Figma</span>
                 </div>
             </div>
 
@@ -192,10 +238,12 @@ export const appContents = {
                     <i data-lucide="monitor" width="18"></i> FRONT-END
                 </h3>
                 <div class="skills-grid">
-                    <span class="skill html">HTML</span>
-                    <span class="skill css">CSS</span>
-                    <span class="skill js">JavaScript</span>
-                    <span class="skill react">React</span>
+                    <span class="skill html" style="--i:0">HTML</span>
+                    <span class="skill css" style="--i:1">CSS</span>
+                    <span class="skill tailwind" style="--i:2">Tailwind</span>
+                    <span class="skill js" style="--i:3">JavaScript</span>
+                    <span class="skill react" style="--i:4">React</span>
+                    <span class="skill nextjs" style="--i:5">Next.js</span>
                 </div>
             </div>
 
@@ -204,20 +252,51 @@ export const appContents = {
                     <i data-lucide="server" width="18"></i> BACK-END
                 </h3>
                 <div class="skills-grid">
-                    <span class="skill php">PHP</span>
-                    <span class="skill python">Python</span>
-                    <span class="skill node">Node.js</span>
+                    <span class="skill csharp" style="--i:0">C#</span>
+                    <span class="skill dotnet" style="--i:1">.NET</span>
+                    <span class="skill winform" style="--i:2">WinForm</span>
+                    <span class="skill php" style="--i:3">PHP</span>
+                    <span class="skill python" style="--i:4">Python</span>
+                    <span class="skill java" style="--i:5">Java</span>
+                    <span class="skill node" style="--i:6">Node.js</span>
+                    <span class="skill sql" style="--i:7">SQL</span>
+                    <span class="skill mariadb" style="--i:8">MariaDB</span>
                 </div>
             </div>
 
             <div class="skill-section">
                 <h3 class="text-secondary" style="display:flex; align-items:center; gap:8px;">
-                    <i data-lucide="container" width="18"></i> DEVOPS & OUTILS
+                    <i data-lucide="container" width="18"></i> DEVOPS & MÉTHODOLOGIE
                 </h3>
                 <div class="skills-grid">
-                    <span class="skill" style="background:#e0f2fe; color:#0369a1;">Docker</span>
-                    <span class="skill" style="background:#f3e8ff; color:#7e22ce;">Git</span>
-                    <span class="skill" style="background:#fee2e2; color:#b91c1c;">Linux</span>
+                    <span class="skill docker" style="--i:0">Docker</span>
+                    <span class="skill git" style="--i:1">Git</span>
+                    <span class="skill linux" style="--i:2">Linux</span>
+                    <span class="skill postman" style="--i:3">Postman</span>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3 class="text-secondary" style="display:flex; align-items:center; gap:8px;">
+                    <i data-lucide="network" width="18"></i> INFRA & RÉSEAU
+                </h3>
+                <div class="skills-grid">
+                    <span class="skill vmware" style="--i:0">VMware</span>
+                    <span class="skill selfhost" style="--i:1">Self-hosting</span>
+                    <span class="skill ssh" style="--i:2">SSH</span>
+                    <span class="skill sysadmin" style="--i:3">Admin Serveur</span>
+                    <span class="skill network" style="--i:4">Réseau</span>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3 class="text-secondary" style="display:flex; align-items:center; gap:8px;">
+                    <i data-lucide="brain" width="18"></i> SOFT SKILLS
+                </h3>
+                <div class="skills-grid">
+                    <span class="skill soft gestion" style="--i:0">Gestion de projet</span>
+                    <span class="skill soft veille" style="--i:1">Veille techno</span>
+                    <span class="skill soft problem" style="--i:2">Problem solving</span>
                 </div>
             </div>
         </div>
@@ -240,15 +319,33 @@ export const appContents = {
         <h2>Mes Réalisations</h2>
         <div class="project-list">
             <div class="project-card">
-                <h3>💬 Projet 1 : Chatbex</h3>
-                <p class="text-secondary">Plateforme de communication conçue pour créer des communautés en ligne.
-Elle permet aux utilisateurs de discuter en temps réel via des messages texte, des appels vocaux et vidéo.</p>
-            <div class="tags"><span class="tag">#</span><span class="tag">#</span><span class="tag">#</span></div>
+                <h3>💊 PharmaSI</h3>
+                <p class="text-secondary">Application Windows de gestion de rapports de visite pour laboratoires pharmaceutiques. Architecture N-Tier, Pattern Singleton, Sécurisation (Hash, Injections SQL) et gestion des rôles (Visiteur, Délégué, Responsable).</p>
+                <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">MySQL</span><span class="tag">WinForms</span></div>
             </div>
+
             <div class="project-card">
-                <h3>⛏️ Projet 2 : Serveur Minecraft</h3>
-                <p class="text-secondary">J’ai conçu et administré un serveur Minecraft, en gérant l’hébergement, la configuration des plugins/mods et l’optimisation des performances. Ce projet m’a permis de développer des compétences en gestion de serveurs, en scripting et en administration de communauté.</p>
-                <div class="tags"><span class="tag">Linux</span><span class="tag">Java</span><span class="tag">Python</span></div>
+                <h3>🛒 Gestion Supermarché</h3>
+                <p class="text-secondary">Développement d'une application web pour la gestion de stocks et de produits d'un supermarché. Opérations CRUD complètes, authentification et base de données relationnelle.</p>
+                <div class="tags"><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">HTML/CSS</span></div>
+            </div>
+
+            <div class="project-card">
+                <h3>🎮 Minecraft Sync Discord</h3>
+                <p class="text-secondary">Développement d'un système de synchronisation bidirectionnelle entre un serveur Minecraft et Discord. Chat en temps réel, logs console et commandes à distance.</p>
+                <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Discord API</span></div>
+            </div>
+
+            <div class="project-card">
+                <h3>🏠 HomeLab Proxmox</h3>
+                <p class="text-secondary">Architecture et administration d'un serveur de virtualisation personnel sous Proxmox. Hébergement de conteneurs LXC, VMs Linux et services auto-hébergés.</p>
+                <div class="tags"><span class="tag">Proxmox</span><span class="tag">Linux</span><span class="tag">Réseau</span></div>
+            </div>
+
+            <div class="project-card">
+                <h3>🎰 CS:GO Gambling Site</h3>
+                <p class="text-secondary">Création d'une plateforme de paris pour skins CS:GO (projet d'étude). Gestion des utilisateurs, système de crédits et interface dynamique.</p>
+                <div class="tags"><span class="tag">JavaScript</span><span class="tag">Tailwind</span><span class="tag">SQL</span></div>
             </div>
         </div>
     `,
