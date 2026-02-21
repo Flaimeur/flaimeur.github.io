@@ -118,7 +118,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/human-aligned-decision-transformers-for-wildfire-evacuation-logistics-networks-with-inverse-4hpe" target="_blank">Transformateurs de décision alignés sur l'homme pour les réseaux logistiques d'évacuation en cas d'incendie de forêt avec vérification par simulation inverse</a>
+                            <a href="https://dev.to/rikinptl/human-aligned-decision-transformers-for-wildfire-evacuation-logistics-networks-with-inverse-4hpe" target="_blank">Transformateurs de décision alignés sur l'humain pour les réseaux logistiques d'évacuation en cas d'incendie de forêt avec vérification par simulation inverse</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
