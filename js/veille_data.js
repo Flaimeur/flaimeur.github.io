@@ -22,38 +22,6 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-bio-inspired-soft-robotics-maintenance-with-ethical-53fd" target="_blank">Apprentissage par renforcement causal explicable pour la maintenance robotique douce bio-inspirée avec auditabilité éthique intégrée</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/alpinumblogs/quantum-eda-from-physics-led-experiments-to-engineering-scale-design-5jo" target="_blank">EDA quantique : des expériences basées sur la physique à la conception à l'échelle de l'ingénierie</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/adaptive-neuro-symbolic-planning-for-bio-inspired-soft-robotics-maintenance-in-hybrid-1m38" target="_blank">Planification neuro-symbolique adaptative pour la maintenance de robotiques douces bio-inspirées dans des pipelines hybrides quantiques-classiques</a>
                         </h3>
                         <div class="news-meta">
@@ -70,7 +38,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-satellite-anomaly-response-operations-with-inverse-2939" target="_blank">Distillation de connaissances intermodales pour les opérations de réponse aux anomalies des satellites avec vérification par simulation inverse</a>
+                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-wildfire-evacuation-logistics-networks-during-4hjd" target="_blank">Distillation de connaissances multimodales pour les réseaux logistiques d'évacuation en cas d'incendie de forêt pendant les fenêtres de récupération critiques</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -151,6 +119,22 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-circular-manufacturing-supply-chains-during-mission-critical-56ld" target="_blank">Coordination Edge-to-Cloud Swarm pour les chaînes d'approvisionnement de fabrication circulaire pendant les fenêtres de récupération critiques</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-circular-manufacturing-supply-chains-with-embodied-agent-408l" target="_blank">Distillation de connaissances multimodales pour les chaînes d'approvisionnement de fabrication circulaire avec des boucles de rétroaction d'agents incorporées</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
