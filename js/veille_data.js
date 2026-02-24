@@ -102,7 +102,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-circular-manufacturing-supply-chains-during-524n" target="_blank">Apprentissage de représentation fédérée clairsemée pour les chaînes d'approvisionnement de fabrication circulaire pendant les fenêtres de reprise critiques</a>
+                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-circular-manufacturing-supply-chains-during-524n" target="_blank">Apprentissage par représentation fédérée clairsemée pour les chaînes d'approvisionnement de fabrication circulaire pendant les fenêtres de reprise critiques</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
