@@ -22,7 +22,23 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-deep-sea-exploration-habitat-design-with-ethical-auditability-2717" target="_blank">Coordination d'essaims de la périphérie au cloud pour la conception d'habitats d'exploration en haute mer avec une auditabilité éthique intégrée</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-satellite-anomaly-response-operations-with-embodied-agent-inn" target="_blank">Apprentissage actif préservant la confidentialité pour les opérations de réponse aux anomalies des satellites avec des boucles de rétroaction d'agent incorporées</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/generative-simulation-benchmarking-for-planetary-geology-survey-missions-in-carbon-negative-1ff6" target="_blank">Analyse comparative de simulation générative pour les missions d'étude géologique planétaire dans des infrastructures à carbone négatif</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -39,22 +55,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-bio-inspired-soft-robotics-maintenance-with-ethical-5b3d" target="_blank">Inférence neuronale graphique probabiliste pour la maintenance robotique douce bio-inspirée avec auditabilité éthique intégrée</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-wildfire-evacuation-logistics-networks-across-lc0" target="_blank">Exploration de modèles temporels auto-supervisée pour les réseaux logistiques d'évacuation en cas d'incendie de forêt au sein de groupes de parties prenantes multilingues</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -87,22 +87,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-bio-inspired-soft-robotics-maintenance-with-embodied-agent-2d50" target="_blank">Inférence neuronale graphique probabiliste pour la maintenance de la robotique douce bio-inspirée avec des boucles de rétroaction d'agents incorporés</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/kivqoroglobal/a-kivqoro-technical-review-of-the-2-second-ethereum-block-proposal-1a0k" target="_blank">Un examen technique Kivqoro de la proposition de bloc Ethereum de 2 secondes</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
