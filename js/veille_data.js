@@ -118,7 +118,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-circular-manufacturing-supply-chains-with-inverse-fdh" target="_blank">Modélisation de diffusion augmentée par la physique pour les chaînes d'approvisionnement de fabrication circulaires avec vérification par simulation inverse</a>
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-circular-manufacturing-supply-chains-with-inverse-fdh" target="_blank">Modélisation de diffusion augmentée par la physique pour les chaînes d'approvisionnement de fabrication circulaire avec vérification par simulation inverse</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
