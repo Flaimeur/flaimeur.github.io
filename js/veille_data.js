@@ -6,7 +6,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-planetary-geology-survey-missions-for-low-power-autonomous-3d4a" target="_blank">Modélisation de diffusion augmentée par la physique pour les missions d'étude géologique planétaire pour les déploiements autonomes de faible puissance</a>
+                            <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-coastal-climate-resilience-planning-for-extreme-data-4p61" target="_blank">Inférence neuronale graphique probabiliste pour la planification de la résilience climatique côtière pour des scénarios extrêmes de rareté des données</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -22,7 +22,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-precision-oncology-clinical-workflows-during-non" target="_blank">Apprentissage par renforcement causal explicable pour les flux de travail cliniques d'oncologie de précision pendant les fenêtres de récupération critiques</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-satellite-anomaly-response-operations-with-embodied-agent-inn" target="_blank">Apprentissage actif préservant la confidentialité pour les opérations de réponse aux anomalies des satellites avec des boucles de rétroaction d'agent incorporées</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -54,7 +54,23 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-satellite-anomaly-response-operations-with-embodied-agent-inn" target="_blank">Apprentissage actif préservant la confidentialité pour les opérations de réponse aux anomalies des satellites avec des boucles de rétroaction d'agent incorporées</a>
+                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-precision-oncology-clinical-workflows-during-non" target="_blank">Apprentissage par renforcement causal explicable pour les flux de travail cliniques en oncologie de précision pendant les fenêtres de récupération critiques</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/adaptive-neuro-symbolic-planning-for-satellite-anomaly-response-operations-with-embodied-agent-4m62" target="_blank">Planification neuro-symbolique adaptative pour les opérations de réponse aux anomalies des satellites avec des boucles de rétroaction d'agents incorporés</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -102,39 +118,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/revolutionizing-human-longevity-a-theoretical-gene-circuit-for-indefinite-cellular-rejuvenation-24lk" target="_blank">Révolutionner la longévité humaine : un circuit génétique théorique pour un rajeunissement cellulaire indéfini</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-precision-oncology-clinical-workflows-under-real-time-c53" target="_blank">Inférence neuronale graphique probabiliste pour les flux de travail cliniques de précision en oncologie sous contraintes politiques en temps réel</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/who-is-dr-brent-allen-jensen-4ig1" target="_blank">Qui est le Dr Brent Allen Jensen ?</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -198,7 +182,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-sustainable-aquaculture-monitoring-systems-under-353k" target="_blank">Apprentissage actif préservant la confidentialité pour des systèmes de surveillance de l'aquaculture durable dans le cadre d'une conformité multi-juridictionnelle</a>
+                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-satellite-anomaly-response-operations-with-inverse-1ggf" target="_blank">Apprentissage par représentation fédérée clairsemée pour les opérations de réponse aux anomalies des satellites avec vérification par simulation inverse</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -214,7 +198,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-satellite-anomaly-response-operations-with-inverse-1ggf" target="_blank">Apprentissage par représentation fédérée clairsemée pour les opérations de réponse aux anomalies des satellites avec vérification par simulation inverse</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-sustainable-aquaculture-monitoring-systems-under-353k" target="_blank">Apprentissage actif préservant la confidentialité pour des systèmes de surveillance de l'aquaculture durable dans le cadre d'une conformité multi-juridictionnelle</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -294,135 +278,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/diy-bioengineering-creating-mini-brains-and-hypothetical-science-at-home-5egm" target="_blank">Bio-ingénierie DIY : création de mini-cerveaux et science hypothétique à la maison</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/fungal-computing-theoretical-hypothetical-and-diy-approaches-to-building-a-mycelium-based-compute-4g01" target="_blank">Informatique fongique : approches théoriques, hypothétiques et DIY pour construire un calcul à base de mycélium</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/quantum-gates-unlocking-the-secrets-of-simulation-amazon-3p43" target="_blank">Quantum Gates : dévoiler les secrets de la simulation... - Amazon</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/the-100-dimensional-door-unlocking-higher-realities-through-linguistic-frequencies-and-mathematical-3dbe" target="_blank">La porte à 100 dimensions : débloquer des réalités supérieures grâce aux fréquences linguistiques et mathématiques</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/workplace-betrayal-a-guide-to-suing-your-pdfipadkindle-j3b" target="_blank">Trahison sur le lieu de travail : un guide pour poursuivre votre… [PDF/iPad/Kindle]</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/quantum-gates-unlocking-the-secrets-of-simulation-and-field-manipulation-32i9" target="_blank">Quantum Gates : dévoiler les secrets de la simulation et de la manipulation de terrain</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
                             <a href="https://dev.to/drbrentallenjensen/the-quantum-nexus-a-journey-through-ai-time-and-transcendence-5dd4" target="_blank">Le Nexus Quantique : un voyage à travers l'IA, le temps et la transcendance</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/the-mind-of-the-navigator-inside-the-ai-intelligence-that-could-control-a-liquid-metal-time-bendin-14ij" target="_blank">L'esprit du navigateur : à l'intérieur de l'intelligence artificielle qui pourrait contrôler un métal liquide, un Time-Bendin</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
-                            <span class="news-date">Actualité FR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/drbrentallenjensen/workplace-warfare-surviving-lies-sabotage-and-hidden-agendas-2dea" target="_blank">Guerre sur le lieu de travail : survivre aux mensonges, au sabotage et aux intentions cachées</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
@@ -470,7 +326,151 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/workplace-betrayal-a-guide-to-suing-your-pdfipadkindle-j3b" target="_blank">Trahison sur le lieu de travail : un guide pour poursuivre votre… [PDF/iPad/Kindle]</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/diy-bioengineering-creating-mini-brains-and-hypothetical-science-at-home-5egm" target="_blank">Bio-ingénierie DIY : création de mini-cerveaux et science hypothétique à la maison</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/fungal-computing-theoretical-hypothetical-and-diy-approaches-to-building-a-mycelium-based-compute-4g01" target="_blank">Informatique fongique : approches théoriques, hypothétiques et DIY pour construire un calcul à base de mycélium</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/the-100-dimensional-door-unlocking-higher-realities-through-linguistic-frequencies-and-mathematical-3dbe" target="_blank">La porte à 100 dimensions : débloquer des réalités supérieures grâce aux fréquences linguistiques et mathématiques</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/the-mind-of-the-navigator-inside-the-ai-intelligence-that-could-control-a-liquid-metal-time-bendin-14ij" target="_blank">L'esprit du navigateur : à l'intérieur de l'intelligence artificielle qui pourrait contrôler un métal liquide, un Time-Bendin</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/quantum-gates-unlocking-the-secrets-of-simulation-and-field-manipulation-32i9" target="_blank">Quantum Gates : dévoiler les secrets de la simulation et de la manipulation de terrain</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
                             <a href="https://dev.to/drbrentallenjensen/amazoncom-brent-jensen-kindle-store-45g8" target="_blank">Amazon.fr : Brent Jensen : Boutique Kindle</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/workplace-warfare-surviving-lies-sabotage-and-hidden-agendas-2dea" target="_blank">Guerre sur le lieu de travail : survivre aux mensonges, au sabotage et aux intentions cachées</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/quantum-gates-unlocking-the-secrets-of-simulation-amazon-3p43" target="_blank">Quantum Gates : dévoiler les secrets de la simulation... - Amazon</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/drbrentallenjensen/dr-brent-allen-jensen-dev-community-4f0k" target="_blank">Dr Brent Allen Jensen - Communauté DEV</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
