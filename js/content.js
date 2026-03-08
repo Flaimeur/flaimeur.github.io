@@ -376,7 +376,7 @@ export const appContents = {
   contact: `
         <div class="contact-container">
             <h2>Ping me 📌</h2>
-            <p class="text-secondary">Envoyez-moi un message, il arrivera directement sur mon Discord !</p>
+            <p class="text-secondary">Envoyez-moi un message, il arrivera directement sur ma messagerie privée !</p>
             
             <div class="social-glow-row">
                 <a href="https://www.linkedin.com/in/bilal-lachkar" target="_blank" class="glow-btn linkedin">
