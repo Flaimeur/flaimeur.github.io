@@ -22,7 +22,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-precision-oncology-clinical-workflows-during-non" target="_blank">Apprentissage par renforcement causal explicable pour les flux de travail cliniques en oncologie de précision pendant les fenêtres de récupération critiques</a>
+                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-precision-oncology-clinical-workflows-during-non" target="_blank">Apprentissage par renforcement causal explicable pour les flux de travail cliniques d'oncologie de précision pendant les fenêtres de récupération critiques</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
