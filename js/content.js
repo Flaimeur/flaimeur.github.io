@@ -8,7 +8,7 @@ export const appContents = {
 
         <div class="bio-box" style="margin-bottom:20px;">
             <h3 style="margin-top:0; font-size:1.1rem; color:#ea580c;">🚀 Futur Ingénieur DevOps</h3>
-            <p>Passionné par le code et l'infrastructure, je veux rendre les applications déployables, scalables et maintenables.</p>
+            <p>Passionné par le code et l'infrastructure, je veux rendre les applications déployables, évolutives et maintenables.</p>
         </div>
 
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:20px;">
@@ -46,7 +46,7 @@ export const appContents = {
                 </div>
                 
                 <a href="https://github.com/Flaimeur" target="_blank" class="gh-edit-btn" 
-                   style="text-decoration:none; display:block; width:100%; box-sizing:border-box; margin-top:15px; color:#c9d1d9; background-color:#21262d; border:1px solid #30363d; padding:5px 16px; border-radius:6px; text-align:center; font-weight:500; font-size:0.9rem; transition: background 0.2s;">
+                   style="text-decoration:none; display:block; width:100%; box-sizing:border-box; margin-top:15px; padding:5px 16px; border-radius:6px; text-align:center; font-weight:500; font-size:0.9rem; transition: background 0.2s;">
                     View Profile
                 </a>
             </div>
@@ -74,7 +74,7 @@ export const appContents = {
                     <div class="gh-repo-card">
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <a href="https://github.com/Flaimeur/flaimeur.github.io" class="gh-repo-link" style="color:#58a6ff; text-decoration:none; font-weight:bold; display:flex; gap:5px;"><i data-lucide="book" width="16"></i> flaimeur.github.io</a>
-                            <span class="text-secondary" style="border:1px solid; border-color:var(--header-text); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
+                            <span class="text-secondary" style="border:1px solid; border-color:var(--text-secondary); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
                         </div>
                         <div class="gh-repo-desc text-secondary" style="font-size:0.8rem; margin-top:5px;">Portfolio V2 🐧</div>
                         <div class="text-secondary" style="margin-top:15px; font-size:0.75rem; display:flex; gap:15px; align-items:center;">
@@ -86,7 +86,7 @@ export const appContents = {
                     <div class="gh-repo-card">
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <a href="https://github.com/Flaimeur/flaimeur-portfolio-v1" class="gh-repo-link" style="color:#58a6ff; text-decoration:none; font-weight:bold; display:flex; gap:5px;"><i data-lucide="book" width="16"></i> flaimeur-portfolio-v1</a>
-                            <span class="text-secondary" style="border:1px solid; border-color:var(--header-text); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
+                            <span class="text-secondary" style="border:1px solid; border-color:var(--text-secondary); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
                         </div>
                         <div class="gh-repo-desc text-secondary" style="font-size:0.8rem; margin-top:5px;">Portfolio V1</div>
                         <div class="text-secondary" style="margin-top:15px; font-size:0.75rem; display:flex; gap:10px;">
@@ -97,7 +97,7 @@ export const appContents = {
                     <div class="gh-repo-card">
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <a href="https://github.com/Flaimeur/PharmaSI" class="gh-repo-link" style="color:#58a6ff; text-decoration:none; font-weight:bold; display:flex; gap:5px;"><i data-lucide="book" width="16"></i> PharmaSI</a>
-                            <span class="text-secondary" style="border:1px solid; border-color:var(--header-text); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
+                            <span class="text-secondary" style="border:1px solid; border-color:var(--text-secondary); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
                         </div>
                         <div class="text-secondary" style="margin-top:15px; font-size:0.75rem; display:flex; gap:10px;">
                             <span style="display:flex; align-items:center; gap:3px;"><span class="gh-lang-dot" style="background:#178600; width:10px; height:10px; border-radius:50%; display:inline-block;"></span> C#</span>
@@ -107,7 +107,7 @@ export const appContents = {
                     <div class="gh-repo-card">
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <a href="https://github.com/Flaimeur/Flaimeur" class="gh-repo-link" style="color:#58a6ff; text-decoration:none; font-weight:bold; display:flex; gap:5px;"><i data-lucide="book" width="16"></i> Flaimeur</a>
-                            <span class="text-secondary" style="border:1px solid; border-color:var(--header-text); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
+                            <span class="text-secondary" style="border:1px solid; border-color:var(--text-secondary); border-radius:10px; padding:0 7px; font-size:0.7rem;">Public</span>
                         </div>
                         <div class="gh-repo-desc text-secondary" style="font-size:0.8rem; margin-top:5px;">Config files for my GitHub profile.</div>
                     </div>

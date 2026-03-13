@@ -1,5 +1,5 @@
 export const appsConfig = [
-    { id: "profile", title: "MOI", icon: "user", color: "#ea580c" },
+    { id: "profile", title: "Présentation", icon: "user", color: "#ea580c" },
     { id: "github", title: "GitHub", icon: "github", color: "#0d1117" },
     { id: "competences", title: "Compétence", icon: "cpu", color: "#6366f1" },
     { id: "stages", title: "Stages", icon: "briefcase", color: "#f59e0b" },
