@@ -42,7 +42,7 @@ export const appContents = {
                 
                 <div class="gh-names" style="margin-top:15px; text-align:left; width:100%;">
                     <h1 style="font-size:1.6rem; margin:0; line-height:1.2;">Flaimeur</h1>
-                    <span class="text-secondary" style="font-size:1.3rem; font-weight:300;">Flaimeur</span>
+                    <span class="text-secondary" style="font-size:1.3rem; font-weight:300;">Blachkar</span>
                 </div>
                 
                 <a href="https://github.com/Flaimeur" target="_blank" class="gh-edit-btn" 
