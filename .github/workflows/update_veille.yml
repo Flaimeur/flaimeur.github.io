@@ -1,0 +1,85 @@
+name: 🔄 Veille RSS — Mise à jour & Récap Email
+
+on:
+  # Mise à jour du site toutes les 9 heures
+  schedule:
+    - cron: "0 */9 * * *"    # toutes les 9h
+    - cron: "0 9 * * *"      # récap email à 9h UTC chaque matin
+  # Déclenchement manuel depuis l'onglet Actions
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: "Envoyer le récap email maintenant ?"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  # ─────────────────────────────────────────────────────────
+  # JOB 1 — Mise à jour de veille_data.js toutes les 9h
+  # ─────────────────────────────────────────────────────────
+  update-rss:
+    name: ⬇️ Fetch RSS & Update veille_data.js
+    runs-on: ubuntu-latest
+    # Ne tourne pas lors du cron de 9h (réservé au job email)
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule != '0 9 * * *')
+
+    steps:
+      - name: 📥 Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 🔄 Génération de veille_data.js
+        run: python scripts/fetch_rss.py
+
+      - name: 💾 Commit & Push si changé
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/veille_data.js
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté, pas de commit."
+          else
+            git commit -m "chore(veille): mise à jour automatique RSS 🔄"
+            git push
+          fi
+
+  # ─────────────────────────────────────────────────────────
+  # JOB 2 — Récap email chaque matin à 9h UTC
+  # ─────────────────────────────────────────────────────────
+  send-recap:
+    name: 📧 Envoi du récap email (9h)
+    runs-on: ubuntu-latest
+    # Tourne uniquement au cron de 9h ou si déclenché manuellement avec send_email=true
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 9 * * *') ||
+      (github.event_name == 'workflow_dispatch' && inputs.send_email == true)
+
+    steps:
+      - name: 📥 Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 📰 Génération du récap HTML
+        run: python scripts/fetch_rss.py --email-only
+
+      - name: 📧 Envoi de l'email via Gmail SMTP
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          to: ${{ secrets.MAIL_TO }}
+          from: "Veille Tech 📰 <${{ secrets.MAIL_USERNAME }}>"
+          subject: "📰 Veille Tech du jour — DevOps & Web Dev"
+          html_body: file://email_body.html
