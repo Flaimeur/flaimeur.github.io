@@ -1,4 +1,4 @@
-// Généré automatiquement par fetch_rss.py — 15/03/2026 à 14:44 UTC
+// Généré automatiquement par fetch_rss.py — 15/03/2026 à 14:48 UTC
 window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
@@ -183,15 +183,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/nakuldevmv/i-built-a-bot-that-keeps-my-resume-always-up-to-date-on-github-463d" target="_blank">I Built a Bot That Keeps My Resume Always Up to Date on GitHub</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-coastal-climate-resilience-planning-during-mission-critical-58bn" target="_blank">Privacy-Preserving Active Learning for coastal climate resilience planning during mission-critical recovery windows</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">15/03/2026</span>
                         </div>
@@ -201,15 +201,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/jsonviewertool/how-to-convert-json-to-xsd-automatically-step-by-step-guide-12i5" target="_blank">How to Convert JSON to XSD Automatically (Step-by-Step Guide)</a>
+                            <a href="https://dev.to/manascodes13/quantum-computing-might-change-ai-more-than-gpus-did-1hj2" target="_blank">Quantum Computing Might Change AI More Than GPUs Did</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">15/03/2026</span>
                         </div>
@@ -219,17 +219,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/aspantel/why-unified-apis-arent-enough-the-sync-logic-trap-1fmb" target="_blank">Why Unified APIs Aren&#x27;t Enough: The &quot;Sync Logic&quot; Trap 🕳️</a>
+                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-deep-sea-exploration-habitat-design-with-zero-trust-27a5" target="_blank">Cross-Modal Knowledge Distillation for deep-sea exploration habitat design with zero-trust governance guarantees</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">14/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -237,17 +237,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rizz_softwares_/building-modern-business-websites-with-rizz-softwares-22ak" target="_blank">Building Modern Business Websites with Rizz Softwares</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-sustainable-aquaculture-monitoring-systems-with-inverse-320p" target="_blank">Privacy-Preserving Active Learning for sustainable aquaculture monitoring systems with inverse simulation verification</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">14/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -255,17 +255,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/jqueryscript/data-anim-anti-fouc-scroll-animation-library-under-3kb-50jh" target="_blank">data-anim: Anti-FOUC Scroll Animation Library Under 3KB</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-heritage-language-revitalization-programs-across-29nf" target="_blank">Privacy-Preserving Active Learning for heritage language revitalization programs across multilingual stakeholder groups</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">13/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -273,17 +273,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/info_metaphor_c2b04d18a56/the-future-of-conversational-revenue-why-whatsapp-is-the-new-frontline-for-b2b-growth-3b6g" target="_blank">The Future of Conversational Revenue: Why WhatsApp is the New Frontline for B2B Growth</a>
+                            <a href="https://dev.to/derivinate/quantum-computings-2026-reckoning-whats-real-vs-hype-51gf" target="_blank">Quantum Computing&#x27;s 2026 Reckoning: What&#x27;s Real vs. Hype</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">13/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -291,17 +291,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/aspantel/why-your-unified-api-is-failing-your-frontend-and-why-metadata-is-the-cure-5d6c" target="_blank">Why Your Unified API is Failing Your Frontend (And Why Metadata is the Cure)</a>
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-smart-agriculture-microgrid-orchestration-under-20b4" target="_blank">Physics-Augmented Diffusion Modeling for smart agriculture microgrid orchestration under multi-jurisdictional compliance</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">13/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -309,17 +309,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/janmejaisingh/javascript-arrays-101-everything-a-beginner-needs-to-know-53f2" target="_blank">JavaScript Arrays 101: Everything a Beginner Needs to Know</a>
+                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-satellite-anomaly-response-operations-for-extreme-3lh" target="_blank">Explainable Causal Reinforcement Learning for satellite anomaly response operations for extreme data sparsity scenarios</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">12/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -327,17 +327,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/triggerall/lillys-supercomputer-revolutionizes-drug-discovery-1pke" target="_blank">Lilly’s Supercomputer Revolutionizes Drug Discovery</a>
+                            <a href="https://dev.to/iaexplore/guide-to-how-does-a-quantum-computer-work-and-why-will-it-change-the-world-10fg" target="_blank">Guide to How Does a Quantum Computer Work and Why Will It Change the World?</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">12/03/2026</span>
                         </div>
                     </div>
                 </div>
@@ -345,17 +345,17 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-code" style="color: #6366f1;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/harishkotra/breaking-the-ai-slop-building-a-real-time-content-detector-2pmp" target="_blank">Breaking the AI Slop: Building a Real-time Content Detector</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-planetary-geology-survey-missions-under-multi-jurisdictional-565m" target="_blank">Privacy-Preserving Active Learning for planetary geology survey missions under multi-jurisdictional compliance</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #6366f122; color: #6366f1; border: 1px solid #6366f144; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-code"></i> Web Dev
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
-                            <span class="news-date">15/03/2026</span>
+                            <span class="news-date">12/03/2026</span>
                         </div>
                     </div>
                 </div>
