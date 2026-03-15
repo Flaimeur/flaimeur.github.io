@@ -12,6 +12,21 @@ export const appContents = {
         </div>
 
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:20px;">
+            <div class="info-card" style="border-left: 3px solid #6366f1;">
+                <h4 style="margin:0 0 8px 0; color:#6366f1; font-size:0.95rem;">💻 BTS SIO — option SLAM</h4>
+                <p style="font-size:0.82rem; margin:0; line-height:1.6;">
+                    La spécialité <b>SLAM</b> (Solutions Logicielles et Applications Métiers) forme aux <b>langages de programmation</b> (Java, C#, PHP, Python, SQL), à la <b>conception de bases de données</b>, au développement web & applicatif, ainsi qu'aux <b>méthodes agiles</b> et à la cybersécurité logicielle.
+                </p>
+            </div>
+            <div class="info-card" style="border-left: 3px solid #0ea5e9;">
+                <h4 style="margin:0 0 8px 0; color:#0ea5e9; font-size:0.95rem;">⚙️ Ambition DevOps</h4>
+                <p style="font-size:0.82rem; margin:0; line-height:1.6;">
+                    En parallèle du BTS, je monte en compétences sur les pratiques <b>DevOps</b> : intégration & déploiement continu (<b>CI/CD</b>), conteneurisation avec <b>Docker</b>, administration <b>Linux</b>, gestion de serveurs et automatisation des pipelines applicatifs.
+                </p>
+            </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:20px;">
             <div class="info-card">
                 <h4 style="margin:0 0 10px 0;">🎓 Formation</h4>
                 <p style="font-size:0.9rem; margin:0;">
@@ -319,13 +334,13 @@ export const appContents = {
         <h2>Mes Réalisations</h2>
         <div class="project-list">
             <div class="project-card">
-                <h3>💊 PharmaSI</h3>
+                <h3><a href="https://github.com/Flaimeur/PharmaSI2" target="_blank" style="color:inherit; text-decoration:none;">💊 PharmaSI</a></h3>
                 <p class="text-secondary">Application Windows de gestion de rapports de visite pour laboratoires pharmaceutiques. Architecture N-Tier, Pattern Singleton, Sécurisation (Hash, Injections SQL) et gestion des rôles (Visiteur, Délégué, Responsable).</p>
                 <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">MySQL</span><span class="tag">WinForms</span></div>
             </div>
 
             <div class="project-card">
-                <h3>🛒 Gestion Supermarché</h3>
+                <h3><a href="https://github.com/Flaimeur/Supermarche" target="_blank" style="color:inherit; text-decoration:none;">🛒 Gestion Supermarché</a></h3>
                 <p class="text-secondary">Développement d'une application web pour la gestion de stocks et de produits d'un supermarché. Opérations CRUD complètes, authentification et base de données relationnelle.</p>
                 <div class="tags"><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">HTML/CSS</span></div>
             </div>
@@ -343,7 +358,7 @@ export const appContents = {
             </div>
 
             <div class="project-card">
-                <h3>🎰 CS:GO Gambling Site</h3>
+                <h3><a href="https://github.com/Flaimeur/Gambling-SC-GO" target="_blank" style="color:inherit; text-decoration:none;">🎰 CS:GO Gambling Site</a></h3>
                 <p class="text-secondary">Création d'une plateforme de paris pour skins CS:GO (projet d'étude). Gestion des utilisateurs, système de crédits et interface dynamique.</p>
                 <div class="tags"><span class="tag">JavaScript</span><span class="tag">Tailwind</span><span class="tag">SQL</span></div>
             </div>
