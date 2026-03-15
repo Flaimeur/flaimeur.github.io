@@ -29,10 +29,10 @@ RSS_FEEDS = [
         "icon": "fa-server",
     },
     {
-        "url": "https://dev.to/feed/tag/webdev",
-        "label": "Web Dev",
-        "color": "#6366f1",
-        "icon": "fa-code",
+        "url": "https://dev.to/feed/tag/quantumcomputing",
+        "label": "Quantique",
+        "color": "#8b5cf6",
+        "icon": "fa-atom",
     },
 ]
 
