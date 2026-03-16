@@ -1,17 +1,25 @@
+<<<<<<< Updated upstream
 // Généré automatiquement par fetch_rss.py — 16/03/2026 à 11:50 UTC
+=======
+// Généré automatiquement par fetch_rss.py — 16/03/2026 à 11:51 UTC
+>>>>>>> Stashed changes
 window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-server" style="color: #0ea5e9;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
+<<<<<<< Updated upstream
                             <a href="https://dev.to/ashwinidave/the-hidden-cost-of-observability-theater-and-how-to-fix-it-2i1n" target="_blank">The Hidden Cost of &quot;Observability Theater&quot; (And How to Fix It)</a>
+=======
+                            <a href="https://dev.to/rikinptl/adaptive-neuro-symbolic-planning-for-wildfire-evacuation-logistics-networks-for-extreme-data-4abh" target="_blank">Adaptive Neuro-Symbolic Planning for wildfire evacuation logistics networks for extreme data sparsity scenarios</a>
+>>>>>>> Stashed changes
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #0ea5e922; color: #0ea5e9; border: 1px solid #0ea5e944; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-server"></i> DevOps
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">16/03/2026</span>
                         </div>
@@ -21,10 +29,47 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-server" style="color: #0ea5e9;"></i>
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
+                            <a href="https://dev.to/soumia_g_9dc322fc4404cecd/the-ember-that-looks-like-ash-4d9j" target="_blank">The Ember That Looks Like Ash</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">16/03/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-sustainable-aquaculture-monitoring-systems-under-3ikh" target="_blank">Physics-Augmented Diffusion Modeling for sustainable aquaculture monitoring systems under multi-jurisdictional compliance</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">16/03/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+<<<<<<< Updated upstream
                             <a href="https://dev.to/tradeapollo/air-gapped-governance-meets-ai-driven-security-securing-openai-api-wrappers-5587" target="_blank">Air-Gapped Governance Meets AI-Driven Security: Securing OpenAI API Wrappers</a>
                         </h3>
                         <div class="news-meta">
@@ -174,6 +219,13 @@ window.veilleData = `
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #0ea5e922; color: #0ea5e9; border: 1px solid #0ea5e944; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
                                 <i class="fas fa-server"></i> DevOps
+=======
+                            <a href="https://dev.to/leio91/quantum-computing-system-downloads-5gfl" target="_blank">Quantum Computing System | Downloads</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+>>>>>>> Stashed changes
                             </span>
                             <span class="news-date">16/03/2026</span>
                         </div>

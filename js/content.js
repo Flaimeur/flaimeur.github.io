@@ -7,8 +7,8 @@ export const appContents = {
         </div>
 
         <div class="bio-box" style="margin-bottom:20px;">
-            <h3 style="margin-top:0; font-size:1.1rem; color:#ea580c;">🚀 Futur Ingénieur DevOps</h3>
-            <p>Passionné par le code et l'infrastructure, je veux rendre les applications déployables, évolutives et maintenables.</p>
+            <h3 style="margin-top:0; font-size:1.1rem; color:#ea580c;">🚀 Futur Ingénieur Logiciel</h3>
+            <p>Passionné par le développement et les nouvelles technologies, je m'intéresse particulièrement à l'informatique quantique et au développement d'applications performantes.</p>
         </div>
 
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:20px;">
@@ -19,9 +19,9 @@ export const appContents = {
                 </p>
             </div>
             <div class="info-card" style="border-left: 3px solid #0ea5e9;">
-                <h4 style="margin:0 0 8px 0; color:#0ea5e9; font-size:0.95rem;">⚙️ Ambition DevOps</h4>
+                <h4 style="margin:0 0 8px 0; color:#0ea5e9; font-size:0.95rem;">⚙️ Spécialisation Tech</h4>
                 <p style="font-size:0.82rem; margin:0; line-height:1.6;">
-                    En parallèle du BTS, je monte en compétences sur les pratiques <b>DevOps</b> : intégration & déploiement continu (<b>CI/CD</b>), conteneurisation avec <b>Docker</b>, administration <b>Linux</b>, gestion de serveurs et automatisation des pipelines applicatifs.
+                    En parallèle du BTS, je développe mes compétences sur les technologies émergentes : <b>Informatique Quantique</b>, architectures modernes, et automatisation du développement.
                 </p>
             </div>
         </div>
@@ -37,7 +37,7 @@ export const appContents = {
             <div class="info-card">
                 <h4 style="margin:0 0 10px 0;">🎯 Objectifs</h4>
                 <p style="font-size:0.9rem; margin:0;">
-                    Devenir DevOps, maîtriser le Cloud et la CI/CD.
+                    Devenir Ingénieur, maîtriser le Cloud et les nouvelles technos.
                 </p>
             </div>
         </div>
@@ -281,7 +281,7 @@ export const appContents = {
 
             <div class="skill-section">
                 <h3 class="text-secondary" style="display:flex; align-items:center; gap:8px;">
-                    <i data-lucide="container" width="18"></i> DEVOPS & MÉTHODOLOGIE
+                    <i data-lucide="container" width="18"></i> OUTILS & MÉTHODOLOGIE
                 </h3>
                 <div class="skills-grid">
                     <span class="skill docker" style="--i:0">Docker</span>
@@ -369,7 +369,7 @@ export const appContents = {
   veille: `
         <div class="center">
             <h2>Veille Technologique</h2>
-            <p class="text-secondary" style="margin-bottom: 20px;">Flux automatique (Quantum & DevOps)</p>
+            <p class="text-secondary" style="margin-bottom: 20px;">Flux automatique (Informatique Quantique)</p>
             <div id="veille-content" style="width: 100%; max-width: 600px; text-align: left;">
                 ${window.veilleData || "<p>Chargement des news...</p>"} 
             </div>

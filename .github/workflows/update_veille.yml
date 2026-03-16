@@ -81,5 +81,5 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           to: ${{ secrets.MAIL_TO }}
           from: "Veille Tech 📰 <${{ secrets.MAIL_USERNAME }}>"
-          subject: "📰 Veille Tech du jour — DevOps & Web Dev"
+          subject: "📰 Veille Tech du jour — Informatique Quantique"
           html_body: file://email_body.html

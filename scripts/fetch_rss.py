@@ -23,12 +23,6 @@ ssl_context = ssl._create_unverified_context()
 
 RSS_FEEDS = [
     {
-        "url": "https://dev.to/feed/tag/devops",
-        "label": "DevOps",
-        "color": "#0ea5e9",
-        "icon": "fa-server",
-    },
-    {
         "url": "https://dev.to/feed/tag/quantumcomputing",
         "label": "Quantique",
         "color": "#8b5cf6",
@@ -166,7 +160,7 @@ def generate_email_html(feeds_data: list[tuple]) -> str:
           <tr>
             <td colspan="2" style="background: linear-gradient(135deg, #0ea5e9, #6366f1); padding: 28px 32px;">
               <h1 style="margin:0; color: white; font-size: 1.4rem;">📰 Veille Tech du {now}</h1>
-              <p style="margin: 6px 0 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">Recap automatique — DevOps &amp; Web Dev</p>
+              <p style="margin: 6px 0 0; color: rgba(255,255,255,0.8); font-size: 0.9rem;">Recap automatique — Informatique Quantique</p>
             </td>
           </tr>
 
