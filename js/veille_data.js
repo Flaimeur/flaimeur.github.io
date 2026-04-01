@@ -1,19 +1,16 @@
-// Généré automatiquement par fetch_rss.py — 01/04/2026 à 03:20 UTC
 window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/generative-simulation-benchmarking-for-precision-oncology-clinical-workflows-in-carbon-negative-3ae7" target="_blank">Generative Simulation Benchmarking for precision oncology clinical workflows in carbon-negative infrastructure</a>
+                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-heritage-language-revitalization-programs-in-hybrid-52dj" target="_blank">Distillation intermodale des connaissances pour les programmes de revitalisation des langues patrimoniales dans des pipelines hybrides quantiques-classiques</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">31/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -21,17 +18,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/qualiumai/classical-computers-are-powerful-but-they-have-limits-3ncd" target="_blank">Classical Computers Are Powerful… But They Have Limits</a>
+                            <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-smart-agriculture-microgrid-orchestration-under-real-time-3nci" target="_blank">Inférence neuronale graphique probabiliste pour l’orchestration intelligente de micro-réseaux agricoles sous contraintes politiques en temps réel</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">31/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -39,17 +34,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/nishil_bhave_641129b49873/quantum-computing-for-web-developers-what-you-need-to-know-in-2026-21in" target="_blank">Quantum Computing for Web Developers: What You Need to Know in 2026</a>
+                            <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-circular-manufacturing-supply-chains-under-real-time-m9o" target="_blank">Inférence neuronale graphique probabiliste pour les chaînes d'approvisionnement de fabrication circulaire sous contraintes politiques en temps réel</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">31/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -57,17 +50,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-circular-manufacturing-supply-chains-under-real-time-policy-3ofg" target="_blank">Privacy-Preserving Active Learning for circular manufacturing supply chains under real-time policy constraints</a>
+                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-planetary-geology-survey-missions-in-carbon-negative-4khd" target="_blank">Distillation de connaissances intermodales pour les missions d'étude de géologie planétaire dans des infrastructures à carbone négatif</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">31/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -75,17 +66,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/walid_azrour_0813f6b60398/quantum-error-correction-the-problem-that-will-define-whether-quantum-computing-actually-matters-34in" target="_blank">Quantum Error Correction: The Problem That Will Define Whether Quantum Computing Actually Matters</a>
+                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-circular-manufacturing-supply-chains-with-zero-trust-39g" target="_blank">Apprentissage de la représentation fédérée éparse pour des chaînes d'approvisionnement de fabrication circulaires avec des garanties de gouvernance zéro confiance</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">31/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -93,17 +82,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-autonomous-urban-air-mobility-routing-under-real-time-policy-1b2o" target="_blank">Privacy-Preserving Active Learning for autonomous urban air mobility routing under real-time policy constraints</a>
+                            <a href="https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-satellite-anomaly-response-operations-for-extreme-data-3hil" target="_blank">Exploration de modèles temporels auto-supervisée pour les opérations de réponse aux anomalies des satellites dans des scénarios de rareté extrême des données</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">30/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -111,17 +98,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-sustainable-aquaculture-monitoring-systems-with-3o0h" target="_blank">Explainable Causal Reinforcement Learning for sustainable aquaculture monitoring systems with inverse simulation verification</a>
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-heritage-language-revitalization-programs-with-zero-trust-3jpa" target="_blank">Modélisation de diffusion augmentée par la physique pour les programmes de revitalisation des langues patrimoniales avec des garanties de gouvernance sans confiance</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">30/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -129,17 +114,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-circular-manufacturing-supply-chains-under-real-time-m9o" target="_blank">Probabilistic Graph Neural Inference for circular manufacturing supply chains under real-time policy constraints</a>
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-deep-sea-exploration-habitat-design-under-2p52" target="_blank">Modélisation de diffusion augmentée par la physique pour la conception d'habitats d'exploration en eaux profondes dans le cadre d'une conformité multi-juridictionnelle</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">29/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
@@ -147,35 +130,15 @@ window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                        <i class="fas fa-atom fa-spin" style="color: #8b5cf6;"></i>
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-planetary-geology-survey-missions-in-carbon-negative-4khd" target="_blank">Cross-Modal Knowledge Distillation for planetary geology survey missions in carbon-negative infrastructure</a>
+                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-heritage-language-revitalization-programs-with-embodied-agent-59a4" target="_blank">Coordination Edge-to-Cloud Swarm pour les programmes de revitalisation des langues patrimoniales avec des boucles de rétroaction d'agents incorporées</a>
                         </h3>
                         <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">28/03/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-smart-agriculture-microgrid-orchestration-under-real-time-3nci" target="_blank">Probabilistic Graph Neural Inference for smart agriculture microgrid orchestration under real-time policy constraints</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">28/03/2026</span>
+                            <span class="tag-quantum"><i class="fas fa-microchip"></i> Spécial Quantique</span>
+                            <span class="news-date">Actualité FR</span>
                         </div>
                     </div>
                 </div>
