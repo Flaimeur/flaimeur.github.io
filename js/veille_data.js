@@ -1,5 +1,23 @@
-// Généré automatiquement par fetch_rss.py — 11/04/2026 à 09:49 UTC
+// Généré automatiquement par fetch_rss.py — 11/04/2026 à 18:54 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/human-aligned-decision-transformers-for-satellite-anomaly-response-operations-with-ethical-13n6" target="_blank">Human-Aligned Decision Transformers for satellite anomaly response operations with ethical auditability baked in</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">11/04/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -152,24 +170,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/probabilistic-graph-neural-inference-for-satellite-anomaly-response-operations-with-zero-trust-566h" target="_blank">Probabilistic Graph Neural Inference for satellite anomaly response operations with zero-trust governance guarantees</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">07/04/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/jtorchia/quantum-computing-para-el-dev-web-que-no-estudio-fisica-cuando-preocuparse-en-serio-3ea4" target="_blank">Quantum computing para el dev web que no estudió física: ¿cuándo preocuparse en serio?</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
