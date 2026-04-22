@@ -1,4 +1,4 @@
-// Généré automatiquement par fetch_rss.py — 22/04/2026 à 10:22 UTC
+// Généré automatiquement par fetch_rss.py — 22/04/2026 à 19:21 UTC
 window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
@@ -7,7 +7,7 @@ window.veilleData = `
                     </div>
                     <div class="stage-info">
                         <h3 class="news-title">
-                            <a href="https://dev.to/cosmotheoros/an-open-source-proof-of-concept-for-sub-microsecond-quantum-error-correction-qec-pre-processing-1mnl" target="_blank">An open-source Proof of Concept for sub-microsecond Quantum Error Correction (QEC) pre-processing using Linux eBPF/XDP.</a>
+                            <a href="https://dev.to/rikinptl/privacy-preserving-active-learning-for-coastal-climate-resilience-planning-in-hybrid-160k" target="_blank">Privacy-Preserving Active Learning for coastal climate resilience planning in hybrid quantum-classical pipelines</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
