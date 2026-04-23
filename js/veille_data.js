@@ -1,5 +1,41 @@
-// Généré automatiquement par fetch_rss.py — 23/04/2026 à 10:24 UTC
+// Généré automatiquement par fetch_rss.py — 23/04/2026 à 19:19 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/mlxio_ai/the-145-billion-math-why-bitcoins-quantum-threat-is-manageable-not-existential-4le1" target="_blank">The $145 billion math: Why bitcoin’s quantum threat is manageable, not existential</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">23/04/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-smart-agriculture-microgrid-orchestration-with-3llp" target="_blank">Explainable Causal Reinforcement Learning for smart agriculture microgrid orchestration with zero-trust governance guarantees</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">23/04/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -140,42 +176,6 @@ window.veilleData = `
                                 <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">20/04/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/meta-optimized-continual-adaptation-for-bio-inspired-soft-robotics-maintenance-with-zero-trust-1261" target="_blank">Meta-Optimized Continual Adaptation for bio-inspired soft robotics maintenance with zero-trust governance guarantees</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">19/04/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-planetary-geology-survey-missions-in-hybrid-quantum-classical-28oh" target="_blank">Edge-to-Cloud Swarm Coordination for planetary geology survey missions in hybrid quantum-classical pipelines</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">19/04/2026</span>
                         </div>
                     </div>
                 </div>
