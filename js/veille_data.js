@@ -1,5 +1,23 @@
-// Généré automatiquement par fetch_rss.py — 23/04/2026 à 19:19 UTC
+// Généré automatiquement par fetch_rss.py — 24/04/2026 à 03:25 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/adaptive-neuro-symbolic-planning-for-planetary-geology-survey-missions-for-extreme-data-sparsity-34f0" target="_blank">Adaptive Neuro-Symbolic Planning for planetary geology survey missions for extreme data sparsity scenarios</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">23/04/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -152,24 +170,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/ki-mathias/why-quantum-computers-are-faster-the-answer-isnt-parallelism-5ef1" target="_blank">Why Quantum Computers Are Faster — the Answer Isn&#x27;t Parallelism</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">20/04/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/cross-modal-knowledge-distillation-for-precision-oncology-clinical-workflows-in-hybrid-3h5n" target="_blank">Cross-Modal Knowledge Distillation for precision oncology clinical workflows in hybrid quantum-classical pipelines</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
