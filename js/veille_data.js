@@ -1,5 +1,23 @@
-// Généré automatiquement par fetch_rss.py — 19/05/2026 à 19:57 UTC
+// Généré automatiquement par fetch_rss.py — 20/05/2026 à 04:03 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/sparse-federated-representation-learning-for-precision-oncology-clinical-workflows-during-mj9" target="_blank">Sparse Federated Representation Learning for precision oncology clinical workflows during mission-critical recovery windows</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">19/05/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -152,24 +170,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/meta-optimized-continual-adaptation-for-heritage-language-revitalization-programs-under-540c" target="_blank">Meta-Optimized Continual Adaptation for heritage language revitalization programs under multi-jurisdictional compliance</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">16/05/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-wildfire-evacuation-logistics-networks-with-zero-trust-26e1" target="_blank">Edge-to-Cloud Swarm Coordination for wildfire evacuation logistics networks with zero-trust governance guarantees</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
