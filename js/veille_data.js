@@ -1,5 +1,23 @@
-// Généré automatiquement par fetch_rss.py — 14/06/2026 à 11:33 UTC
+// Généré automatiquement par fetch_rss.py — 14/06/2026 à 19:43 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-bio-inspired-soft-robotics-maintenance-with-zero-trust-j7c" target="_blank">Edge-to-Cloud Swarm Coordination for bio-inspired soft robotics maintenance with zero-trust governance guarantees</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">14/06/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -158,24 +176,6 @@ window.veilleData = `
                                 <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">10/06/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-coastal-climate-resilience-planning-for-extreme-data-sparsity-1a69" target="_blank">Edge-to-Cloud Swarm Coordination for coastal climate resilience planning for extreme data sparsity scenarios</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">09/06/2026</span>
                         </div>
                     </div>
                 </div>
