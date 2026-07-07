@@ -1,5 +1,41 @@
-// Généré automatiquement par fetch_rss.py — 07/07/2026 à 11:55 UTC
+// Généré automatiquement par fetch_rss.py — 07/07/2026 à 20:02 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/johngouzos/john-gouzos-on-bridging-business-vision-and-technical-execution-in-modern-technology-projects-494o" target="_blank">John Gouzos on Bridging Business Vision and Technical Execution in Modern Technology Projects</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">07/07/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-smart-agriculture-microgrid-orchestration-in-hybrid-4gai" target="_blank">Physics-Augmented Diffusion Modeling for smart agriculture microgrid orchestration in hybrid quantum-classical pipelines</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">07/07/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -140,42 +176,6 @@ window.veilleData = `
                                 <i class="fas fa-atom"></i> Quantique
                             </span>
                             <span class="news-date">05/07/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/generative-simulation-benchmarking-for-autonomous-urban-air-mobility-routing-for-low-power-22c2" target="_blank">Generative Simulation Benchmarking for autonomous urban air mobility routing for low-power autonomous deployments</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">04/07/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/cleiton_augusto_/i-built-a-neutral-benchmarking-layer-for-quantum-simulators-in-rust-and-it-revealed-a-silent-2i59" target="_blank">I built a neutral benchmarking layer for quantum simulators in Rust — and it revealed a silent disagreement between two backends</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">04/07/2026</span>
                         </div>
                     </div>
                 </div>
