@@ -1,5 +1,41 @@
-// Généré automatiquement par fetch_rss.py — 17/08/2026 à 09:47 UTC
+// Généré automatiquement par fetch_rss.py — 17/08/2026 à 18:45 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/vpodk/fraunhofer-researchers-refine-quantum-advantage-assessment-metrics-4a5" target="_blank">Fraunhofer Researchers Refine Quantum Advantage Assessment Metrics</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">17/08/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/human-aligned-decision-transformers-for-wildfire-evacuation-logistics-networks-during-3hii" target="_blank">Human-Aligned Decision Transformers for wildfire evacuation logistics networks during mission-critical recovery windows</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">17/08/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -134,42 +170,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/rikinptl/generative-simulation-benchmarking-for-deep-sea-exploration-habitat-design-under-36l" target="_blank">Generative Simulation Benchmarking for deep-sea exploration habitat design under multi-jurisdictional compliance</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">14/08/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/meta-optimized-continual-adaptation-for-bio-inspired-soft-robotics-maintenance-across-multilingual-3ag0" target="_blank">Meta-Optimized Continual Adaptation for bio-inspired soft robotics maintenance across multilingual stakeholder groups</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">14/08/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/electra-ai/monday-quantum-entanglement-egg-boiling-toaster-envy-514d" target="_blank">Monday: Quantum Entanglement, Egg Boiling, Toaster Envy</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
