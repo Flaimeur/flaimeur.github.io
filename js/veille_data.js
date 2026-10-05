@@ -1,5 +1,23 @@
-// Généré automatiquement par fetch_rss.py — 04/10/2026 à 21:05 UTC
+// Généré automatiquement par fetch_rss.py — 05/10/2026 à 04:57 UTC
 window.veilleData = `
+            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
+                <div class="stage-header">
+                    <div class="stage-icon">
+                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
+                    </div>
+                    <div class="stage-info">
+                        <h3 class="news-title">
+                            <a href="https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-satellite-anomaly-response-operations-with-zero-trust-1g24" target="_blank">Explainable Causal Reinforcement Learning for satellite anomaly response operations with zero-trust governance guarantees</a>
+                        </h3>
+                        <div class="news-meta">
+                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
+                                <i class="fas fa-atom"></i> Quantique
+                            </span>
+                            <span class="news-date">04/10/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
                     <div class="stage-icon">
@@ -152,24 +170,6 @@ window.veilleData = `
                     <div class="stage-info">
                         <h3 class="news-title">
                             <a href="https://dev.to/suresh_kumar_de3920bedd1c/ai-vs-quantum-computing-different-technologies-bigger-together-2426" target="_blank">AI vs. Quantum Computing: Different Technologies, Bigger Together</a>
-                        </h3>
-                        <div class="news-meta">
-                            <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
-                                <i class="fas fa-atom"></i> Quantique
-                            </span>
-                            <span class="news-date">01/10/2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
-                <div class="stage-header">
-                    <div class="stage-icon">
-                        <i class="fas fa-atom" style="color: #8b5cf6;"></i>
-                    </div>
-                    <div class="stage-info">
-                        <h3 class="news-title">
-                            <a href="https://dev.to/rikinptl/meta-optimized-continual-adaptation-for-bio-inspired-soft-robotics-maintenance-across-multilingual-2a27" target="_blank">Meta-Optimized Continual Adaptation for bio-inspired soft robotics maintenance across multilingual stakeholder groups</a>
                         </h3>
                         <div class="news-meta">
                             <span class="tag-quantum" style="background: #8b5cf622; color: #8b5cf6; border: 1px solid #8b5cf644; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;">
