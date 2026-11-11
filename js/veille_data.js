@@ -1,4 +1,4 @@
-// Généré automatiquement par fetch_rss.py — 10/11/2026 à 23:01 UTC
+// Généré automatiquement par fetch_rss.py — 11/11/2026 à 05:32 UTC
 window.veilleData = `
             <div class="stage-card animate-on-scroll" style="margin-bottom: 20px; opacity: 1;">
                 <div class="stage-header">
