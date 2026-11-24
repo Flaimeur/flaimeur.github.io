@@ -3,20 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bilal Lachkar · Développeur logiciel & web</title>
-    <meta name="description" content="Portfolio de Bilal Lachkar (Flaimeur) : applications Windows en C#/.NET, outils web en JavaScript et services auto-hébergés." />
-    <meta property="og:title" content="Bilal Lachkar · Développeur logiciel & web" />
-    <meta property="og:description" content="Applications Windows, outils web et homelab. Projets, expérience et contact." />
+    <title>Bilal Lachkar</title>
+    <meta name="description" content="Bilal Lachkar (Flaimeur), développeur à Paris. Applications Windows en C#, outils en JavaScript, homelab." />
+    <meta property="og:title" content="Bilal Lachkar" />
+    <meta property="og:description" content="Développeur à Paris. Applications Windows en C#, outils en JavaScript, homelab." />
     <meta property="og:image" content="https://github.com/Flaimeur.png" />
     <meta property="og:url" content="https://flaimeur.github.io/" />
-    <meta name="theme-color" content="#0b0b12" />
     <link rel="icon" href="asset/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <script>
-      document.documentElement.classList.add("js");
       try {
         const t = localStorage.getItem("theme");
         if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
@@ -25,292 +23,138 @@
   </head>
 
   <body>
-    <a class="skip" href="#main">Aller au contenu</a>
-
-    <header class="nav" id="nav">
-      <div class="container nav-inner">
-        <a href="#top" class="brand" aria-label="Accueil">
-          <img src="https://github.com/Flaimeur.png" alt="" width="28" height="28" />
-          <span>Flaimeur</span>
-        </a>
-        <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
-          <a href="#projets">Projets</a>
-          <a href="#experience">Expérience</a>
-          <a href="#competences">Compétences</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="nav-actions">
-          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Changer de thème">
-            <i data-lucide="sun-moon"></i>
-          </button>
-          <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
-            <i data-lucide="menu"></i>
-          </button>
-        </div>
-      </div>
+    <header class="top">
+      <a href="#" class="me">Bilal Lachkar</a>
+      <nav>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" type="button" aria-label="Changer de thème">◐</button>
+      </nav>
     </header>
 
-    <main id="main">
-      <!-- HERO -->
-      <section class="hero" id="top">
-        <div class="container hero-inner">
-          <div class="hero-text reveal">
-            <p class="eyebrow"><span class="dot"></span> Disponible pour un stage ou une alternance</p>
-            <h1>Bilal Lachkar<br /><span class="grad">Développeur logiciel & web</span></h1>
-            <p class="lead">
-              Je conçois des applications Windows en C#/.NET, des outils web en JavaScript et je fais tourner mes propres
-              services sur un homelab Proxmox. J'aime quand le code est propre, carré et optimisé.
-            </p>
-            <div class="hero-cta">
-              <a href="#projets" class="btn btn-primary">Voir mes projets <i data-lucide="arrow-down"></i></a>
-              <a href="asset/cv.pdf" class="btn btn-ghost" download>Télécharger le CV <i data-lucide="download"></i></a>
-            </div>
-            <div class="socials">
-              <a href="https://github.com/Flaimeur" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
-              <a href="https://www.linkedin.com/in/bilal-lachkar/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#contact" aria-label="Contact"><i data-lucide="mail"></i></a>
-            </div>
-          </div>
-
-          <div class="hero-card reveal" aria-hidden="true">
-            <div class="term">
-              <div class="term-bar"><span></span><span></span><span></span><em>~/flaimeur</em></div>
-              <pre><code><span class="c">$</span> whoami
-Bilal Lachkar · Paris
-<span class="c">$</span> cat stack.txt
-C# · .NET · JavaScript · React
-Node.js · Python · SQL · Docker
-<span class="c">$</span> ls projets/
-<span class="hl">Lumen/</span>  <span class="hl">Lueur/</span>  <span class="hl">steam-bp-manager/</span>
-<span class="hl">sims4mp/</span>  <span class="hl">homelab/</span>
-<span class="c">$</span> <span class="caret"></span></code></pre>
-            </div>
-          </div>
-        </div>
+    <main>
+      <section class="intro">
+        <img class="avatar" src="https://github.com/Flaimeur.png" alt="" width="72" height="72" />
+        <h1>Bilal Lachkar</h1>
+        <p>
+          Développeur à Paris, 20 ans. Je fais surtout des applis Windows en C# et des outils en JavaScript,
+          souvent pour régler un problème que j'ai moi-même : lancer mes jeux à la manette, allumer la lumière
+          de ma chambre et le RGB du PC en même temps, changer l'animation de démarrage de Steam.
+        </p>
+        <p>
+          En formation au CNAM Paris. Je cherche une alternance en développement.
+        </p>
+        <p class="links">
+          <a href="https://github.com/Flaimeur" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/bilal-lachkar/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="asset/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </p>
       </section>
 
-      <!-- CHIFFRES -->
-      <section class="stats container reveal" aria-label="En chiffres">
-        <div><strong>4</strong><span>applications publiées</span></div>
-        <div><strong>90+</strong><span>versions livrées</span></div>
-        <div><strong>3</strong><span>langages en production<br />(C#, JS, Python)</span></div>
-        <div><strong>24/7</strong><span>homelab auto-hébergé</span></div>
-      </section>
+      <section id="projets">
+        <h2>Projets</h2>
 
-      <!-- PROJETS -->
-      <section class="section" id="projets">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">01 · Projets</p>
-            <h2>Ce que j'ai construit</h2>
-            <p class="section-sub">Des applications utilisées au quotidien, avec mises à jour automatiques et releases régulières.</p>
-          </div>
-
-          <article class="project featured reveal">
-            <a class="project-media" href="https://github.com/Flaimeur/Lumen" target="_blank" rel="noopener">
-              <img src="https://raw.githubusercontent.com/Flaimeur/Lumen/main/docs/screenshots/accueil.jpg" alt="Écran d'accueil de Lumen : widgets, jeu à reprendre et jeux récents" loading="lazy" />
-            </a>
-            <div class="project-body">
-              <div class="project-top">
-                <h3>Lumen</h3>
-                <span class="badge">40 versions</span>
-              </div>
-              <p>
-                Tous mes jeux au même endroit, à piloter à la manette : ROMs, Steam, Epic, GOG et serveur RomM dans une
-                interface plein écran pour Windows. Jaquettes automatiques, succès Steam et RetroAchievements,
-                statistiques de jeu, profils manette et mises à jour automatiques.
-              </p>
-              <ul class="tags"><li>Electron</li><li>JavaScript</li><li>Node.js</li><li>APIs REST</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/Flaimeur/Lumen" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
-                <a href="https://github.com/Flaimeur/Lumen/releases/latest" target="_blank" rel="noopener"><i data-lucide="download"></i> Télécharger</a>
-              </div>
-            </div>
-          </article>
-
-          <div class="project-grid">
-            <article class="project reveal">
-              <div class="project-icon" style="--c: #f5b84a"><i data-lucide="lamp"></i></div>
-              <div class="project-top"><h3>Lueur</h3><span class="badge">C# · .NET</span></div>
-              <p>
-                Une seule appli Windows pour la lumière de la chambre (IKEA DIRIGERA, en local, sans cloud) et le RGB du PC
-                (OpenRGB). Appairage OAuth PKCE, synchro temps réel par websocket, raccourcis clavier et mises à jour vérifiées par empreinte.
-              </p>
-              <ul class="tags"><li>C#</li><li>.NET</li><li>WebSocket</li><li>Domotique</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/Flaimeur/Lueur" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
-              </div>
-            </article>
-
-            <article class="project reveal">
-              <div class="project-icon" style="--c: #1a9eff"><i data-lucide="gamepad-2"></i></div>
-              <div class="project-top"><h3>Steam Big Picture Manager</h3><span class="badge">MIT</span></div>
-              <p>
-                Application de bureau pour parcourir, télécharger et appliquer en un clic les animations de démarrage de
-                Steam Big Picture et du Steam Deck. Navigation complète à la manette et import de vidéos perso.
-              </p>
-              <ul class="tags"><li>JavaScript</li><li>Python</li><li>Vite</li><li>CI GitHub Actions</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/Flaimeur/steam-big-picture-manager" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
-              </div>
-            </article>
-
-            <article class="project reveal">
-              <div class="project-icon" style="--c: #3ecf8e"><i data-lucide="users"></i></div>
-              <div class="project-top"><h3>sims4mp</h3><span class="badge">45 versions</span></div>
-              <p>
-                Mod multijoueur expérimental pour Les Sims 4 : protocole JSON sur TCP non bloquant, et lanceur Windows
-                qui installe et met à jour le mod depuis les Releases GitHub (contrôle SHA-256), avec tests unitaires.
-              </p>
-              <ul class="tags"><li>Python</li><li>Réseau TCP</li><li>Tkinter</li><li>Tests</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/Flaimeur/sims4mp" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
-              </div>
-            </article>
-
-            <article class="project reveal">
-              <div class="project-icon" style="--c: #e57000"><i data-lucide="server"></i></div>
-              <div class="project-top"><h3>Homelab Proxmox</h3><span class="badge">Infra</span></div>
-              <p>
-                Serveur de virtualisation personnel sous Proxmox : conteneurs LXC, VMs Linux et services auto-hébergés
-                en Docker Compose pour mes outils du quotidien.
-              </p>
-              <ul class="tags"><li>Proxmox</li><li>Docker</li><li>Linux</li><li>Réseau</li></ul>
-            </article>
-          </div>
-
-          <p class="more reveal">
-            <a href="https://github.com/Flaimeur?tab=repositories" target="_blank" rel="noopener">Tous mes dépôts sur GitHub <i data-lucide="arrow-up-right"></i></a>
+        <article class="project">
+          <h3><a href="https://github.com/Flaimeur/Lumen" target="_blank" rel="noopener">Lumen</a></h3>
+          <p class="meta">Electron, JavaScript · 40 versions</p>
+          <p>
+            Un lanceur plein écran pour tous mes jeux : ROMs, Steam, Epic, GOG et un serveur RomM. Il se pilote
+            entièrement à la manette, récupère les jaquettes tout seul, affiche les succès Steam et RetroAchievements
+            et se met à jour automatiquement.
           </p>
-        </div>
+          <a href="https://github.com/Flaimeur/Lumen" target="_blank" rel="noopener" class="shot">
+            <img src="https://raw.githubusercontent.com/Flaimeur/Lumen/main/docs/screenshots/accueil.jpg" alt="Écran d'accueil de Lumen" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Flaimeur/Lueur" target="_blank" rel="noopener">Lueur</a></h3>
+          <p class="meta">C#, .NET</p>
+          <p>
+            Une appli Windows qui pilote la lumière de ma chambre (passerelle IKEA DIRIGERA, en local, sans cloud)
+            et le RGB du PC via OpenRGB. Si je change la lumière avec l'appli IKEA ou un interrupteur, le PC suit
+            en temps réel grâce au websocket de la passerelle.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Flaimeur/steam-big-picture-manager" target="_blank" rel="noopener">Steam Big Picture Manager</a></h3>
+          <p class="meta">JavaScript, Python · licence MIT</p>
+          <p>
+            Pour parcourir les animations de démarrage de SteamDeckRepo et les appliquer en un clic à Steam
+            Big Picture ou au Steam Deck. Utilisable à la manette, et on peut importer ses propres vidéos.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Flaimeur/sims4mp" target="_blank" rel="noopener">sims4mp</a></h3>
+          <p class="meta">Python · expérimental</p>
+          <p>
+            Une tentative de multijoueur pour Les Sims 4 : un mod qui échange l'état du jeu en JSON sur TCP,
+            et un lanceur qui installe et met à jour le mod depuis les releases GitHub.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Homelab</h3>
+          <p class="meta">Proxmox, Docker, Linux</p>
+          <p>
+            Un serveur Proxmox à la maison avec des conteneurs LXC, quelques VMs Linux et les services
+            que j'héberge moi-même en Docker Compose.
+          </p>
+        </article>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section class="section alt" id="experience">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">02 · Expérience</p>
-            <h2>Parcours professionnel</h2>
-          </div>
+      <section id="parcours">
+        <h2>Parcours</h2>
+        <dl class="rows">
+          <dt>2025 – 26</dt>
+          <dd><strong>La Dictée Géante</strong>, développeur web. Site vitrine du jeu de société (maquettes Figma puis HTML, CSS, JS) et plateforme d'inscription pour « La Dictée des Voisins », avec un tableau de bord admin.</dd>
 
-          <ol class="timeline">
-            <li class="reveal">
-              <span class="when">déc. 2025 · févr. 2026</span>
-              <div>
-                <h3>Développeur web · <span>La Dictée Géante</span></h3>
-                <p>Conception et développement du site vitrine du jeu de société (Figma, HTML/CSS/JS) et de la plateforme événementielle « La Dictée des Voisins » : inscriptions et tableau de bord admin.</p>
-                <ul class="tags"><li>Figma</li><li>JavaScript</li><li>Responsive</li><li>Git</li></ul>
-              </div>
-            </li>
-            <li class="reveal">
-              <span class="when">mai · juin 2025</span>
-              <div>
-                <h3>Développeur · <span>Reenbow</span></h3>
-                <p>Tests et retours UX sur l'application Universe BTP, scoring des leads et reporting automatisé (Make, Lemlist), tableau de bord Notion de suivi.</p>
-                <ul class="tags"><li>UX</li><li>Automatisation</li><li>CRM</li></ul>
-              </div>
-            </li>
-            <li class="reveal">
-              <span class="when">janv. · févr. 2024</span>
-              <div>
-                <h3>Technicien · <span>Minute Phone</span></h3>
-                <p>Diagnostic et réparation matérielle de smartphones, accueil et conseil client.</p>
-              </div>
-            </li>
-            <li class="reveal">
-              <span class="when">sept. · oct. 2023</span>
-              <div>
-                <h3>Photographe · <span>Boomker Concept</span></h3>
-                <p>Prises de vue photo et vidéo de produits, montage et retouche (Photoshop, Premiere Pro).</p>
-              </div>
-            </li>
-            <li class="reveal">
-              <span class="when">2022 · 2023</span>
-              <div>
-                <h3>Stages data · <span>Deezer</span></h3>
-                <p>Extraction et analyse de données en SQL, curation de métadonnées musicales, mini blind-test en Python avec l'API Deezer.</p>
-                <ul class="tags"><li>SQL</li><li>Python</li><li>API REST</li></ul>
-              </div>
-            </li>
-            <li class="reveal">
-              <span class="when">mai · juin 2022</span>
-              <div>
-                <h3>Vente · <span>Micromania</span></h3>
-                <p>Conseil et vente de jeux vidéo et consoles, gestion du rayonnage.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
+          <dt>2025</dt>
+          <dd><strong>Reenbow</strong>, stage. Retours UX sur l'appli Universe BTP, automatisation de la prospection avec Make et Lemlist, suivi des campagnes dans Notion.</dd>
+
+          <dt>2024</dt>
+          <dd><strong>Minute Phone</strong>, technicien. Réparation de smartphones.</dd>
+
+          <dt>2022 – 23</dt>
+          <dd><strong>Deezer</strong>, deux stages. Requêtes SQL et analyse de données, et un petit blind-test en Python avec l'API Deezer.</dd>
+        </dl>
+
+        <h2 class="sub">Formation</h2>
+        <dl class="rows">
+          <dt>2026 – 27</dt>
+          <dd>CNAM Paris, formation en informatique</dd>
+          <dt>2024</dt>
+          <dd>Bac pro Systèmes numériques, mention bien</dd>
+        </dl>
+
+        <h2 class="sub">Outils</h2>
+        <p class="tools">
+          C#, .NET, JavaScript, Electron, React, Node.js, Python, PHP, SQL (MySQL, MariaDB).<br />
+          Git, GitHub Actions, Docker, Proxmox, Linux. Figma pour les maquettes.
+        </p>
       </section>
 
-      <!-- COMPETENCES -->
-      <section class="section" id="competences">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">03 · Compétences</p>
-            <h2>Stack & outils</h2>
-          </div>
-
-          <div class="skills">
-            <div class="skill-card reveal">
-              <i data-lucide="app-window"></i>
-              <h3>Applications</h3>
-              <ul class="tags"><li>C#</li><li>.NET</li><li>WinForms</li><li>Electron</li><li>Python</li><li>Java</li></ul>
-            </div>
-            <div class="skill-card reveal">
-              <i data-lucide="monitor"></i>
-              <h3>Front-end</h3>
-              <ul class="tags"><li>JavaScript</li><li>React</li><li>Next.js</li><li>HTML / CSS</li><li>Tailwind</li><li>Figma</li></ul>
-            </div>
-            <div class="skill-card reveal">
-              <i data-lucide="database"></i>
-              <h3>Back-end & données</h3>
-              <ul class="tags"><li>Node.js</li><li>PHP</li><li>SQL</li><li>MariaDB / MySQL</li><li>APIs REST</li></ul>
-            </div>
-            <div class="skill-card reveal">
-              <i data-lucide="server-cog"></i>
-              <h3>Infra & DevOps</h3>
-              <ul class="tags"><li>Proxmox</li><li>Docker</li><li>Linux</li><li>SSH</li><li>Git</li><li>GitHub Actions</li></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="section alt" id="contact">
-        <div class="container contact">
-          <div class="reveal">
-            <p class="kicker">04 · Contact</p>
-            <h2>Travaillons ensemble</h2>
-            <p class="section-sub">
-              Un stage, une alternance, un projet ou juste une question ? Écris-moi, je réponds rapidement.
-            </p>
-            <ul class="contact-links">
-              <li><a href="https://www.linkedin.com/in/bilal-lachkar/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i> linkedin.com/in/bilal-lachkar</a></li>
-              <li><a href="https://github.com/Flaimeur" target="_blank" rel="noopener"><i data-lucide="github"></i> github.com/Flaimeur</a></li>
-              <li><a href="asset/cv.pdf" download><i data-lucide="file-text"></i> CV au format PDF</a></li>
-            </ul>
-          </div>
-
-          <form class="form reveal" id="contact-form" novalidate>
-            <label>Nom<input type="text" name="nom" autocomplete="name" required /></label>
-            <label>Email<input type="email" name="email" autocomplete="email" required /></label>
-            <label>Message<textarea name="message" rows="5" required></textarea></label>
-            <button type="submit" class="btn btn-primary">Envoyer <i data-lucide="send"></i></button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Le plus simple, c'est <a href="https://www.linkedin.com/in/bilal-lachkar/" target="_blank" rel="noopener">LinkedIn</a>. Sinon, ce formulaire m'arrive directement.</p>
+        <form id="contact-form" novalidate>
+          <label>Nom <input type="text" name="nom" autocomplete="name" required /></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button type="submit">Envoyer</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <span>© <span id="year">2026</span> Bilal Lachkar</span>
-        <a href="https://github.com/Flaimeur/flaimeur.github.io" target="_blank" rel="noopener">Code source du site</a>
-      </div>
+    <footer>
+      <span>Bilal Lachkar, <span id="year">2026</span></span>
+      <a href="https://github.com/Flaimeur/flaimeur.github.io" target="_blank" rel="noopener">source</a>
     </footer>
 
-    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
