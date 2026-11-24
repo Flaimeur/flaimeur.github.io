@@ -94,6 +94,14 @@ h2.sub { margin-top: 40px; }
 .entry p:not(.role) { margin: 6px 0 0; }
 .tools { margin: 0; }
 
+.degrees { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.degree { border-top: 2px solid var(--text); padding-top: 12px; display: flex; flex-direction: column; gap: 2px; }
+.degree:first-child { border-top-color: var(--link); }
+.degree .year { margin-bottom: 6px; }
+.degree strong { font-weight: 600; line-height: 1.35; }
+.school { color: var(--muted); font-size: 0.95rem; }
+.degree p { margin: 8px 0 0; font-size: 0.92rem; color: var(--muted); line-height: 1.5; }
+
 /* Contact */
 #contact > p { margin: 0 0 24px; }
 form { display: grid; gap: 14px; }
@@ -122,6 +130,7 @@ footer a { color: var(--muted); }
 :focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 @media (max-width: 520px) {
+  .degrees { grid-template-columns: 1fr; gap: 24px; }
   body { font-size: 16px; }
   .top nav { gap: 14px; }
   .intro { padding-top: 16px; }
