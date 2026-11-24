@@ -86,9 +86,12 @@ h2.sub { margin-top: 40px; }
 .shot { display: block; margin-top: 16px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
 
 /* Parcours */
-.rows { display: grid; grid-template-columns: 96px 1fr; gap: 14px 20px; margin: 0; }
-.rows dt { font: 400 0.85rem/1.95 "IBM Plex Mono", monospace; color: var(--muted); }
-.rows dd { margin: 0; }
+.entries { display: grid; gap: 22px; }
+.entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.entry-head strong { font-weight: 600; }
+.year { font: 400 0.85rem "IBM Plex Mono", monospace; color: var(--muted); white-space: nowrap; }
+.role { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.entry p:not(.role) { margin: 6px 0 0; }
 .tools { margin: 0; }
 
 /* Contact */
@@ -122,6 +125,4 @@ footer a { color: var(--muted); }
   body { font-size: 16px; }
   .top nav { gap: 14px; }
   .intro { padding-top: 16px; }
-  .rows { grid-template-columns: 1fr; gap: 2px; }
-  .rows dd { margin-bottom: 14px; }
 }
